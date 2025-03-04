@@ -1,0 +1,38 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Project Plan}{1}{}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{}%
+\contentsline {subsection}{\numberline {1.1.1}Problem Statement}{1}{}%
+\contentsline {subsection}{\numberline {1.1.2}Problem Statement Analysis}{1}{}%
+\contentsline {chapter}{\numberline {2}Analysis}{2}{}%
+\contentsline {section}{\numberline {2.1}Requirements and Constraints}{2}{}%
+\contentsline {subsection}{\numberline {2.1.1}Requirements}{2}{}%
+\contentsline {subsection}{\numberline {2.1.2}Constraints}{2}{}%
+\contentsline {section}{\numberline {2.2}State of the art}{2}{}%
+\contentsline {subsection}{\numberline {2.2.1}Economy}{2}{}%
+\contentsline {subsection}{\numberline {2.2.2}Ecology}{2}{}%
+\contentsline {subsection}{\numberline {2.2.3}Sports}{2}{}%
+\contentsline {section}{\numberline {2.3}Market Research}{2}{}%
+\contentsline {section}{\numberline {2.4}System Architecture}{2}{}%
+\contentsline {chapter}{\numberline {3}Design}{3}{}%
+\contentsline {section}{\numberline {3.1}Analysis Review}{3}{}%
+\contentsline {section}{\numberline {3.2}Hardware Specification}{3}{}%
+\contentsline {subsection}{\numberline {3.2.1}STM32}{3}{}%
+\contentsline {subsection}{\numberline {3.2.2}BMI088 IMU Sensor}{3}{}%
+\contentsline {subsection}{\numberline {3.2.3}SIM7600E-H}{3}{}%
+\contentsline {section}{\numberline {3.3}Tools and COTS}{5}{}%
+\contentsline {subsection}{\numberline {3.3.1}Tools}{5}{}%
+\contentsline {subsection}{\numberline {3.3.2}COTS}{5}{}%
+\contentsline {subsubsection}{GPS and 4G module}{5}{}%
+\contentsline {subsubsection}{Inkscape}{5}{}%
+\contentsline {subsubsection}{draw.io}{5}{}%
+\contentsline {subsubsection}{STM32 CUBEmx}{5}{}%
+\contentsline {subsubsection}{\LaTeX }{5}{}%
+\contentsline {section}{\numberline {3.4}Software Specification}{5}{}%
+\contentsline {section}{\numberline {3.5}Theorical Concepts}{5}{}%
+\contentsline {chapter}{\numberline {4}Implementation}{6}{}%
+\contentsline {section}{\numberline {4.1}Hardware}{6}{}%
+\contentsline {section}{\numberline {4.2}Software}{6}{}%
+\contentsline {subsection}{\numberline {4.2.1}DataBase Comunication}{6}{}%
+\contentsline {chapter}{\numberline {5}Conclusion}{7}{}%
+\contentsline {section}{\numberline {5.1}Gantt Diagram}{7}{}%
+\contentsline {section}{\numberline {5.2}Bibliografy}{7}{}%
