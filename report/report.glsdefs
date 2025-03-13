@@ -1,0 +1,84 @@
+\glsdefs@newdocentry{ny}%
+{%
+name={\acronymfont {\glsentryshort {ny}}},%
+sort={NY},%
+type={acronym},%
+first={NY},%
+firstplural={NYs},%
+text={NY},%
+plural={NYs},%
+description={New York},%
+descriptionplural={New York},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={New York},%
+longplural={New Yorks},%
+short={NY},%
+shortplural={NYs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{la}%
+{%
+name={\acronymfont {\glsentryshort {la}}},%
+sort={LA},%
+type={acronym},%
+first={LA},%
+firstplural={LAs},%
+text={LA},%
+plural={LAs},%
+description={Los Angeles},%
+descriptionplural={Los Angeles},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Los Angeles},%
+longplural={Los Angeless},%
+short={LA},%
+shortplural={LAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{un}%
+{%
+name={\acronymfont {\glsentryshort {un}}},%
+sort={UN},%
+type={acronym},%
+first={UN},%
+firstplural={UNs},%
+text={UN},%
+plural={UNs},%
+description={United Nations},%
+descriptionplural={United Nations},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={United Nations},%
+longplural={United Nationss},%
+short={UN},%
+shortplural={UNs},%
+counter={page},%
+parent={},%
+%
+}%
+

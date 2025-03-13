@@ -6,6 +6,7 @@
 \usepackage{graphicx} 
 \usepackage{fancyhdr}
 \usepackage{float}
+\usepackage{acronym} 
 
 %\usepackage{natbib}
 %\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
@@ -27,7 +28,7 @@
 Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
 \fancyfoot[R]{\newline\newline\thepage}
 
-\fancyhead{}
+%\fancyhead{}
 \fancyhead[R]{\footnotesize\nouppercase{\leftmark}}
 \fancyhead[LO]{\footnotesize\nouppercase{\leftmark}}
 \fancyhead[R]
@@ -54,6 +55,14 @@ Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
     \tableofcontents  
     \listoffigures
     \listoftables
+    \textbf{\Huge Acronyms} %remove indentation
+    \normalsize
+    \begin{acronym}[UART] % Give the longest label here so that the list is nicely aligned
+        \acro{UART}{Universal asynchronous receiver/transmitter}
+        \acro{LTE}{Long-Term Evolution}
+        \acro{ADC}{Analog to Digital Converter}
+    \end{acronym}
+    
     \newpage
 
     \pagenumbering{arabic}

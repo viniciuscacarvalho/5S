@@ -3,36 +3,45 @@
 \contentsline {section}{\numberline {1.1}Introduction}{1}{}%
 \contentsline {subsection}{\numberline {1.1.1}Problem Statement}{1}{}%
 \contentsline {subsection}{\numberline {1.1.2}Problem Statement Analysis}{1}{}%
-\contentsline {chapter}{\numberline {2}Analysis}{2}{}%
-\contentsline {section}{\numberline {2.1}Requirements and Constraints}{2}{}%
-\contentsline {subsection}{\numberline {2.1.1}Requirements}{2}{}%
-\contentsline {subsection}{\numberline {2.1.2}Constraints}{2}{}%
-\contentsline {section}{\numberline {2.2}State of the art}{2}{}%
-\contentsline {subsection}{\numberline {2.2.1}Economy}{2}{}%
-\contentsline {subsection}{\numberline {2.2.2}Ecology}{2}{}%
-\contentsline {subsection}{\numberline {2.2.3}Sports}{2}{}%
-\contentsline {section}{\numberline {2.3}Market Research}{2}{}%
-\contentsline {section}{\numberline {2.4}System Architecture}{2}{}%
-\contentsline {chapter}{\numberline {3}Design}{3}{}%
-\contentsline {section}{\numberline {3.1}Analysis Review}{3}{}%
-\contentsline {section}{\numberline {3.2}Hardware Specification}{3}{}%
-\contentsline {subsection}{\numberline {3.2.1}STM32}{3}{}%
-\contentsline {subsection}{\numberline {3.2.2}BMI088 IMU Sensor}{3}{}%
-\contentsline {subsection}{\numberline {3.2.3}SIM7600E-H}{3}{}%
-\contentsline {section}{\numberline {3.3}Tools and COTS}{5}{}%
-\contentsline {subsection}{\numberline {3.3.1}Tools}{5}{}%
-\contentsline {subsection}{\numberline {3.3.2}COTS}{5}{}%
-\contentsline {subsubsection}{GPS and 4G module}{5}{}%
-\contentsline {subsubsection}{Inkscape}{5}{}%
-\contentsline {subsubsection}{draw.io}{5}{}%
-\contentsline {subsubsection}{STM32 CUBEmx}{5}{}%
-\contentsline {subsubsection}{\LaTeX }{5}{}%
-\contentsline {section}{\numberline {3.4}Software Specification}{5}{}%
-\contentsline {section}{\numberline {3.5}Theorical Concepts}{5}{}%
-\contentsline {chapter}{\numberline {4}Implementation}{6}{}%
-\contentsline {section}{\numberline {4.1}Hardware}{6}{}%
-\contentsline {section}{\numberline {4.2}Software}{6}{}%
-\contentsline {subsection}{\numberline {4.2.1}DataBase Comunication}{6}{}%
-\contentsline {chapter}{\numberline {5}Conclusion}{7}{}%
-\contentsline {section}{\numberline {5.1}Gantt Diagram}{7}{}%
-\contentsline {section}{\numberline {5.2}Bibliografy}{7}{}%
+\contentsline {chapter}{\numberline {2}Analysis}{3}{}%
+\contentsline {section}{\numberline {2.1}Requirements and Constraints}{3}{}%
+\contentsline {subsection}{\numberline {2.1.1}Requirements}{3}{}%
+\contentsline {subsection}{\numberline {2.1.2}Constraints}{3}{}%
+\contentsline {section}{\numberline {2.2}State of the art}{3}{}%
+\contentsline {subsection}{\numberline {2.2.1}Economy}{3}{}%
+\contentsline {subsection}{\numberline {2.2.2}Ecology}{3}{}%
+\contentsline {subsection}{\numberline {2.2.3}Sports}{3}{}%
+\contentsline {section}{\numberline {2.3}Market Research}{3}{}%
+\contentsline {section}{\numberline {2.4}System Architecture}{3}{}%
+\contentsline {chapter}{\numberline {3}Design}{4}{}%
+\contentsline {section}{\numberline {3.1}Analysis Review}{4}{}%
+\contentsline {section}{\numberline {3.2}Hardware Consumption}{4}{}%
+\contentsline {subsection}{\numberline {3.2.1}Autonomy}{4}{}%
+\contentsline {subsubsection}{Batteries}{4}{}%
+\contentsline {subsubsection}{Board Consumption}{4}{}%
+\contentsline {subsection}{\numberline {3.2.2}Communication protocol}{4}{}%
+\contentsline {subsection}{\numberline {3.2.3}Conclusion}{5}{}%
+\contentsline {section}{\numberline {3.3}Case Construction}{5}{}%
+\contentsline {section}{\numberline {3.4}Hardware Specification}{5}{}%
+\contentsline {subsection}{\numberline {3.4.1}SDCard}{5}{}%
+\contentsline {subsection}{\numberline {3.4.2}STM32}{5}{}%
+\contentsline {subsection}{\numberline {3.4.3}BMI088 IMU Sensor}{5}{}%
+\contentsline {subsection}{\numberline {3.4.4}SIM7600E-H}{5}{}%
+\contentsline {subsection}{\numberline {3.4.5}Temperature}{6}{}%
+\contentsline {section}{\numberline {3.5}Tools and COTS}{7}{}%
+\contentsline {subsection}{\numberline {3.5.1}Tools}{7}{}%
+\contentsline {subsection}{\numberline {3.5.2}COTS}{7}{}%
+\contentsline {subsubsection}{GPS and 4G module}{7}{}%
+\contentsline {subsubsection}{Inkscape}{7}{}%
+\contentsline {subsubsection}{draw.io}{7}{}%
+\contentsline {subsubsection}{STM32 CUBEmx}{7}{}%
+\contentsline {subsubsection}{\LaTeX }{7}{}%
+\contentsline {section}{\numberline {3.6}Software Specification}{7}{}%
+\contentsline {section}{\numberline {3.7}Theorical Concepts}{7}{}%
+\contentsline {chapter}{\numberline {4}Implementation}{8}{}%
+\contentsline {section}{\numberline {4.1}Hardware}{8}{}%
+\contentsline {section}{\numberline {4.2}Software}{8}{}%
+\contentsline {subsection}{\numberline {4.2.1}DataBase Comunication}{8}{}%
+\contentsline {chapter}{\numberline {5}Conclusion}{9}{}%
+\contentsline {section}{\numberline {5.1}Gantt Diagram}{9}{}%
+\contentsline {section}{\numberline {5.2}Bibliografy}{9}{}%
