@@ -4,5 +4,16 @@
  *  Created on: Apr 23, 2025
  *      Author: viny
  */
+#include "sd_card_task.h"
+void sd_card_task(void *argument)
+{
+	//setup
 
-void sd_card_task(void *argument);
+	//loop
+	while(1)
+	{
+		osDelay(DELAY_MAX);
+	}
+
+}
+

@@ -9,14 +9,19 @@
 #define PROJECT_TASK_HEADER_H_
 
 #include "defines.h"
+#include "task_behavior/nb_iot_task.h"
+#include "task_behavior/batteries_task.h"
+#include "task_behavior/cnss_task.h"
+#include "task_behavior/sd_card_task.h"
+#include "task_behavior/temp_task.h"
+#include "task_behavior/imu_task.h"
+
+#include "../Core/Inc/usart.h"
+#include "../Core/Inc/spi.h"
+#include "../Core/Inc/gpio.h"
+
+extern UART_HandleTypeDef huart3;
 
 void idle_task(void *argument);
-void nb_iot_task(void *argument);
-void cnss_task(void *argument);
-void sd_card_task(void *argument);
-void temp_task(void *argument);
-void imu_task(void *argument);
-void batterie_task(void *argument);
-
 
 #endif /* PROJECT_TASK_HEADER_H_ */

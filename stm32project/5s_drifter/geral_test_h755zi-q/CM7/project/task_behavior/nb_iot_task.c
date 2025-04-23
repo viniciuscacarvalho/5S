@@ -5,7 +5,7 @@
  *      Author: viny
  */
 
-#include "../task_header.h"
+#include "nb_iot_task.h"
 
 void nb_iot_task(void *argument)
 {
@@ -14,7 +14,7 @@ void nb_iot_task(void *argument)
 	//loop
 	while(1)
 	{
-
+		osDelay(DELAY_MAX);
 	}
 
 }

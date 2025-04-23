@@ -5,6 +5,8 @@
  *      Author: viny
  */
 
+#include "cnss_task.h"
+
 void cnss_task(void *argument)
 {
 	//setup
@@ -12,7 +14,7 @@ void cnss_task(void *argument)
 	//loop
 	while(1)
 	{
-
+		osDelay(DELAY_MAX);
 	}
 
 }

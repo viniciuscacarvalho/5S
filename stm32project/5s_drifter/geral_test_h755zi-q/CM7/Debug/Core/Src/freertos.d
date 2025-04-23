@@ -40,7 +40,14 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  ../Core/Src/../../project/task_header.h \
- ../Core/Src/../../project/defines.h
+ ../Core/Src/../../project/defines.h \
+ ../Core/Src/../../project/task_behavior/nb_iot_task.h \
+ ../Core/Src/../../project/task_behavior/../task_header.h \
+ ../Core/Src/../../project/task_behavior/batteries_task.h \
+ ../Core/Src/../../project/task_behavior/cnss_task.h \
+ ../Core/Src/../../project/task_behavior/sd_card_task.h \
+ ../Core/Src/../../project/task_behavior/temp_task.h \
+ ../Core/Src/../../project/task_behavior/imu_task.h
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
@@ -83,3 +90,10 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 ../Core/Src/../../project/task_header.h:
 ../Core/Src/../../project/defines.h:
+../Core/Src/../../project/task_behavior/nb_iot_task.h:
+../Core/Src/../../project/task_behavior/../task_header.h:
+../Core/Src/../../project/task_behavior/batteries_task.h:
+../Core/Src/../../project/task_behavior/cnss_task.h:
+../Core/Src/../../project/task_behavior/sd_card_task.h:
+../Core/Src/../../project/task_behavior/temp_task.h:
+../Core/Src/../../project/task_behavior/imu_task.h:

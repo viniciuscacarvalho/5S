@@ -5,6 +5,8 @@
  *      Author: viny
  */
 
+#include "imu_task.h"
+
 void imu_task(void *argument)
 {
 	//setup
@@ -12,7 +14,7 @@ void imu_task(void *argument)
 	//loop
 	while(1)
 	{
-
+		osDelay(DELAY_MAX);
 	}
 
 }

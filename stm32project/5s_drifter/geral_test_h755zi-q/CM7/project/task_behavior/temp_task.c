@@ -5,4 +5,17 @@
  *      Author: viny
  */
 
-void temp_task(void *argument);
+#include "temp_task.h"
+
+void temp_task(void *argument)
+{
+	//setup
+
+	//loop
+	while(1)
+	{
+		osDelay(DELAY_MAX);
+	}
+
+}
+

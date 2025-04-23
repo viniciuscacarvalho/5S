@@ -1,0 +1,19 @@
+/*
+ * sd_card_task.c
+ *
+ *  Created on: Apr 23, 2025
+ *      Author: viny
+ */
+#include "sd_card_task.h"
+void sd_card_task(void *argument)
+{
+	//setup
+
+	//loop
+	while(1)
+	{
+
+	}
+
+}
+

@@ -6326,7 +6326,7 @@ LOAD /opt/st/stm32cubeide_1.18.0/plugins/com.st.stm32cube.ide.mcu.externaltools.
  .debug_rnglists
                 0x00000ae3       0xb8 ./Middlewares/Third_Party/FreeRTOS/timers.o
 
-.debug_macro    0x00000000    0x3a8ca
+.debug_macro    0x00000000    0x3a90a
  .debug_macro   0x00000000      0x280 ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o
  .debug_macro   0x00000280      0xafc ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o
  .debug_macro   0x00000d7c       0x2e ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o
@@ -6386,95 +6386,95 @@ LOAD /opt/st/stm32cubeide_1.18.0/plugins/com.st.stm32cube.ide.mcu.externaltools.
  .debug_macro   0x00035ee5      0x2ea ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o
  .debug_macro   0x000361cf       0x35 ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o
  .debug_macro   0x00036204      0x7a4 ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o
- .debug_macro   0x000369a8      0x327 ./Core/Src/freertos.o
- .debug_macro   0x00036ccf      0x169 ./Core/Src/freertos.o
- .debug_macro   0x00036e38      0x15a ./Core/Src/freertos.o
- .debug_macro   0x00036f92       0xc9 ./Core/Src/freertos.o
- .debug_macro   0x0003705b       0x1c ./Core/Src/freertos.o
- .debug_macro   0x00037077       0x26 ./Core/Src/freertos.o
- .debug_macro   0x0003709d      0x4c5 ./Core/Src/freertos.o
- .debug_macro   0x00037562       0xb5 ./Core/Src/freertos.o
- .debug_macro   0x00037617       0xaa ./Core/Src/freertos.o
- .debug_macro   0x000376c1       0x6c ./Core/Src/freertos.o
- .debug_macro   0x0003772d       0x74 ./Core/Src/freertos.o
- .debug_macro   0x000377a1       0xdd ./Core/Src/freertos.o
- .debug_macro   0x0003787e       0x10 ./Core/Src/freertos.o
- .debug_macro   0x0003788e      0x294 ./Core/Src/gpio.o
- .debug_macro   0x00037b22      0x338 ./Core/Src/main.o
- .debug_macro   0x00037e5a      0x169 ./Core/Src/main.o
- .debug_macro   0x00037fc3       0x66 ./Core/Src/main.o
- .debug_macro   0x00038029      0x28a ./Core/Src/stm32h7xx_hal_msp.o
- .debug_macro   0x000382b3      0x2fc ./Core/Src/stm32h7xx_it.o
- .debug_macro   0x000385af      0x2aa ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
- .debug_macro   0x00038859      0x280 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
- .debug_macro   0x00038ad9      0x294 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
- .debug_macro   0x00038d6d      0x292 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o
- .debug_macro   0x00038fff      0x2b9 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
- .debug_macro   0x000392b8      0x2a4 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
- .debug_macro   0x0003955c      0x3df ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_macro   0x0003993b       0x10 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_macro   0x0003994b       0x20 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_macro   0x0003996b       0x10 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_macro   0x0003997b       0xf5 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_macro   0x00039a70       0x91 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_macro   0x00039b01       0x8d ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_macro   0x00039b8e       0x9a ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_macro   0x00039c28       0x22 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_macro   0x00039c4a      0x1ae ./Middlewares/Third_Party/FreeRTOS/heap_4.o
- .debug_macro   0x00039df8      0x187 ./Middlewares/Third_Party/FreeRTOS/list.o
- .debug_macro   0x00039f7f      0x196 ./Middlewares/Third_Party/FreeRTOS/port.o
- .debug_macro   0x0003a115      0x216 ./Middlewares/Third_Party/FreeRTOS/queue.o
- .debug_macro   0x0003a32b       0x16 ./Middlewares/Third_Party/FreeRTOS/queue.o
- .debug_macro   0x0003a341       0x87 ./Middlewares/Third_Party/FreeRTOS/queue.o
- .debug_macro   0x0003a3c8      0x27f ./Middlewares/Third_Party/FreeRTOS/tasks.o
- .debug_macro   0x0003a647       0x10 ./Middlewares/Third_Party/FreeRTOS/tasks.o
- .debug_macro   0x0003a657      0x1dc ./Middlewares/Third_Party/FreeRTOS/timers.o
- .debug_macro   0x0003a833       0x97 ./Middlewares/Third_Party/FreeRTOS/timers.o
+ .debug_macro   0x000369a8      0x367 ./Core/Src/freertos.o
+ .debug_macro   0x00036d0f      0x169 ./Core/Src/freertos.o
+ .debug_macro   0x00036e78      0x15a ./Core/Src/freertos.o
+ .debug_macro   0x00036fd2       0xc9 ./Core/Src/freertos.o
+ .debug_macro   0x0003709b       0x1c ./Core/Src/freertos.o
+ .debug_macro   0x000370b7       0x26 ./Core/Src/freertos.o
+ .debug_macro   0x000370dd      0x4c5 ./Core/Src/freertos.o
+ .debug_macro   0x000375a2       0xb5 ./Core/Src/freertos.o
+ .debug_macro   0x00037657       0xaa ./Core/Src/freertos.o
+ .debug_macro   0x00037701       0x6c ./Core/Src/freertos.o
+ .debug_macro   0x0003776d       0x74 ./Core/Src/freertos.o
+ .debug_macro   0x000377e1       0xdd ./Core/Src/freertos.o
+ .debug_macro   0x000378be       0x10 ./Core/Src/freertos.o
+ .debug_macro   0x000378ce      0x294 ./Core/Src/gpio.o
+ .debug_macro   0x00037b62      0x338 ./Core/Src/main.o
+ .debug_macro   0x00037e9a      0x169 ./Core/Src/main.o
+ .debug_macro   0x00038003       0x66 ./Core/Src/main.o
+ .debug_macro   0x00038069      0x28a ./Core/Src/stm32h7xx_hal_msp.o
+ .debug_macro   0x000382f3      0x2fc ./Core/Src/stm32h7xx_it.o
+ .debug_macro   0x000385ef      0x2aa ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
+ .debug_macro   0x00038899      0x280 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
+ .debug_macro   0x00038b19      0x294 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
+ .debug_macro   0x00038dad      0x292 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o
+ .debug_macro   0x0003903f      0x2b9 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
+ .debug_macro   0x000392f8      0x2a4 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
+ .debug_macro   0x0003959c      0x3df ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_macro   0x0003997b       0x10 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_macro   0x0003998b       0x20 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_macro   0x000399ab       0x10 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_macro   0x000399bb       0xf5 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_macro   0x00039ab0       0x91 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_macro   0x00039b41       0x8d ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_macro   0x00039bce       0x9a ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_macro   0x00039c68       0x22 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_macro   0x00039c8a      0x1ae ./Middlewares/Third_Party/FreeRTOS/heap_4.o
+ .debug_macro   0x00039e38      0x187 ./Middlewares/Third_Party/FreeRTOS/list.o
+ .debug_macro   0x00039fbf      0x196 ./Middlewares/Third_Party/FreeRTOS/port.o
+ .debug_macro   0x0003a155      0x216 ./Middlewares/Third_Party/FreeRTOS/queue.o
+ .debug_macro   0x0003a36b       0x16 ./Middlewares/Third_Party/FreeRTOS/queue.o
+ .debug_macro   0x0003a381       0x87 ./Middlewares/Third_Party/FreeRTOS/queue.o
+ .debug_macro   0x0003a408      0x27f ./Middlewares/Third_Party/FreeRTOS/tasks.o
+ .debug_macro   0x0003a687       0x10 ./Middlewares/Third_Party/FreeRTOS/tasks.o
+ .debug_macro   0x0003a697      0x1dc ./Middlewares/Third_Party/FreeRTOS/timers.o
+ .debug_macro   0x0003a873       0x97 ./Middlewares/Third_Party/FreeRTOS/timers.o
 
-.debug_line     0x00000000    0x10c65
+.debug_line     0x00000000    0x10d2c
  .debug_line    0x00000000      0xa21 ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o
- .debug_line    0x00000a21      0xa36 ./Core/Src/freertos.o
- .debug_line    0x00001457      0x81a ./Core/Src/gpio.o
- .debug_line    0x00001c71      0xa13 ./Core/Src/main.o
- .debug_line    0x00002684      0x7b7 ./Core/Src/stm32h7xx_hal_msp.o
- .debug_line    0x00002e3b      0x956 ./Core/Src/stm32h7xx_it.o
- .debug_line    0x00003791       0x7b ./Core/Startup/startup_stm32h755zitx.o
- .debug_line    0x0000380c      0xf35 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
- .debug_line    0x00004741      0xdcc ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
- .debug_line    0x0000550d      0xc5f ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
- .debug_line    0x0000616c      0x974 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o
- .debug_line    0x00006ae0     0x109f ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
- .debug_line    0x00007b7f     0x147d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
- .debug_line    0x00008ffc     0x2483 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_line    0x0000b47f      0x925 ./Middlewares/Third_Party/FreeRTOS/heap_4.o
- .debug_line    0x0000bda4      0x70e ./Middlewares/Third_Party/FreeRTOS/list.o
- .debug_line    0x0000c4b2      0x7e4 ./Middlewares/Third_Party/FreeRTOS/port.o
- .debug_line    0x0000cc96     0x167f ./Middlewares/Third_Party/FreeRTOS/queue.o
- .debug_line    0x0000e315     0x1c02 ./Middlewares/Third_Party/FreeRTOS/tasks.o
- .debug_line    0x0000ff17      0xd4e ./Middlewares/Third_Party/FreeRTOS/timers.o
+ .debug_line    0x00000a21      0xafd ./Core/Src/freertos.o
+ .debug_line    0x0000151e      0x81a ./Core/Src/gpio.o
+ .debug_line    0x00001d38      0xa13 ./Core/Src/main.o
+ .debug_line    0x0000274b      0x7b7 ./Core/Src/stm32h7xx_hal_msp.o
+ .debug_line    0x00002f02      0x956 ./Core/Src/stm32h7xx_it.o
+ .debug_line    0x00003858       0x7b ./Core/Startup/startup_stm32h755zitx.o
+ .debug_line    0x000038d3      0xf35 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
+ .debug_line    0x00004808      0xdcc ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
+ .debug_line    0x000055d4      0xc5f ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
+ .debug_line    0x00006233      0x974 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o
+ .debug_line    0x00006ba7     0x109f ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
+ .debug_line    0x00007c46     0x147d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
+ .debug_line    0x000090c3     0x2483 ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_line    0x0000b546      0x925 ./Middlewares/Third_Party/FreeRTOS/heap_4.o
+ .debug_line    0x0000be6b      0x70e ./Middlewares/Third_Party/FreeRTOS/list.o
+ .debug_line    0x0000c579      0x7e4 ./Middlewares/Third_Party/FreeRTOS/port.o
+ .debug_line    0x0000cd5d     0x167f ./Middlewares/Third_Party/FreeRTOS/queue.o
+ .debug_line    0x0000e3dc     0x1c02 ./Middlewares/Third_Party/FreeRTOS/tasks.o
+ .debug_line    0x0000ffde      0xd4e ./Middlewares/Third_Party/FreeRTOS/timers.o
 
-.debug_str      0x00000000   0x17dbec
- .debug_str     0x00000000   0x17dbec ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o
+.debug_str      0x00000000   0x17dccd
+ .debug_str     0x00000000   0x17dccd ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o
                              0x170b71 (size before relaxing)
- .debug_str     0x0017dbec   0x1754af ./Core/Src/freertos.o
- .debug_str     0x0017dbec   0x1707ca ./Core/Src/gpio.o
- .debug_str     0x0017dbec   0x17545a ./Core/Src/main.o
- .debug_str     0x0017dbec   0x170fb6 ./Core/Src/stm32h7xx_hal_msp.o
- .debug_str     0x0017dbec   0x174361 ./Core/Src/stm32h7xx_it.o
- .debug_str     0x0017dbec       0x98 ./Core/Startup/startup_stm32h755zitx.o
- .debug_str     0x0017dbec   0x171bde ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
- .debug_str     0x0017dbec   0x171445 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
- .debug_str     0x0017dbec   0x170ad0 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
- .debug_str     0x0017dbec   0x17075b ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o
- .debug_str     0x0017dbec   0x170fdb ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
- .debug_str     0x0017dbec   0x170e51 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
- .debug_str     0x0017dbec   0x17867f ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
- .debug_str     0x0017dbec     0xb624 ./Middlewares/Third_Party/FreeRTOS/heap_4.o
- .debug_str     0x0017dbec     0xace2 ./Middlewares/Third_Party/FreeRTOS/list.o
- .debug_str     0x0017dbec     0x8888 ./Middlewares/Third_Party/FreeRTOS/port.o
- .debug_str     0x0017dbec     0xc822 ./Middlewares/Third_Party/FreeRTOS/queue.o
- .debug_str     0x0017dbec     0xd2df ./Middlewares/Third_Party/FreeRTOS/tasks.o
- .debug_str     0x0017dbec     0xcd54 ./Middlewares/Third_Party/FreeRTOS/timers.o
+ .debug_str     0x0017dccd   0x175590 ./Core/Src/freertos.o
+ .debug_str     0x0017dccd   0x1707ca ./Core/Src/gpio.o
+ .debug_str     0x0017dccd   0x17545a ./Core/Src/main.o
+ .debug_str     0x0017dccd   0x170fb6 ./Core/Src/stm32h7xx_hal_msp.o
+ .debug_str     0x0017dccd   0x174361 ./Core/Src/stm32h7xx_it.o
+ .debug_str     0x0017dccd       0x98 ./Core/Startup/startup_stm32h755zitx.o
+ .debug_str     0x0017dccd   0x171bde ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
+ .debug_str     0x0017dccd   0x171445 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
+ .debug_str     0x0017dccd   0x170ad0 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
+ .debug_str     0x0017dccd   0x17075b ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o
+ .debug_str     0x0017dccd   0x170fdb ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
+ .debug_str     0x0017dccd   0x170e51 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
+ .debug_str     0x0017dccd   0x17867f ./Middlewares/Third_Party/FreeRTOS/cmsis_os2.o
+ .debug_str     0x0017dccd     0xb624 ./Middlewares/Third_Party/FreeRTOS/heap_4.o
+ .debug_str     0x0017dccd     0xace2 ./Middlewares/Third_Party/FreeRTOS/list.o
+ .debug_str     0x0017dccd     0x8888 ./Middlewares/Third_Party/FreeRTOS/port.o
+ .debug_str     0x0017dccd     0xc822 ./Middlewares/Third_Party/FreeRTOS/queue.o
+ .debug_str     0x0017dccd     0xd2df ./Middlewares/Third_Party/FreeRTOS/tasks.o
+ .debug_str     0x0017dccd     0xcd54 ./Middlewares/Third_Party/FreeRTOS/timers.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o

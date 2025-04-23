@@ -1,0 +1,8 @@
+/*
+ * temp_task.c
+ *
+ *  Created on: Apr 23, 2025
+ *      Author: viny
+ */
+
+void temp_task(void *argument);

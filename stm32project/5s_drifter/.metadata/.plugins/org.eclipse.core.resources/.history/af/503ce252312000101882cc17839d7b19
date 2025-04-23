@@ -1,0 +1,21 @@
+/*
+ * imu_task.c
+ *
+ *  Created on: Apr 23, 2025
+ *      Author: viny
+ */
+
+#include "imu_task.h"
+
+void imu_task(void *argument)
+{
+	//setup
+
+	//loop
+	while(1)
+	{
+
+	}
+
+}
+
