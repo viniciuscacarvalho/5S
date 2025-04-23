@@ -1,0 +1,10 @@
+11:33:44 **** Incremental Build of configuration Debug for project geral_test_h755zi-q_CM7 ****
+make -j12 all 
+arm-none-eabi-size  geral_test_h755zi-q_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19924	     20	  20364	  40308	   9d74	geral_test_h755zi-q_CM7.elf
+Finished building: default.size.stdout
+ 
+
+11:33:44 Build Finished. 0 errors, 0 warnings. (took 140ms)
+

@@ -1,0 +1,8 @@
+../Core/Src/freertos.c:120:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:180:13:idle_task	16	static
+../Core/Src/freertos.c:198:13:nb_iot_task	16	static
+../Core/Src/freertos.c:212:13:cnss_task	16	static
+../Core/Src/freertos.c:226:13:sd_card_task	16	static
+../Core/Src/freertos.c:240:13:temp_task	16	static
+../Core/Src/freertos.c:254:13:imu_task	16	static
+../Core/Src/freertos.c:270:13:batterie_task	16	static
