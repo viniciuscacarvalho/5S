@@ -37,6 +37,12 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  ../Core/Src/../../project/task_header.h \
@@ -47,7 +53,11 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
  ../Core/Src/../../project/task_behavior/cnss_task.h \
  ../Core/Src/../../project/task_behavior/sd_card_task.h \
  ../Core/Src/../../project/task_behavior/temp_task.h \
- ../Core/Src/../../project/task_behavior/imu_task.h
+ ../Core/Src/../../project/task_behavior/imu_task.h \
+ ../Core/Src/../../project/../Core/Inc/usart.h \
+ ../Core/Src/../../project/../Core/Inc/main.h \
+ ../Core/Src/../../project/../Core/Inc/spi.h \
+ ../Core/Src/../../project/../Core/Inc/gpio.h
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
@@ -86,6 +96,12 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 ../Core/Src/../../project/task_header.h:
@@ -97,3 +113,7 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
 ../Core/Src/../../project/task_behavior/sd_card_task.h:
 ../Core/Src/../../project/task_behavior/temp_task.h:
 ../Core/Src/../../project/task_behavior/imu_task.h:
+../Core/Src/../../project/../Core/Inc/usart.h:
+../Core/Src/../../project/../Core/Inc/main.h:
+../Core/Src/../../project/../Core/Inc/spi.h:
+../Core/Src/../../project/../Core/Inc/gpio.h:

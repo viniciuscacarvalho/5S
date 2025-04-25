@@ -9,50 +9,53 @@
 \contentsline {subsubsection}{Sports}{3}{}%
 \contentsline {subsection}{\numberline {1.1.2}Problem Statement Analysis}{3}{}%
 \contentsline {subsubsection}{12324}{3}{}%
-\contentsline {subsubsection}{Threads}{3}{}%
-\contentsline {subsubsection}{Block Diagram}{4}{}%
-\contentsline {subsubsection}{Use Case}{5}{}%
-\contentsline {subsubsection}{Sequence Diagram}{5}{}%
-\contentsline {chapter}{\numberline {2}Analysis}{7}{}%
-\contentsline {section}{\numberline {2.1}Requirements and Constraints}{7}{}%
-\contentsline {subsection}{\numberline {2.1.1}Requirements}{7}{}%
-\contentsline {subsection}{\numberline {2.1.2}Constraints}{7}{}%
-\contentsline {section}{\numberline {2.2}State of the art}{7}{}%
-\contentsline {subsection}{\numberline {2.2.1}Economy}{7}{}%
-\contentsline {subsection}{\numberline {2.2.2}Ecology}{7}{}%
-\contentsline {subsection}{\numberline {2.2.3}Sports}{7}{}%
-\contentsline {section}{\numberline {2.3}Market Research}{7}{}%
-\contentsline {section}{\numberline {2.4}System Architecture}{7}{}%
-\contentsline {chapter}{\numberline {3}Design}{8}{}%
-\contentsline {section}{\numberline {3.1}Analysis Review}{8}{}%
-\contentsline {section}{\numberline {3.2}Hardware Consumption}{8}{}%
-\contentsline {subsection}{\numberline {3.2.1}Autonomy}{8}{}%
-\contentsline {subsubsection}{Batteries}{8}{}%
-\contentsline {subsubsection}{Board Consumption}{8}{}%
-\contentsline {subsection}{\numberline {3.2.2}Communication protocol}{8}{}%
-\contentsline {subsection}{\numberline {3.2.3}Conclusion}{9}{}%
-\contentsline {section}{\numberline {3.3}Case Construction}{9}{}%
-\contentsline {section}{\numberline {3.4}Hardware Specification}{9}{}%
-\contentsline {subsection}{\numberline {3.4.1}SDCard}{9}{}%
-\contentsline {subsection}{\numberline {3.4.2}STM32}{9}{}%
-\contentsline {subsection}{\numberline {3.4.3}BMI088 IMU Sensor}{9}{}%
-\contentsline {subsection}{\numberline {3.4.4}SIM7600E-H}{9}{}%
-\contentsline {subsection}{\numberline {3.4.5}Temperature}{10}{}%
-\contentsline {section}{\numberline {3.5}Tools and COTS}{11}{}%
-\contentsline {subsection}{\numberline {3.5.1}Tools}{11}{}%
-\contentsline {subsection}{\numberline {3.5.2}COTS}{11}{}%
-\contentsline {subsubsection}{GPS and 4G module}{11}{}%
-\contentsline {subsubsection}{Inkscape}{11}{}%
-\contentsline {subsubsection}{draw.io}{11}{}%
-\contentsline {subsubsection}{STM32 CUBEmx}{11}{}%
-\contentsline {subsubsection}{\LaTeX }{11}{}%
-\contentsline {section}{\numberline {3.6}Software Specification}{11}{}%
-\contentsline {section}{\numberline {3.7}Theorical Concepts}{11}{}%
-\contentsline {chapter}{\numberline {4}Implementation}{12}{}%
-\contentsline {section}{\numberline {4.1}Hardware}{12}{}%
-\contentsline {section}{\numberline {4.2}Software}{12}{}%
-\contentsline {subsection}{\numberline {4.2.1}DataBase Comunication}{12}{}%
-\contentsline {chapter}{\numberline {5}Conclusion}{13}{}%
-\contentsline {section}{\numberline {5.1}Gantt Diagram}{13}{}%
-\contentsline {section}{\numberline {5.2}Bibliografy}{13}{}%
-\contentsline {section}{\numberline {5.3}Special Greatings}{13}{}%
+\contentsline {chapter}{\numberline {2}Analysis}{4}{}%
+\contentsline {section}{\numberline {2.1}Requirements and Constraints}{4}{}%
+\contentsline {subsection}{\numberline {2.1.1}Requirements}{4}{}%
+\contentsline {subsection}{\numberline {2.1.2}Constraints}{4}{}%
+\contentsline {section}{\numberline {2.2}State of the art}{5}{}%
+\contentsline {subsection}{\numberline {2.2.1}Economy}{5}{}%
+\contentsline {subsection}{\numberline {2.2.2}Ecology}{5}{}%
+\contentsline {subsection}{\numberline {2.2.3}Sports}{5}{}%
+\contentsline {section}{\numberline {2.3}Market Research}{5}{}%
+\contentsline {section}{\numberline {2.4}System Architecture}{5}{}%
+\contentsline {subsubsection}{Block Diagram}{5}{}%
+\contentsline {subsubsection}{Use Case}{6}{}%
+\contentsline {subsubsection}{Sequence Diagram}{6}{}%
+\contentsline {subsubsection}{Threads}{7}{}%
+\contentsline {subsubsection}{High Priority Threads}{7}{}%
+\contentsline {subsubsection}{Normal Priority Threads}{7}{}%
+\contentsline {subsubsection}{Low Priority Threads}{7}{}%
+\contentsline {chapter}{\numberline {3}Design}{9}{}%
+\contentsline {section}{\numberline {3.1}Analysis Review}{9}{}%
+\contentsline {section}{\numberline {3.2}Hardware Consumption}{9}{}%
+\contentsline {subsection}{\numberline {3.2.1}Autonomy}{9}{}%
+\contentsline {subsubsection}{Batteries}{9}{}%
+\contentsline {subsubsection}{Board Consumption}{9}{}%
+\contentsline {subsection}{\numberline {3.2.2}Communication protocol}{9}{}%
+\contentsline {subsection}{\numberline {3.2.3}Conclusion}{10}{}%
+\contentsline {section}{\numberline {3.3}Case Construction}{10}{}%
+\contentsline {section}{\numberline {3.4}Hardware Specification}{10}{}%
+\contentsline {subsection}{\numberline {3.4.1}SDCard}{10}{}%
+\contentsline {subsection}{\numberline {3.4.2}STM32}{10}{}%
+\contentsline {subsection}{\numberline {3.4.3}BMI088 IMU Sensor}{10}{}%
+\contentsline {subsection}{\numberline {3.4.4}SIM7600E-H}{10}{}%
+\contentsline {subsection}{\numberline {3.4.5}Temperature}{11}{}%
+\contentsline {section}{\numberline {3.5}Tools and COTS}{12}{}%
+\contentsline {subsection}{\numberline {3.5.1}Tools}{12}{}%
+\contentsline {subsection}{\numberline {3.5.2}COTS}{12}{}%
+\contentsline {subsubsection}{GPS and 4G module}{12}{}%
+\contentsline {subsubsection}{Inkscape}{12}{}%
+\contentsline {subsubsection}{draw.io}{12}{}%
+\contentsline {subsubsection}{STM32 CUBEmx}{12}{}%
+\contentsline {subsubsection}{\LaTeX }{12}{}%
+\contentsline {section}{\numberline {3.6}Software Specification}{12}{}%
+\contentsline {section}{\numberline {3.7}Theorical Concepts}{12}{}%
+\contentsline {chapter}{\numberline {4}Implementation}{13}{}%
+\contentsline {section}{\numberline {4.1}Hardware}{13}{}%
+\contentsline {section}{\numberline {4.2}Software}{13}{}%
+\contentsline {subsection}{\numberline {4.2.1}DataBase Comunication}{13}{}%
+\contentsline {chapter}{\numberline {5}Conclusion}{14}{}%
+\contentsline {section}{\numberline {5.1}Gantt Diagram}{14}{}%
+\contentsline {section}{\numberline {5.2}Bibliografy}{14}{}%
+\contentsline {section}{\numberline {5.3}Special Greatings}{14}{}%

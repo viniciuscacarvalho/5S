@@ -170,60 +170,11 @@ INPUT ./images/logos/TOP_CMEMS_LOGO.png
 INPUT ./images/logos/TOP_CMEMS_LOGO.png
 INPUT ./images/logos/TOP_CMEMS_LOGO.png
 INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/diagrams/threads/thread.drawio.png
-INPUT ./images/diagrams/threads/thread.drawio.png
-INPUT ./images/diagrams/threads/thread.drawio.png
-INPUT ./images/diagrams/threads/thread.drawio.png
-INPUT ./images/diagrams/threads/thread.drawio.png
-INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
-INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
-INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
-INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
-INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
-INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
-INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
-INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
-INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
-INPUT ./images/diagrams/use_case/Use Case.drawio.png
-INPUT ./images/diagrams/use_case/Use Case.drawio.png
-INPUT ./images/diagrams/use_case/Use Case.drawio.png
-INPUT ./images/diagrams/use_case/Use Case.drawio.png
-INPUT ./images/diagrams/use_case/Use Case.drawio.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
-INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_ENG_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
-INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/diagrams/block_diagram/block_diagram_2/block_diagram.png
+INPUT ./images/diagrams/block_diagram/block_diagram_2/block_diagram.png
+INPUT ./images/diagrams/block_diagram/block_diagram_2/block_diagram.png
+INPUT ./images/diagrams/block_diagram/block_diagram_2/block_diagram.png
+INPUT ./images/diagrams/block_diagram/block_diagram_2/block_diagram.png
 INPUT ./images/logos/TOP_ENG_LOGO.png
 INPUT ./images/logos/TOP_ENG_LOGO.png
 INPUT ./images/logos/TOP_ENG_LOGO.png
@@ -239,7 +190,69 @@ INPUT ./chapters/analysis.tex
 INPUT ./chapters/analysis.tex
 INPUT chapters/analysis.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
+INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
+INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
+INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
+INPUT ./images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./images/diagrams/use_case/Use Case.drawio.png
+INPUT ./images/diagrams/use_case/Use Case.drawio.png
+INPUT ./images/diagrams/use_case/Use Case.drawio.png
+INPUT ./images/diagrams/use_case/Use Case.drawio.png
+INPUT ./images/diagrams/use_case/Use Case.drawio.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
+INPUT ./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/diagrams/threads/thread.drawio.png
+INPUT ./images/diagrams/threads/thread.drawio.png
+INPUT ./images/diagrams/threads/thread.drawio.png
+INPUT ./images/diagrams/threads/thread.drawio.png
+INPUT ./images/diagrams/threads/thread.drawio.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
+INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
+INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
+INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
+INPUT ./images/diagrams/threads/graph/threads_graph.drawio.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_ENG_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
+INPUT ./images/logos/TOP_CMEMS_LOGO.png
 INPUT ./chapters/design.tex
 INPUT ./chapters/design.tex
 OUTPUT chapters/design.aux

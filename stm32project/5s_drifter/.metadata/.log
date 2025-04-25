@@ -73,3 +73,54 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-04-23 17:52:05.821
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-04-24 13:37:40.134 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-04-24 13:39:34.480
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-04-24 13:39:34.514
+!MESSAGE Log4j2 initialized with config file /home/viny/Desktop/pi_project/stm32project/5s_drifter/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-04-24 13:40:02.726
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-04-24 13:57:32.802
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-04-24 13:57:32.802
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-04-24 13:57:40.400
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-04-24 13:57:40.400
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2025-04-24 13:58:32.720
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2025-04-24 13:58:32.720
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-04-24 14:00:59.882
+!MESSAGE Could not determine GDB version using command: arm-none-eabi-gdb --version
+!SESSION 2025-04-25 14:34:29.976 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-04-25 14:34:51.494
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-04-25 14:35:07.012
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-04-25 14:35:07.013
+!MESSAGE Log4j2 initialized with config file /home/viny/Desktop/pi_project/stm32project/5s_drifter/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-04-25 14:35:21.735
+!MESSAGE Started RMI Server, listening on port 41337
