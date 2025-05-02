@@ -46,7 +46,7 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  ../Core/Src/../../project/task_header.h \
- ../Core/Src/../../project/defines.h \
+ ../Core/Src/../../project/defines.h ../Core/Src/../../project/package.h \
  ../Core/Src/../../project/task_behavior/nb_iot_task.h \
  ../Core/Src/../../project/task_behavior/../task_header.h \
  ../Core/Src/../../project/task_behavior/batteries_task.h \
@@ -106,6 +106,7 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 ../Core/Src/../../project/task_header.h:
 ../Core/Src/../../project/defines.h:
+../Core/Src/../../project/package.h:
 ../Core/Src/../../project/task_behavior/nb_iot_task.h:
 ../Core/Src/../../project/task_behavior/../task_header.h:
 ../Core/Src/../../project/task_behavior/batteries_task.h:

@@ -1,0 +1,25 @@
+/*
+ * package.h
+ *
+ *  Created on: May 1, 2025
+ *      Author: viny
+ */
+
+#ifndef PROJECT_TASK_BEHAVIOR_PACKAGE_H_
+#define PROJECT_TASK_BEHAVIOR_PACKAGE_H_
+
+
+typedef struct data
+{
+    int local_data;
+} package_data_t;
+
+
+package_data_t* write_package_data();
+
+package_data_t* read_package_data();
+
+void update_package_data():
+
+
+#endif /* PROJECT_TASK_BEHAVIOR_PACKAGE_H_ */

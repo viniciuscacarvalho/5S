@@ -11,6 +11,7 @@ void nb_iot_task(void *argument)
 {
 	//setup
 
+	HAL_UART_Transmit_IT(&huart3, "NB-Iot\n", 8);
 	//loop
 	while(1)
 	{

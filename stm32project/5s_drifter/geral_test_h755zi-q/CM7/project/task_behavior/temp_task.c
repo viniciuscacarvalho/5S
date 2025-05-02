@@ -11,9 +11,11 @@ void temp_task(void *argument)
 {
 	//setup
 
+	HAL_UART_Transmit_IT(&huart3, "Temp\n", 6);
 	//loop
 	while(1)
 	{
+		//one wire comunication
 		osDelay(DELAY_MAX);
 	}
 

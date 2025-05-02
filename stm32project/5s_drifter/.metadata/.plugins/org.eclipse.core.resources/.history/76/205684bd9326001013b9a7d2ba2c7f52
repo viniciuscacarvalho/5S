@@ -1,0 +1,41 @@
+/*
+ * package.h
+ *
+ *  Created on: May 1, 2025
+ *      Author: viny
+ */
+
+#ifndef PROJECT_TASK_BEHAVIOR_PACKAGE_H_
+#define PROJECT_TASK_BEHAVIOR_PACKAGE_H_
+
+
+typedef struct data
+{
+    int local_data;
+} package_data_t;
+
+
+package_data_t* write_package_data();
+
+package_data_t* read_package_data();
+
+void update_package_data():
+
+int main()
+{
+    package_data_t* writing = write_package_data();
+
+    writing->local_data = 25;
+    printf("index:%d\n",package_data_index);
+    update_package_data();
+
+    package_data_t* reading = read_package_data();
+
+    printf("index:%d\n",package_data_index);
+    printf("%d",reading->local_data);
+
+    return 0;
+}
+
+
+#endif /* PROJECT_TASK_BEHAVIOR_PACKAGE_H_ */

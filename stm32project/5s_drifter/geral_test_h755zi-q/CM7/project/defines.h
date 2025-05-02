@@ -10,6 +10,6 @@
 
 #define DELAY_MAX (unsigned int)-1
 
-
+#define NUMBER_OF_SAMPLES 10
 
 #endif /* PROJECT_DEFINES_H_ */

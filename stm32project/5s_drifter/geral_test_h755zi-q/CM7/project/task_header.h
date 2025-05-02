@@ -9,6 +9,7 @@
 #define PROJECT_TASK_HEADER_H_
 
 #include "defines.h"
+#include "package.h"
 #include "task_behavior/nb_iot_task.h"
 #include "task_behavior/batteries_task.h"
 #include "task_behavior/cnss_task.h"

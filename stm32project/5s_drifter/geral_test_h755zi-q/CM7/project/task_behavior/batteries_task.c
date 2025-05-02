@@ -8,6 +8,7 @@
 void batterie_task(void *argument)
 {
 	//setup
+
 	HAL_UART_Transmit_IT(&huart3, "Batt\n", 6);
 	//loop
 	while(1)
