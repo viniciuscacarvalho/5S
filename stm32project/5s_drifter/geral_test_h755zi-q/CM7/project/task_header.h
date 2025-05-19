@@ -8,6 +8,8 @@
 #ifndef PROJECT_TASK_HEADER_H_
 #define PROJECT_TASK_HEADER_H_
 
+#include <stdint.h>
+
 #include "defines.h"
 #include "package.h"
 #include "task_behavior/nb_iot_task.h"
@@ -20,6 +22,10 @@
 #include "../Core/Inc/usart.h"
 #include "../Core/Inc/spi.h"
 #include "../Core/Inc/gpio.h"
+#include "../Core/Inc/adc.h"
+
+#include "../Core/Inc/FreeRTOSConfig.h"
+#include <cmsis_os2.h>
 
 extern UART_HandleTypeDef huart3;
 

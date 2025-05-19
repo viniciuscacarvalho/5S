@@ -10,8 +10,9 @@
 
 #include "task_header.h"
 
-void set_at_gpio (unsigned char gpio,unsigned char state);
-unsigned char get_at_gpio (unsigned char gpio);
+void ac_set_at_gpio (unsigned char gpio,unsigned char state);
+void ac_get_at_gpio (unsigned char gpio,char* recived);
+
 
 
 #endif /* PROJECT_AT_COMMANDS_ST87M01_H_ */

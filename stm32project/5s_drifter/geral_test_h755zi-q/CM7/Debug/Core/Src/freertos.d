@@ -30,6 +30,9 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h \
+ ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h \
@@ -57,7 +60,10 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
  ../Core/Src/../../project/../Core/Inc/usart.h \
  ../Core/Src/../../project/../Core/Inc/main.h \
  ../Core/Src/../../project/../Core/Inc/spi.h \
- ../Core/Src/../../project/../Core/Inc/gpio.h
+ ../Core/Src/../../project/../Core/Inc/gpio.h \
+ ../Core/Src/../../project/../Core/Inc/adc.h \
+ ../Core/Src/../../project/../Core/Inc/FreeRTOSConfig.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
@@ -89,6 +95,9 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h:
@@ -118,3 +127,6 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
 ../Core/Src/../../project/../Core/Inc/main.h:
 ../Core/Src/../../project/../Core/Inc/spi.h:
 ../Core/Src/../../project/../Core/Inc/gpio.h:
+../Core/Src/../../project/../Core/Inc/adc.h:
+../Core/Src/../../project/../Core/Inc/FreeRTOSConfig.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:

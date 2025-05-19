@@ -1,10 +1,41 @@
-17:08:48 **** Incremental Build of configuration Debug for project geral_test_h755zi-q_CM7 ****
+00:48:40 **** Incremental Build of configuration Debug for project geral_test_h755zi-q_CM7 ****
 make -j12 all 
+arm-none-eabi-gcc "../project/task_behavior/imu_task.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/task_behavior/imu_task.d" -MT"project/task_behavior/imu_task.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/task_behavior/imu_task.o"
+../project/task_behavior/imu_task.c: In function 'imu_task':
+../project/task_behavior/imu_task.c:13:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+   13 |         HAL_UART_Transmit_IT(&huart3, "IMU\n", 5);
+      |                                       ^~~~~~~
+      |                                       |
+      |                                       char *
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../project/task_behavior/../../Core/Inc/main.h:30,
+                 from ../project/task_behavior/../../Core/Inc/usart.h:29,
+                 from ../project/task_behavior/../task_header.h:22,
+                 from ../project/task_behavior/imu_task.h:11,
+                 from ../project/task_behavior/imu_task.c:8:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/task_behavior/imu_task.c:24:47: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+   24 |                 HAL_UART_Transmit_IT(&huart3, "Test\n", 6);
+      |                                               ^~~~~~~~
+      |                                               |
+      |                                               char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "geral_test_h755zi-q_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/viny/Desktop/pi_project/stm32project/5s_drifter/geral_test_h755zi-q/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="geral_test_h755zi-q_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: geral_test_h755zi-q_CM7.elf
+ 
 arm-none-eabi-size  geral_test_h755zi-q_CM7.elf 
+arm-none-eabi-objdump -h -S geral_test_h755zi-q_CM7.elf  > "geral_test_h755zi-q_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  35924	     20	  20724	  56668	   dd5c	geral_test_h755zi-q_CM7.elf
+  50716	    112	  21160	  71988	  11934	geral_test_h755zi-q_CM7.elf
 Finished building: default.size.stdout
  
+Finished building: geral_test_h755zi-q_CM7.list
+ 
 
-17:08:48 Build Finished. 0 errors, 0 warnings. (took 294ms)
+00:48:41 Build Finished. 0 errors, 2 warnings. (took 653ms)
 

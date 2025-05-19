@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "adc.h"
 #include "memorymap.h"
 #include "spi.h"
 #include "usart.h"
@@ -126,6 +127,7 @@ Error_Handler();
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_USART3_UART_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -145,7 +147,8 @@ Error_Handler();
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+	  //
+	  //HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

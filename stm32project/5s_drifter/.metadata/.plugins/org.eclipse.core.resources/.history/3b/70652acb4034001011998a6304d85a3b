@@ -1,0 +1,9 @@
+#include "task_header.h"
+
+void idle_task(void *argument)
+{
+	while (1){
+		HAL_UART_Transmit_IT(&huart3, "Test\n", 6);
+		osDelay(1000);
+	}
+}
