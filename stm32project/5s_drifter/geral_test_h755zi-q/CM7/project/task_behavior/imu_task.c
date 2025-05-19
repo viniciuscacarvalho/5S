@@ -21,8 +21,8 @@ void imu_task(void *argument)
 	{
 		//to implement yet
 		//osDelay(IMU_SAMPLE_PERIOD_UC);
-		HAL_UART_Transmit_IT(&huart3, "Test\n", 6);
-		osDelay(100);
+		//HAL_UART_Transmit_IT(&huart3, "Test\n", 6);
+		//osDelay(100);
 	}
 
 }

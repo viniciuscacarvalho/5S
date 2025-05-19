@@ -1,9 +1,10 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The Design of a Wave Energy Converter to Electricity}}{2}{}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Draft Floater}}{1}{}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The Design of a Wave Energy Converter to Electricity}}{3}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Block Diagram}}{5}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Floater Architecture}}{6}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Floater Architecture}}{5}{}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Block Diagram}}{7}{}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Use Case Diagram}}{7}{}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Sequence Diagram of Sensor Task}}{8}{}%
@@ -13,6 +14,5 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Package data structure}}{10}{}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Memory Flowchart}}{10}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces SIM7600 datasheet}}{13}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

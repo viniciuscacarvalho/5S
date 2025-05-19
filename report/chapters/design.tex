@@ -2,8 +2,9 @@
 \chapter{Design}
 \section{Analysis Review}
 
-\section{Shell}
-2.5 dB Antenna should be at least 10 cm form water 
+\section{Hardware}
+\subsection{Autonomy}
+
 
 \section{Hardware Consumption}
 Here will be discussed witch hardware is best sued for the task. The hardware will be evaluated by their
@@ -13,7 +14,6 @@ As for the autonomy there are two main factors to consider, the batteries and th
 meaning that the whole system must consume, on average, 5mAH.
 \subsubsection{Batteries}
 Google sheets
-
 \subsubsection{Board Consumption}
 
 Possible solar energy
@@ -55,6 +55,24 @@ BMI270
 
 Unix Steptime
 
+\section{Hardware Specification}
+\subsection{SDCard}
+\subsection{STM32}
+
+STM32L010K4T6
+microcontroler
+ADC
+UART
+SPI
+ONEWire
+\subsection{BMI088 IMU Sensor}
+gyroscope and acelerometer
+
+
+\subsection{Temperature}
+DS18B20
+\section{Software}
+
 \subsection{Communication protocol}
 
 table
@@ -77,35 +95,15 @@ europe coast
 2g 4g
 
 
+\section{Shell}
+2.5 dB Antenna should be at least 10 cm form water 
+
+
 \subsection{Conclusion}
 \section{Case Construction}
 
 Diagram
 
-\section{Hardware Specification}
-\subsection{SDCard}
-\subsection{STM32}
-
-STM32L010K4T6
-microcontroler
-ADC
-UART
-SPI
-ONEWire
-\subsection{BMI088 IMU Sensor}
-gyroscope and acelerometer
-\subsection{SIM7600E-H} 
-The module SIM7600E-H, developed by SIMCom, is a 4G/3G/2G LTE module that comunicates via UART commads using an intern parser described on the module datasheet. 
-The waveshare Board with the module, comes with a set of extra functionalities for extra support to the module normal usage.
-
-
-The following image, taken from the Waveshare board datasheet, lists the hardware features.
-\begin{figure}[H]%não estou gostando dessa foto
-    \centering
-    \includegraphics[width=1\textwidth]{images/chapter/design/SIM7600_board.png}
-    \caption{SIM7600 datasheet}
-    \label{fig:SIM7600 datasheet}
-\end{figure}
 
 The hardware configurations, as idicated on the datasheet should follow the leading steps.
 %hw config
@@ -114,8 +112,6 @@ As for the UART communication, the list of commads are listed on the datasheet.
 As for better flow, here are listed the commadsused along the project and their functionalities. 
 %commmand list
 
-\subsection{Temperature}
-DS18B20
 
 
 \section{Tools and COTS}
