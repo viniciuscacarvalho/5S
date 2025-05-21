@@ -13,7 +13,7 @@ void batterie_task(void *argument)
 	//setup
 
 	int adc_reading = 0;
-	HAL_UART_Transmit_IT(&huart3, "Batt\n", 6);
+	HAL_UART_Transmit(&huart3, "Batt\n", 6, -1);
 	//loop
 	while(1)
 	{

@@ -1,18 +1,20 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Draft Floater}}{1}{}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The Design of a Wave Energy Converter to Electricity}}{3}{}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Draft Floater}}{1}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The Design of a Wave Energy Converter to Electricity}}{3}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Depth Map of Portugal's Coast}}{3}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Block Diagram}}{5}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Floater Architecture}}{5}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Block Diagram}}{7}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Use Case Diagram}}{7}{}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Sequence Diagram of Sensor Task}}{8}{}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Sequence Diagram for Sending and Archive Task}}{8}{}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Thread Priority Stack}}{9}{}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Thread Temporal Graph}}{9}{}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Package data structure}}{10}{}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Memory Flowchart}}{10}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Block Diagram}}{6}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Floater Architecture}}{6}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces SVP-BRST Design}}{8}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Block Diagram}}{8}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Use Case Diagram}}{9}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Sequence Diagram of Sensor Task}}{9}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sequence Diagram for Sending and Archive Task}}{10}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Thread Priority Stack}}{11}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Thread Temporal Graph}}{11}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Package data structure}}{11}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Memory Flowchart}}{12}{figure.caption.27}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

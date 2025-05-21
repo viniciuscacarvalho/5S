@@ -9,7 +9,7 @@ void sd_card_task(void *argument)
 {
 	//setup
 
-	HAL_UART_Transmit_IT(&huart3, "SD-Card\n", 9);
+	HAL_UART_Transmit(&huart3, "SD-Card\n", 9,-1);
 	//loop
 	while(1)
 	{

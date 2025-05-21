@@ -10,7 +10,7 @@
 void imu_task(void *argument)
 {
 	//setup
-	HAL_UART_Transmit_IT(&huart3, "IMU\n", 5);
+	HAL_UART_Transmit(&huart3, "IMU\n", 5,-1);
 	//uint8_t id = imu_spi_read(0x0F);
 
 	//imu_spi_write(0x10, 0x40); // CTRL1_XL: ODR_XL = 104 Hz, FS = ±2g
@@ -21,8 +21,8 @@ void imu_task(void *argument)
 	{
 		//to implement yet
 		//osDelay(IMU_SAMPLE_PERIOD_UC);
-		//HAL_UART_Transmit_IT(&huart3, "Test\n", 6);
-		//osDelay(100);
+		HAL_UART_Transmit_IT(&huart3, "Test\n", 6);
+		osDelay(100);
 	}
 
 }

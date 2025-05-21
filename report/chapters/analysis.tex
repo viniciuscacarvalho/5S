@@ -18,8 +18,18 @@ well the modules for this task without any over and under dimensions.
     \end{itemize}
 \end{itemize}
 
+As for the outer shell there are a few things to have in attention. 
 
+\begin{itemize}
+    \item The Antenna to floater distance, once the water interferes with the antenna signal.
+    \item The float size, that needs to support all the weight and float, respecting the fisrt topic.
+    \item The drifter ballast, that will be the drifter core, located between the 
+    floater and the temperature sensor tip. It should be heavy so the drifter points up, but it should't exeed the 
+    second topic demand 
 
+This creates a first view of the system as a block diagram. Indicating the physical 
+connection between each component. This won't define the 5S architecture, but it will serve
+as an initial guide to build on.
 
 \begin{figure}[H]
     \centering
@@ -29,14 +39,7 @@ well the modules for this task without any over and under dimensions.
 \end{figure}
 
 
-As for the outer shell there are a few things to have in attention. 
 
-\begin{itemize}
-    \item The Antenna to floater distance, once the water interferes with the antenna signal.
-    \item The float size, that needs to support all the weight and float, respecting the fisrt topic.
-    \item The drifter ballast, that will be the drifter core, located between the 
-    floater and the temperature sensor tip. It should be heavy so the drifter points up, but it should't exeed the 
-    second topic demand 
 
 \end{itemize}
 %corrigir, falta a case no meio e ta mau recortado
@@ -70,18 +73,50 @@ As for the outer shell there are a few things to have in attention.
 %atenção ao clima \\
 \section{State of the art}
 %%usar fotos do projeto no lab
-twretwertw
-\subsection{Economy}
-twertwert
-\subsection{Ecology}
-wertwert
-\subsection{Sports}
-\section{Market Research}
+Nowadays, there are a series of reasons in witch drifters are used. Usually, government 
+departments, companies and universities with relations to oceanography, use drifter alike 
+to research the local coast for the following reasons.
+
+\begin{itemize}
+    \item Border Control
+    \item Climate Modeling
+    \item Traffic management
+    \item Aquaculture management
+    \item Public oceanographic research
+    \item Marine spatial planning
+    \item Defense and security
+\end{itemize}
+
+5S drifter aims for \textbf{Climate Modeling}, \textbf{Public oceanographic} or even \textbf{Traffic management} research as this project main objective.
+As the data for this project can be used, as stated in the \hyperref[sec:Problem Statement]{Introduction}, to model the environment
+in order to better the quality of said topics.
+
+The Copernicus Marine Service, component of Copernicus Programme of the 
+European Union, has developed the SVP-BRST, a drifter for temperature and depth measurement.
+Based on the SSP-B design, the updated version implements a HRSST in addition to the regular 
+SST sensor, gathering the position with GNSS and transmitting the data using Iridium.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/chapter/analysis/svp.png}  % Adjust the width as necessary
+    \caption{SVP-BRST Design}
+    \label{fig:SVP-BRST Design}        
+\end{figure}
+The image shows the SVP-BRST model. The (a) image shows the hole model with the antenna the buoyant part ad the weight to point the buoy up.
+As for the (b) image, shows the sensor's placement. 
+%\subsection{Economy}
+
+%\subsection{Ecology}
+
+%\subsection{Sports}
+%\section{Market Research}
 
 
 
 \section{System Architecture}
 
+Once studied what the system needs to follow, it is now needed to formulate a solution.
+Here it will be used UML diagrams to convey the solution in question, whiteout real specifications
+once this proposal works as a validation and organization to the problem as a formal lenguage.
 
 \subsubsection{Block Diagram}
 

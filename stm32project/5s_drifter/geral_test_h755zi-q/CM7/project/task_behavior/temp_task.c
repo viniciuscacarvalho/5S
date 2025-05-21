@@ -11,7 +11,7 @@ void temp_task(void *argument)
 {
 	//setup
 
-	HAL_UART_Transmit_IT(&huart3, "Temp\n", 6);
+	HAL_UART_Transmit(&huart3, "Temp\n", 6,-1);
 	//loop
 	while(1)
 	{

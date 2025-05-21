@@ -139,7 +139,7 @@ Error_Handler();
   MX_FREERTOS_Init();
 
   /* Start scheduler */
-  //osKernelStart();
+  osKernelStart();
 
   /* We should never get here as control is now taken by the scheduler */
 
@@ -147,8 +147,6 @@ Error_Handler();
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_UART_Transmit_IT(&huart3, "Test\n", 6);
-	  osDelay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
