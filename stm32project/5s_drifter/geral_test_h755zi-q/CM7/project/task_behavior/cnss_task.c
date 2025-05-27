@@ -11,7 +11,7 @@ void cnss_task(void *argument)
 {
 	//setup
 
-	HAL_UART_Transmit(&huart3, "Gnss\n", 6,-1);
+	//HAL_UART_Transmit_IT(&huart3, "Gnss\n", 5);
 	//loop
 	while(1)
 	{

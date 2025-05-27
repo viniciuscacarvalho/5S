@@ -1,0 +1,23 @@
+/*
+ * cnss_task.c
+ *
+ *  Created on: Apr 23, 2025
+ *      Author: viny
+ */
+
+#include "cnss_task.h"
+
+void cnss_task(void *argument)
+{
+	//setup
+
+	HAL_UART_Transmit(&huart3, "Gnss\n", 5,-1);
+	HAL_Delay(10);
+	//loop
+	while(1)
+	{
+		osDelay(DELAY_MAX);
+	}
+
+}
+

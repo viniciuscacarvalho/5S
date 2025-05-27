@@ -49,19 +49,27 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  ../Core/Src/../../project/task_header.h \
- ../Core/Src/../../project/defines.h ../Core/Src/../../project/package.h \
+ ../Core/Src/../../project/../Core/Inc/main.h \
+ ../Core/Src/../../project/package.h ../Core/Src/../../project/defines.h \
  ../Core/Src/../../project/task_behavior/nb_iot_task.h \
  ../Core/Src/../../project/task_behavior/../task_header.h \
  ../Core/Src/../../project/task_behavior/batteries_task.h \
  ../Core/Src/../../project/task_behavior/cnss_task.h \
  ../Core/Src/../../project/task_behavior/sd_card_task.h \
  ../Core/Src/../../project/task_behavior/temp_task.h \
+ ../Core/Src/../../project/task_behavior/../one_wire/ds18b20.h \
+ ../Core/Src/../../project/task_behavior/../one_wire/../task_header.h \
+ ../Core/Src/../../project/task_behavior/../one_wire/onewire.h \
+ ../Core/Inc/gpio.h ../Core/Inc/main.h \
+ ../Core/Src/../../project/task_behavior/../one_wire/ds18b20Config.h \
+ ../Core/Src/../../project/task_behavior/../one_wire/../defines.h \
  ../Core/Src/../../project/task_behavior/imu_task.h \
  ../Core/Src/../../project/../Core/Inc/usart.h \
  ../Core/Src/../../project/../Core/Inc/main.h \
  ../Core/Src/../../project/../Core/Inc/spi.h \
  ../Core/Src/../../project/../Core/Inc/gpio.h \
  ../Core/Src/../../project/../Core/Inc/adc.h \
+ ../Core/Src/../../project/../Core/Inc/tim.h \
  ../Core/Src/../../project/../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
@@ -114,19 +122,28 @@ Core/Src/freertos.o: ../Core/Src/freertos.c \
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 ../Core/Src/../../project/task_header.h:
-../Core/Src/../../project/defines.h:
+../Core/Src/../../project/../Core/Inc/main.h:
 ../Core/Src/../../project/package.h:
+../Core/Src/../../project/defines.h:
 ../Core/Src/../../project/task_behavior/nb_iot_task.h:
 ../Core/Src/../../project/task_behavior/../task_header.h:
 ../Core/Src/../../project/task_behavior/batteries_task.h:
 ../Core/Src/../../project/task_behavior/cnss_task.h:
 ../Core/Src/../../project/task_behavior/sd_card_task.h:
 ../Core/Src/../../project/task_behavior/temp_task.h:
+../Core/Src/../../project/task_behavior/../one_wire/ds18b20.h:
+../Core/Src/../../project/task_behavior/../one_wire/../task_header.h:
+../Core/Src/../../project/task_behavior/../one_wire/onewire.h:
+../Core/Inc/gpio.h:
+../Core/Inc/main.h:
+../Core/Src/../../project/task_behavior/../one_wire/ds18b20Config.h:
+../Core/Src/../../project/task_behavior/../one_wire/../defines.h:
 ../Core/Src/../../project/task_behavior/imu_task.h:
 ../Core/Src/../../project/../Core/Inc/usart.h:
 ../Core/Src/../../project/../Core/Inc/main.h:
 ../Core/Src/../../project/../Core/Inc/spi.h:
 ../Core/Src/../../project/../Core/Inc/gpio.h:
 ../Core/Src/../../project/../Core/Inc/adc.h:
+../Core/Src/../../project/../Core/Inc/tim.h:
 ../Core/Src/../../project/../Core/Inc/FreeRTOSConfig.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:

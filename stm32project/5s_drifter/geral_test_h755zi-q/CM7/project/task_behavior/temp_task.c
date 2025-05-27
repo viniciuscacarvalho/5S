@@ -11,7 +11,9 @@ void temp_task(void *argument)
 {
 	//setup
 
-	HAL_UART_Transmit(&huart3, "Temp\n", 6,-1);
+	//HAL_UART_Transmit_IT(&huart3, "Temp\n", 5);
+
+	Ds18b20_Init((osPriority_t) osPriorityLow);
 	//loop
 	while(1)
 	{

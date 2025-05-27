@@ -2,16 +2,6 @@ project/task_behavior/sd_card_task.o: \
  ../project/task_behavior/sd_card_task.c \
  ../project/task_behavior/sd_card_task.h \
  ../project/task_behavior/../task_header.h \
- ../project/task_behavior/../defines.h \
- ../project/task_behavior/../package.h \
- ../project/task_behavior/../task_behavior/nb_iot_task.h \
- ../project/task_behavior/../task_behavior/../task_header.h \
- ../project/task_behavior/../task_behavior/batteries_task.h \
- ../project/task_behavior/../task_behavior/cnss_task.h \
- ../project/task_behavior/../task_behavior/sd_card_task.h \
- ../project/task_behavior/../task_behavior/temp_task.h \
- ../project/task_behavior/../task_behavior/imu_task.h \
- ../project/task_behavior/../../Core/Inc/usart.h \
  ../project/task_behavior/../../Core/Inc/main.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
@@ -50,23 +40,42 @@ project/task_behavior/sd_card_task.o: \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
+ ../project/task_behavior/../package.h \
+ ../project/task_behavior/../defines.h \
+ ../project/task_behavior/../task_behavior/nb_iot_task.h \
+ ../project/task_behavior/../task_behavior/../task_header.h \
+ ../project/task_behavior/../task_behavior/batteries_task.h \
+ ../project/task_behavior/../task_behavior/cnss_task.h \
+ ../project/task_behavior/../task_behavior/sd_card_task.h \
+ ../project/task_behavior/../task_behavior/temp_task.h \
+ ../project/task_behavior/../task_behavior/../one_wire/ds18b20.h \
+ ../project/task_behavior/../task_behavior/../one_wire/../task_header.h \
+ ../project/task_behavior/../task_behavior/../one_wire/onewire.h \
+ ../Core/Inc/gpio.h ../Core/Inc/main.h \
+ ../project/task_behavior/../task_behavior/../one_wire/ds18b20Config.h \
+ ../project/task_behavior/../task_behavior/../one_wire/../defines.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+ ../Core/Inc/FreeRTOSConfig.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ ../project/task_behavior/../task_behavior/imu_task.h \
+ ../project/task_behavior/../../Core/Inc/usart.h \
+ ../project/task_behavior/../../Core/Inc/main.h \
  ../project/task_behavior/../../Core/Inc/spi.h \
  ../project/task_behavior/../../Core/Inc/gpio.h \
  ../project/task_behavior/../../Core/Inc/adc.h \
+ ../project/task_behavior/../../Core/Inc/tim.h \
  ../project/task_behavior/../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 ../project/task_behavior/sd_card_task.h:
 ../project/task_behavior/../task_header.h:
-../project/task_behavior/../defines.h:
-../project/task_behavior/../package.h:
-../project/task_behavior/../task_behavior/nb_iot_task.h:
-../project/task_behavior/../task_behavior/../task_header.h:
-../project/task_behavior/../task_behavior/batteries_task.h:
-../project/task_behavior/../task_behavior/cnss_task.h:
-../project/task_behavior/../task_behavior/sd_card_task.h:
-../project/task_behavior/../task_behavior/temp_task.h:
-../project/task_behavior/../task_behavior/imu_task.h:
-../project/task_behavior/../../Core/Inc/usart.h:
 ../project/task_behavior/../../Core/Inc/main.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -105,8 +114,38 @@ project/task_behavior/sd_card_task.o: \
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
+../project/task_behavior/../package.h:
+../project/task_behavior/../defines.h:
+../project/task_behavior/../task_behavior/nb_iot_task.h:
+../project/task_behavior/../task_behavior/../task_header.h:
+../project/task_behavior/../task_behavior/batteries_task.h:
+../project/task_behavior/../task_behavior/cnss_task.h:
+../project/task_behavior/../task_behavior/sd_card_task.h:
+../project/task_behavior/../task_behavior/temp_task.h:
+../project/task_behavior/../task_behavior/../one_wire/ds18b20.h:
+../project/task_behavior/../task_behavior/../one_wire/../task_header.h:
+../project/task_behavior/../task_behavior/../one_wire/onewire.h:
+../Core/Inc/gpio.h:
+../Core/Inc/main.h:
+../project/task_behavior/../task_behavior/../one_wire/ds18b20Config.h:
+../project/task_behavior/../task_behavior/../one_wire/../defines.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
+../Core/Inc/FreeRTOSConfig.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../project/task_behavior/../task_behavior/imu_task.h:
+../project/task_behavior/../../Core/Inc/usart.h:
+../project/task_behavior/../../Core/Inc/main.h:
 ../project/task_behavior/../../Core/Inc/spi.h:
 ../project/task_behavior/../../Core/Inc/gpio.h:
 ../project/task_behavior/../../Core/Inc/adc.h:
+../project/task_behavior/../../Core/Inc/tim.h:
 ../project/task_behavior/../../Core/Inc/FreeRTOSConfig.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:

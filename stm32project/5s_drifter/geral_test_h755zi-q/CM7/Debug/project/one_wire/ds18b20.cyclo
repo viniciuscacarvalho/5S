@@ -1,0 +1,14 @@
+../project/one_wire/ds18b20.c:27:6:Ds18b20_Init	1
+../project/one_wire/ds18b20.c:67:6:Ds18b20_ManualConvert	3
+../project/one_wire/ds18b20.c:109:6:Task_Ds18b20	12
+../project/one_wire/ds18b20.c:176:9:DS18B20_Start	2
+../project/one_wire/ds18b20.c:193:6:DS18B20_StartAll	1
+../project/one_wire/ds18b20.c:203:6:DS18B20_Read	11
+../project/one_wire/ds18b20.c:308:9:DS18B20_GetResolution	2
+../project/one_wire/ds18b20.c:335:9:DS18B20_SetResolution	6
+../project/one_wire/ds18b20.c:400:9:DS18B20_Is	2
+../project/one_wire/ds18b20.c:409:9:DS18B20_SetAlarmLowTemperature	4
+../project/one_wire/ds18b20.c:460:9:DS18B20_SetAlarmHighTemperature	4
+../project/one_wire/ds18b20.c:511:9:DS18B20_DisableAlarmTemperature	2
+../project/one_wire/ds18b20.c:557:9:DS18B20_AlarmSearch	1
+../project/one_wire/ds18b20.c:563:9:DS18B20_AllDone	1

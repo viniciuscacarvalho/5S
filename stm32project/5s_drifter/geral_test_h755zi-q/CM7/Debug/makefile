@@ -10,6 +10,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include project/task_behavior/subdir.mk
+-include project/one_wire/subdir.mk
 -include project/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/subdir.mk
 -include Drivers/STM32H7xx_HAL_Driver/subdir.mk

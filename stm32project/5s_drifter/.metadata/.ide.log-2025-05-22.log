@@ -1,0 +1,24 @@
+2025-05-22 17:29:49,512 [INFO] Activator:176 - 
+
+
+2025-05-22 17:29:49,531 [INFO] Activator:177 - !SESSION log4j initialized
+2025-05-22 17:30:00,536 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-05-22 17:30:06,196 [INFO] ApplicationProperties:184 - Using Application install path: /opt/st/stm32cubeide_1.18.0/plugins/com.st.stm32cube.common.mx_6.14.0.202502271554
+2025-05-22 17:30:06,365 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.18.0/plugins/com.st.stm32cube.common.mx_6.14.0.202502271554//db//mcu/
+2025-05-22 17:30:06,365 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.18.0/plugins/com.st.stm32cube.common.mx_6.14.0.202502271554//db//plugins/boardmanager/
+2025-05-22 17:30:06,365 [WARN] ApiDb:259 - Overriding images path with different value:  => /opt/st/stm32cubeide_1.18.0/plugins/com.st.stm32cube.common.mx_6.14.0.202502271554//db//plugins/mcufinder/images/
+2025-05-22 17:30:06,396 [INFO] ApiDb:250 - Set database path to: /home/viny/.stmcufinder/plugins/mcufinder//mcu/
+2025-05-22 17:30:06,397 [INFO] DbMcusAds:125 - Set database path to: /home/viny/.stmcufinder/plugins/mcufinder//mcu/
+2025-05-22 17:30:06,400 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/viny/.stmcufinder/plugins/mcufinder//mcu/cs/
+2025-05-22 17:30:06,749 [INFO] RulesReader:64 - Compatibility file has been processed (301 Rules)
+2025-05-22 17:30:07,036 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.18.0/plugins/com.st.stm32cube.common.mx_6.14.0.202502271554//db//mcu/
+2025-05-22 17:30:07,037 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.18.0/plugins/com.st.stm32cube.common.mx_6.14.0.202502271554//db//plugins/boardmanager/
+2025-05-22 17:30:07,037 [INFO] ApiDb:261 - Set plugin images path to: /opt/st/stm32cubeide_1.18.0/plugins/com.st.stm32cube.common.mx_6.14.0.202502271554//db//plugins/mcufinder/images/
+2025-05-22 17:30:07,037 [WARN] DbFile:41 - Overriding database path with different value: /home/viny/.stmcufinder/plugins/mcufinder/ => /home/viny/.stmcufinder/plugins/mcufinder
+2025-05-22 17:30:07,037 [INFO] ApiDb:250 - Set database path to: /home/viny/.stmcufinder/plugins/mcufinder//mcu/
+2025-05-22 17:30:07,038 [WARN] DbFile:41 - Overriding database path with different value: /home/viny/.stmcufinder/plugins/mcufinder/ => /home/viny/.stmcufinder/plugins/mcufinder
+2025-05-22 17:30:07,038 [INFO] DbMcusAds:125 - Set database path to: /home/viny/.stmcufinder/plugins/mcufinder//mcu/
+2025-05-22 17:30:07,038 [WARN] DbFile:41 - Overriding database path with different value: /home/viny/.stmcufinder/plugins/mcufinder/ => /home/viny/.stmcufinder/plugins/mcufinder
+2025-05-22 17:30:07,038 [WARN] DbFile:41 - Overriding database path with different value: /home/viny/.stmcufinder/plugins/mcufinder/ => /home/viny/.stmcufinder/plugins/mcufinder
+2025-05-22 17:30:07,038 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/viny/.stmcufinder/plugins/mcufinder//mcu/cs/
+2025-05-22 17:30:07,610 [INFO] MainPanel:272 - HeapMemory: 268435456

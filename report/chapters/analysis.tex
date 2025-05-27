@@ -22,32 +22,30 @@ As for the outer shell there are a few things to have in attention.
 
 \begin{itemize}
     \item The Antenna to floater distance, once the water interferes with the antenna signal.
-    \item The float size, that needs to support all the weight and float, respecting the fisrt topic.
+    \item The float size, that needs to support all the weight and float, respecting the first topic.
     \item The drifter ballast, that will be the drifter core, located between the 
-    floater and the temperature sensor tip. It should be heavy so the drifter points up, but it should't exeed the 
+    floater and the temperature sensor tip. It should be heavy so the drifter points up, but it shouldn't exceed the 
     second topic demand 
-
+    \item The Floater volume, as it has to balance the hole eletronics and shell weight.
+\end{itemize}
 This creates a first view of the system as a block diagram. Indicating the physical 
 connection between each component. This won't define the 5S architecture, but it will serve
 as an initial guide to build on.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{images/diagrams/block_diagram/block_diagram_2/block_diagram.png}  % Adjust the width as necessary
-    \caption{Block Diagram}
-    \label{fig:Block Diagram}        
+    \includegraphics[width=0.9\textwidth]{images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png}  % Adjust the width as necessary
+    \caption{Block Diagram Initial Draft}
+    \label{fig:Block Diagram Initial Draft}        
 \end{figure}
 
-
-
-
-\end{itemize}
+The floater draft shows the initial concept of a drifter, as it has the above water antenna, a floater to counter balance the buoy weight, and the temperature sensor. Acording to the blockd diagram.
 %corrigir, falta a case no meio e ta mau recortado
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/diagrams/shell/unnamed.png}  % Adjust the width as necessary
-    \caption{Floater Architecture}
-    \label{fig:Floater Architecture}        
+    \caption{Floater Architecture Initial Draft}
+    \label{fig:Floater Architecture Initial Draft}        
 \end{figure}
 
 \section{Requirements and Constraints}
@@ -116,27 +114,58 @@ As for the (b) image, shows the sensor's placement.
 
 Once studied what the system needs to follow, it is now needed to formulate a solution.
 Here it will be used UML diagrams to convey the solution in question, whiteout real specifications
-once this proposal works as a validation and organization to the problem as a formal lenguage.
+once this proposal works as a validation and organization to the problem as a formal language.
 
 \subsubsection{Block Diagram}
 
+As previsiosly stated, a block diagram is a formal representation of the system components
+and their connection. This one, shows how the peripherals communicate with the microcontroller STM32
+as it considers connections with components outside the shell. Initialy, as a first analysis
+the communication protocol is't yet defined. However it will be used to narrow it down.
+
+The diagram shows the SMT32 minimum peripherals: ADC, TIMER, GPIO, I2C / SPI, USART. However,
+as it discribes the hardware, it dosen't gives a good notion on the system software. 
+
+Some points to be considered are:
+\begin{itemize}
+    \item The temperature sensor communicate using the GPIO, as waterproof sensors, usually, use a driver with specific
+    comunication protocols.
+    \item Mobile Comms is the protocol that will be used to send information to the database. Yet to be chosen. 
+    \item GNSS and Mobile Comms for now comunicate to the same Antenna, However it probably will use diferent atennas as different
+    protocols require different frequencies to be used.
+    \item The comunication to the SDcard, uses SPI with STM32 below 64 pins. As it dosent include SDMMC suporting FatFS.
+    \item The batteris power the hole system. Even if not shown.
+    \item Depending on the implementation, the timer block will be the Sysclock, as the a RTOS may use by defalt.
+\end{itemize}
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/diagrams/block_diagram/block_diagram_1/block_diagram.drawio.png}  % Adjust the width as necessary
+    \includegraphics[width=0.9\textwidth]{images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png}  % Adjust the width as necessary
     \caption{Block Diagram}
     \label{fig:Block Diagram}        
 \end{figure}
 
 \subsubsection{Use Case}
 
+Now, for a software ilustration, UML offers a user case, a diagram that exemplifies the system interactions and stimuli.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/diagrams/use_case/Use Case.drawio.png}  % Adjust the width as necessary
+    \includegraphics[width=0.6\textwidth]{images/diagrams/use_case/Use Case.drawio.png}  % Adjust the width as necessary
     \caption{Use Case Diagram}
     \label{fig:Use Case Diagram}        
 \end{figure}
 
+Now it is introduced to one main component that will be explored further, an RTOS. As it is stimulated by the timer, it will actvate the 
+peripherals in a organized form, allowing a fast and efficient use of energy. Other component is the Log, a virtual memory that will store
+temporaly the information, only storing localy, once per cicle, reducing the SDcard entries.
+
 \subsubsection{Sequence Diagram}
+
+Once the software and hardware are planed, now a time related diagram will show the blocks interactions
+as time passes.
+
+First task sequence, a generic "Data Acquisition Task" shows the general behavior of a task focused to menage the sensors.
 
 \begin{figure}[H]
     \centering
@@ -145,6 +174,8 @@ once this proposal works as a validation and organization to the problem as a fo
     \label{fig:Sequence Diagram of Sensor Task}
 \end{figure}
 
+Next, the seconde task sequence, there will be 2 tasks with the behavior to get the GNSS information, store it on log, then call for the Mobile Comms task to send the stored memory to the Database.
+On the end, iniciating the SDcard storage. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png}  % Adjust the width as necessary
@@ -154,7 +185,7 @@ once this proposal works as a validation and organization to the problem as a fo
 
 \subsubsection{Threads} 
 Once this problem requires a list of taks to be executed, using a OS will allow
-a better project organization and performance with little to no impact in power consumption.
+a better project organization and performance with little to no impact in power consumption, even helping to menage the low power mode.
 
 As the ST uC offers a variety of RTOS, the implementation will be acessible with good support due to the
 CMSIS v2 abstraction layer.
@@ -186,7 +217,9 @@ tools for tasks control that will be used for its synchronization and comunicati
     \label{fig:Thread Priority Stack}        
 \end{figure}
 
-
+Other important perspective, is to emulate the task behavior with the priorities in action. 
+Showing a repetion of X times a group of data aqcuisition tasks, then ending with the second task sequence.
+X yet to be defined as it first depends on the sample time. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/diagrams/threads/graph/threads_graph.drawio.png}  % Adjust the width as necessary
@@ -194,6 +227,12 @@ tools for tasks control that will be used for its synchronization and comunicati
     \label{fig:Thread Temporal Graph}        
 \end{figure}
 
+Here up to t1 the system executes tasks, storing data, then entering low power mode untill the next sample.
+then, at the end of the last repetition, at t2, stating the second task sequence. Then after the SDcard task behavior ends, as so do the cicle.
+\subsubsection{Memory Abstraction (Log)} 
+
+The final diagrams, are a exeption of UML diagrams, As it only builds a data structure and a simple interface to interact with it.
+Here the ideia is to allow memory to be acessible while written by the system, optmizing the RTOS ITCs options.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/diagrams/data_struct/package_data.drawio.png}  % Adjust the width as necessary
@@ -204,7 +243,7 @@ tools for tasks control that will be used for its synchronization and comunicati
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/diagrams/data_struct/fluxogram.png}  % Adjust the width as necessary
+    \includegraphics[width=0.75\textwidth]{images/diagrams/data_struct/fluxogram.png}  % Adjust the width as necessary
     \caption{Memory Flowchart}
     \label{fig:Memory Flowchart}        
 \end{figure}
