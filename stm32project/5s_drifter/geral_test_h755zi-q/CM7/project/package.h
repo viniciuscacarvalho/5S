@@ -19,6 +19,18 @@ typedef struct p_data_s
     unsigned short errors;
 } package_data_t;
 
+/*
+{
+  "power_level": 0,
+  "temperature": [0, 0, 0],
+  "imu": [0, 0, 0],
+  "gnss": [
+    [0, 0, 0],
+    [0, 0, 0]
+  ],
+  "errors": 0
+}
+ * */
 
 package_data_t* write_package_data();
 

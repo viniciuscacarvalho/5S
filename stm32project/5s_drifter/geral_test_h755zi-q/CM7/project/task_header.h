@@ -24,6 +24,7 @@
 #include "../Core/Inc/gpio.h"
 #include "../Core/Inc/adc.h"
 #include "../Core/Inc/tim.h"
+#include "../FATFS/App/fatfs.h"
 
 
 #include "../Core/Inc/FreeRTOSConfig.h"

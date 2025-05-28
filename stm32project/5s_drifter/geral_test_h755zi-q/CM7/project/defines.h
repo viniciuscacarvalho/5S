@@ -34,4 +34,7 @@
 
 #define VODAFONE_APN "http://net2.vodafone.pt"
 
+//GNSS
+#define GNSS_ANSWER_LEN 64
+
 #endif /* PROJECT_DEFINES_H_ */

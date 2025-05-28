@@ -20,7 +20,9 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "adc.h"
+#include "fatfs.h"
 #include "memorymap.h"
+#include "sdmmc.h"
 #include "spi.h"
 #include "tim.h"
 #include "usart.h"
@@ -130,6 +132,8 @@ Error_Handler();
   MX_USART3_UART_Init();
   MX_ADC1_Init();
   MX_TIM3_Init();
+  MX_SDMMC1_SD_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

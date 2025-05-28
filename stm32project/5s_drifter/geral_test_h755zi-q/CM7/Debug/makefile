@@ -13,6 +13,9 @@ RM := rm -rf
 -include project/one_wire/subdir.mk
 -include project/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/subdir.mk
+-include Middlewares/Third_Party/FatFs/subdir.mk
+-include FATFS/Target/subdir.mk
+-include FATFS/App/subdir.mk
 -include Drivers/STM32H7xx_HAL_Driver/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk

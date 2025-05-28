@@ -14,5 +14,14 @@ void ac_set_at_gpio (unsigned char gpio,unsigned char state);
 void ac_get_at_gpio (unsigned char gpio,char* recived);
 
 
+void ac_power_on		(unsigned char gpio, char* recived);
+void ac_check 								(char* recived);
+void ac_gnss_request 						(char* recived);
+void ac_ping					(char count, char* recived);
+void ac_network_attach_request 				(char* recived);
+void ac_network_pdp_activate				(char* recived);
+void ac_nb_iot_send	(char* to_send,char size,char* recived);
+
+
 
 #endif /* PROJECT_AT_COMMANDS_ST87M01_H_ */

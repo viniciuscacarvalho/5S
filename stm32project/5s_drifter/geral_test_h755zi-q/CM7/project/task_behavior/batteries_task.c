@@ -23,8 +23,6 @@ void batterie_task(void *argument)
 
 		adc_reading = HAL_ADC_GetValue(&hadc1);
 
-			// Process ADC value (e.g., print or use)
-		//printf("ADC Value: %lu\r\n", adc_reading);
 
 			// Start next conversion
 		osDelay(ADC_SAMPLE_PERIOD_UC);
