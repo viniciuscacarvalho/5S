@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.27)  25 MAY 2025 17:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.27)  30 MAY 2025 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -247,12 +247,19 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip64
+) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen165
+\WF@size=\dimen166
+\c@WF@wrappedlines=\count291
+\WF@box=\box53
+\WF@everypar=\toks22
+Package: wrapfig 2003/01/31  v 3.6
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+Package hyperref Info: Option `colorlinks' set `true' on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count291
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count292
+\l__pdf_internal_box=\box54
 ) (./report.aux (./titlepage/title_page.aux) (./chapters/introduction.aux) (./chapters/analysis.aux) (./chapters/design.aux
 
 LaTeX Warning: Label `fig:Memory Flowchart' multiply defined.
@@ -278,28 +285,29 @@ LaTeX Warning: Label `fig:Memory Flowchart' multiply defined.
 ) (./chapters/implementation.aux) (./chapters/conclusion.aux))
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
@@ -338,17 +346,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count292
-\scratchdimen=\dimen165
-\scratchbox=\box54
-\nofMPsegments=\count293
-\nofMParguments=\count294
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count295
-\MPscratchDim=\dimen166
-\MPnumerator=\count296
-\makeMPintoPDFobject=\count297
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count293
+\scratchdimen=\dimen167
+\scratchbox=\box55
+\nofMPsegments=\count294
+\nofMParguments=\count295
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count296
+\MPscratchDim=\dimen168
+\MPnumerator=\count297
+\makeMPintoPDFobject=\count298
+\everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -361,7 +369,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 58.
+Package hyperref Info: Link coloring ON on input line 59.
  (./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
@@ -369,12 +377,12 @@ Package hyperref Info: Link coloring ON on input line 58.
 \openout2 = `titlepage/title_page.aux'.
 
  (./titlepage/title_page.tex
-<images/logos/ENG-EN.png, id=164, 301.125pt x 273.02pt>
+<images/logos/ENG-EN.png, id=172, 301.125pt x 273.02pt>
 File: images/logos/ENG-EN.png Graphic file (type png)
 <use images/logos/ENG-EN.png>
 Package pdftex.def Info: images/logos/ENG-EN.png  used on input line 4.
 (pdftex.def)             Requested size: 135.89174pt x 123.21196pt.
-<images/logos/CMEMS.png, id=166, 2578.63374pt x 537.00626pt>
+<images/logos/CMEMS.png, id=174, 2578.63374pt x 537.00626pt>
 File: images/logos/CMEMS.png Graphic file (type png)
 <use images/logos/CMEMS.png>
 Package pdftex.def Info: images/logos/CMEMS.png  used on input line 8.
@@ -397,15 +405,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
-<images/logos/TOP_ENG_LOGO.png, id=226, 1204.5pt x 632.3625pt>
+<images/logos/TOP_ENG_LOGO.png, id=236, 1204.5pt x 632.3625pt>
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 65.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 66.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
-<images/logos/TOP_CMEMS_LOGO.png, id=227, 449.68pt x 506.89375pt>
+<images/logos/TOP_CMEMS_LOGO.png, id=237, 449.68pt x 506.89375pt>
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 65.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 66.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
  [2 <./images/logos/TOP_ENG_LOGO.png (PNG copy)> <./images/logos/TOP_CMEMS_LOGO.png>] (./report.lof)
 \tf@lof=\write5
@@ -419,94 +427,94 @@ Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 65.
 
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 70.
+LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 71.
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 70.
+LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 71.
 
 
-LaTeX Warning: Hyper reference `acro:LTE' on page iv undefined on input line 71.
+LaTeX Warning: Hyper reference `acro:LTE' on page iv undefined on input line 72.
 
 
-LaTeX Warning: Hyper reference `acro:LTE' on page iv undefined on input line 71.
+LaTeX Warning: Hyper reference `acro:LTE' on page iv undefined on input line 72.
 
 
-LaTeX Warning: Hyper reference `acro:ADC' on page iv undefined on input line 72.
+LaTeX Warning: Hyper reference `acro:ADC' on page iv undefined on input line 73.
 
 
-LaTeX Warning: Hyper reference `acro:ADC' on page iv undefined on input line 72.
+LaTeX Warning: Hyper reference `acro:ADC' on page iv undefined on input line 73.
 
 
-LaTeX Warning: Hyper reference `acro:IMU' on page iv undefined on input line 73.
+LaTeX Warning: Hyper reference `acro:IMU' on page iv undefined on input line 74.
 
 
-LaTeX Warning: Hyper reference `acro:IMU' on page iv undefined on input line 73.
+LaTeX Warning: Hyper reference `acro:IMU' on page iv undefined on input line 74.
 
 
-LaTeX Warning: Hyper reference `acro:PCB' on page iv undefined on input line 74.
+LaTeX Warning: Hyper reference `acro:PCB' on page iv undefined on input line 75.
 
 
-LaTeX Warning: Hyper reference `acro:PCB' on page iv undefined on input line 74.
+LaTeX Warning: Hyper reference `acro:PCB' on page iv undefined on input line 75.
 
 
-LaTeX Warning: Hyper reference `acro:CMEMS' on page iv undefined on input line 75.
+LaTeX Warning: Hyper reference `acro:CMEMS' on page iv undefined on input line 76.
 
 
-LaTeX Warning: Hyper reference `acro:CMEMS' on page iv undefined on input line 75.
+LaTeX Warning: Hyper reference `acro:CMEMS' on page iv undefined on input line 76.
 
 
-LaTeX Warning: Hyper reference `acro:STM32' on page iv undefined on input line 76.
+LaTeX Warning: Hyper reference `acro:STM32' on page iv undefined on input line 77.
 
 
-LaTeX Warning: Hyper reference `acro:STM32' on page iv undefined on input line 76.
+LaTeX Warning: Hyper reference `acro:STM32' on page iv undefined on input line 77.
 
 
-LaTeX Warning: Hyper reference `acro:DMA' on page iv undefined on input line 77.
+LaTeX Warning: Hyper reference `acro:DMA' on page iv undefined on input line 78.
 
 
-LaTeX Warning: Hyper reference `acro:DMA' on page iv undefined on input line 77.
+LaTeX Warning: Hyper reference `acro:DMA' on page iv undefined on input line 78.
 
 
-LaTeX Warning: Hyper reference `acro:IoT' on page iv undefined on input line 78.
+LaTeX Warning: Hyper reference `acro:IoT' on page iv undefined on input line 79.
 
 
-LaTeX Warning: Hyper reference `acro:IoT' on page iv undefined on input line 78.
+LaTeX Warning: Hyper reference `acro:IoT' on page iv undefined on input line 79.
 
 
-LaTeX Warning: Hyper reference `acro:GPS' on page iv undefined on input line 79.
+LaTeX Warning: Hyper reference `acro:GPS' on page iv undefined on input line 80.
 
 
-LaTeX Warning: Hyper reference `acro:GPS' on page iv undefined on input line 79.
+LaTeX Warning: Hyper reference `acro:GPS' on page iv undefined on input line 80.
 
 
-LaTeX Warning: Hyper reference `acro:JSON' on page iv undefined on input line 80.
+LaTeX Warning: Hyper reference `acro:JSON' on page iv undefined on input line 81.
 
 
-LaTeX Warning: Hyper reference `acro:JSON' on page iv undefined on input line 80.
+LaTeX Warning: Hyper reference `acro:JSON' on page iv undefined on input line 81.
 
 
-LaTeX Warning: Hyper reference `acro:DB' on page iv undefined on input line 81.
+LaTeX Warning: Hyper reference `acro:DB' on page iv undefined on input line 82.
 
 
-LaTeX Warning: Hyper reference `acro:DB' on page iv undefined on input line 81.
+LaTeX Warning: Hyper reference `acro:DB' on page iv undefined on input line 82.
 
 
-LaTeX Warning: Hyper reference `acro:SST' on page iv undefined on input line 82.
+LaTeX Warning: Hyper reference `acro:SST' on page iv undefined on input line 83.
 
 
-LaTeX Warning: Hyper reference `acro:SST' on page iv undefined on input line 82.
+LaTeX Warning: Hyper reference `acro:SST' on page iv undefined on input line 83.
 
 
-LaTeX Warning: Hyper reference `acro:HRSST' on page iv undefined on input line 83.
+LaTeX Warning: Hyper reference `acro:HRSST' on page iv undefined on input line 84.
 
 
-LaTeX Warning: Hyper reference `acro:HRSST' on page iv undefined on input line 83.
+LaTeX Warning: Hyper reference `acro:HRSST' on page iv undefined on input line 84.
 
 
-LaTeX Warning: Hyper reference `acro:ITC' on page iv undefined on input line 84.
+LaTeX Warning: Hyper reference `acro:ITC' on page iv undefined on input line 85.
 
 
-LaTeX Warning: Hyper reference `acro:ITC' on page iv undefined on input line 84.
+LaTeX Warning: Hyper reference `acro:ITC' on page iv undefined on input line 85.
 
 [4
 
@@ -515,7 +523,7 @@ LaTeX Warning: Hyper reference `acro:ITC' on page iv undefined on input line 84.
 
  (./chapters/introduction.tex
 Chapter 1.
-<images/diagrams/shell/unnamed.png, id=301, 513.92pt x 415.5525pt>
+<images/diagrams/shell/unnamed.png, id=311, 513.92pt x 415.5525pt>
 File: images/diagrams/shell/unnamed.png Graphic file (type png)
 <use images/diagrams/shell/unnamed.png>
 Package pdftex.def Info: images/diagrams/shell/unnamed.png  used on input line 17.
@@ -529,7 +537,7 @@ l.27
 
 
  <./images/diagrams/shell/unnamed.png>]
-<images/chapter/introduction/renewable_energy.png, id=305, 1027.84pt x 578.16pt>
+<images/chapter/introduction/renewable_energy.png, id=315, 1027.84pt x 578.16pt>
 File: images/chapter/introduction/renewable_energy.png Graphic file (type png)
 <use images/chapter/introduction/renewable_energy.png>
 Package pdftex.def Info: images/chapter/introduction/renewable_energy.png  used on input line 76.
@@ -543,7 +551,7 @@ File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 79.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
  [2]
-<images/maps/pt_depth.png, id=314, 485.815pt x 778.91pt>
+<images/maps/pt_depth.png, id=324, 485.815pt x 778.91pt>
 File: images/maps/pt_depth.png Graphic file (type png)
 <use images/maps/pt_depth.png>
 Package pdftex.def Info: images/maps/pt_depth.png  used on input line 87.
@@ -559,18 +567,18 @@ Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 106
  [3 <./images/chapter/introduction/renewable_energy.png> <./images/maps/pt_depth.png (PNG copy)>])
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 93.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 94.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 93.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 94.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
  [4{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 \openout2 = `chapters/analysis.aux'.
 
  (./chapters/analysis.tex
 Chapter 2.
-<images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png, id=328, 663.47874pt x 392.46625pt>
+<images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png, id=338, 663.47874pt x 392.46625pt>
 File: images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png Graphic file (type png)
 <use images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png>
 Package pdftex.def Info: images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png  used on input line 37.
@@ -594,222 +602,231 @@ File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 55.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
  [6 <./images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png>]
-<images/chapter/analysis/svp.png, id=339, 569.0058pt x 437.7153pt>
+<images/chapter/analysis/svp.png, id=349, 569.0058pt x 437.7153pt>
 File: images/chapter/analysis/svp.png Graphic file (type png)
 <use images/chapter/analysis/svp.png>
-Package pdftex.def Info: images/chapter/analysis/svp.png  used on input line 98.
-(pdftex.def)             Requested size: 317.07614pt x 243.91667pt.
+Package pdftex.def Info: images/chapter/analysis/svp.png  used on input line 99.
+(pdftex.def)             Requested size: 249.13371pt x 191.6469pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 102.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 103.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 102.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 103.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
  [7]
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 138.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 142.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 138.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 142.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
  [8 <./images/chapter/analysis/svp.png (PNG copy)>]
 File: images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png Graphic file (type png)
 <use images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png>
-Package pdftex.def Info: images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png  used on input line 143.
+Package pdftex.def Info: images/diagrams/block_diagram/block_diagrams_3/blockdiagram_analysis.drawio.png  used on input line 167.
 (pdftex.def)             Requested size: 407.66833pt x 241.14671pt.
-<images/diagrams/use_case/Use Case.drawio.png, id=350, 468.75125pt x 373.395pt>
+<images/diagrams/use_case/Use Case.drawio.png, id=361, 468.75125pt x 373.395pt>
 File: images/diagrams/use_case/Use Case.drawio.png Graphic file (type png)
 <use images/diagrams/use_case/Use Case.drawio.png>
-Package pdftex.def Info: images/diagrams/use_case/Use Case.drawio.png  used on input line 154.
+Package pdftex.def Info: images/diagrams/use_case/Use Case.drawio.png  used on input line 178.
 (pdftex.def)             Requested size: 271.7835pt x 216.49518pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 162.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 181.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 162.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 181.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [9 <./images/diagrams/use_case/Use Case.drawio.png>]
-<images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png, id=357, 404.51125pt x 206.7725pt>
+ [9]
+<images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png, id=367, 404.51125pt x 206.7725pt>
 File: images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png Graphic file (type png)
 <use images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png>
-Package pdftex.def Info: images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png  used on input line 172.
+Package pdftex.def Info: images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png  used on input line 196.
 (pdftex.def)             Requested size: 317.07614pt x 162.08012pt.
-<images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png, id=358, 521.95pt x 373.395pt>
+<images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png, id=368, 521.95pt x 373.395pt>
 File: images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png Graphic file (type png)
 <use images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png>
-Package pdftex.def Info: images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png  used on input line 181.
+Package pdftex.def Info: images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png  used on input line 205.
 (pdftex.def)             Requested size: 317.07614pt x 226.83621pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 189.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 208.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 189.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 208.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [10 <./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png> <./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png>]
-<images/diagrams/threads/thread.drawio.png, id=366, 417.56pt x 281.05pt>
+ [10 <./images/diagrams/use_case/Use Case.drawio.png> <./images/diagrams/sequence_diagram/sequence_diagram_1/Sequence Diagram.drawio.png>]
+<images/diagrams/threads/thread.drawio.png, id=377, 417.56pt x 281.05pt>
 File: images/diagrams/threads/thread.drawio.png Graphic file (type png)
 <use images/diagrams/threads/thread.drawio.png>
-Package pdftex.def Info: images/diagrams/threads/thread.drawio.png  used on input line 215.
+Package pdftex.def Info: images/diagrams/threads/thread.drawio.png  used on input line 239.
 (pdftex.def)             Requested size: 317.07614pt x 213.42867pt.
-<images/diagrams/threads/graph/threads_graph.drawio.png, id=367, 406.51875pt x 200.75pt>
-File: images/diagrams/threads/graph/threads_graph.drawio.png Graphic file (type png)
-<use images/diagrams/threads/graph/threads_graph.drawio.png>
-Package pdftex.def Info: images/diagrams/threads/graph/threads_graph.drawio.png  used on input line 225.
-(pdftex.def)             Requested size: 317.07614pt x 156.58742pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 229.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 243.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 229.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 243.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [11 <./images/diagrams/threads/thread.drawio.png>]
-<images/diagrams/data_struct/package_data.drawio.png, id=374, 443.6575pt x 221.82875pt>
+ [11 <./images/diagrams/sequence_diagram/sequence_diagram_2/Sequence Diagram.drawio.png>]
+<images/diagrams/threads/graph/threads_graph.drawio.png, id=384, 406.51875pt x 200.75pt>
+File: images/diagrams/threads/graph/threads_graph.drawio.png Graphic file (type png)
+<use images/diagrams/threads/graph/threads_graph.drawio.png>
+Package pdftex.def Info: images/diagrams/threads/graph/threads_graph.drawio.png  used on input line 249.
+(pdftex.def)             Requested size: 317.07614pt x 156.58742pt.
+<images/diagrams/data_struct/package_data.drawio.png, id=385, 443.6575pt x 221.82875pt>
 File: images/diagrams/data_struct/package_data.drawio.png Graphic file (type png)
 <use images/diagrams/data_struct/package_data.drawio.png>
-Package pdftex.def Info: images/diagrams/data_struct/package_data.drawio.png  used on input line 238.
+Package pdftex.def Info: images/diagrams/data_struct/package_data.drawio.png  used on input line 262.
 (pdftex.def)             Requested size: 317.07614pt x 158.53525pt.
-<images/diagrams/data_struct/fluxogram.png, id=375, 623.32875pt x 262.9825pt>
+File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/logos/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 266.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
+<use images/logos/TOP_CMEMS_LOGO.png>
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 266.
+(pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
+ [12 <./images/diagrams/threads/thread.drawio.png> <./images/diagrams/threads/graph/threads_graph.drawio.png>]
+<images/diagrams/data_struct/fluxogram.png, id=393, 623.32875pt x 262.9825pt>
 File: images/diagrams/data_struct/fluxogram.png Graphic file (type png)
 <use images/diagrams/data_struct/fluxogram.png>
-Package pdftex.def Info: images/diagrams/data_struct/fluxogram.png  used on input line 246.
+Package pdftex.def Info: images/diagrams/data_struct/fluxogram.png  used on input line 270.
 (pdftex.def)             Requested size: 339.72592pt x 143.33264pt.
 )
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 96.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 97.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 96.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 97.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [12 <./images/diagrams/threads/graph/threads_graph.drawio.png> <./images/diagrams/data_struct/package_data.drawio.png> <./images/diagrams/data_struct/fluxogram.png>]
+ [13 <./images/diagrams/data_struct/package_data.drawio.png> <./images/diagrams/data_struct/fluxogram.png>]
 \openout2 = `chapters/design.aux'.
 
  (./chapters/design.tex
 Chapter 3.
-<images/chapter/design/components/final_IMU.png, id=384, 803.0pt x 803.0pt>
-File: images/chapter/design/components/final_IMU.png Graphic file (type png)
-<use images/chapter/design/components/final_IMU.png>
-Package pdftex.def Info: images/chapter/design/components/final_IMU.png  used on input line 55.
-(pdftex.def)             Requested size: 339.72592pt x 339.73276pt.
-[13
+[14
 
 
 
 
 ]
-<images/chapter/design/components/SIM7000.png, id=391, 803.0pt x 803.0pt>
+<images/chapter/design/components/final_IMU.png, id=407, 803.0pt x 803.0pt>
+File: images/chapter/design/components/final_IMU.png Graphic file (type png)
+<use images/chapter/design/components/final_IMU.png>
+Package pdftex.def Info: images/chapter/design/components/final_IMU.png  used on input line 73.
+(pdftex.def)             Requested size: 339.72592pt x 339.73276pt.
+<images/chapter/design/components/SIM7000.png, id=408, 803.0pt x 803.0pt>
 File: images/chapter/design/components/SIM7000.png Graphic file (type png)
 <use images/chapter/design/components/SIM7000.png>
-Package pdftex.def Info: images/chapter/design/components/SIM7000.png  used on input line 65.
+Package pdftex.def Info: images/chapter/design/components/SIM7000.png  used on input line 83.
 (pdftex.def)             Requested size: 339.72592pt x 339.73276pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 69.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 87.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 69.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 87.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [14 <./images/chapter/design/components/final_IMU.png>]
-<images/chapter/design/components/temp.png, id=397, 602.25pt x 602.25pt>
+ [15 <./images/chapter/design/components/final_IMU.png>]
+<images/chapter/design/components/temp.png, id=413, 602.25pt x 602.25pt>
 File: images/chapter/design/components/temp.png Graphic file (type png)
 <use images/chapter/design/components/temp.png>
-Package pdftex.def Info: images/chapter/design/components/temp.png  used on input line 76.
+Package pdftex.def Info: images/chapter/design/components/temp.png  used on input line 94.
 (pdftex.def)             Requested size: 339.72592pt x 339.73888pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 80.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 98.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 80.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 98.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [15 <./images/chapter/design/components/SIM7000.png>]
-<images/chapter/design/components/sdcard.png, id=402, 453.695pt x 453.695pt>
+ [16 <./images/chapter/design/components/SIM7000.png>]
+<images/chapter/design/components/sdcard.png, id=418, 453.695pt x 453.695pt>
 File: images/chapter/design/components/sdcard.png Graphic file (type png)
 <use images/chapter/design/components/sdcard.png>
-Package pdftex.def Info: images/chapter/design/components/sdcard.png  used on input line 87.
+Package pdftex.def Info: images/chapter/design/components/sdcard.png  used on input line 105.
 (pdftex.def)             Requested size: 339.72592pt x 339.73044pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 91.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 109.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 91.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 109.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [16 <./images/chapter/design/components/temp.png>]
-<images/chapter/design/components/sd_support.jpg, id=407, 803.0pt x 803.0pt>
+ [17 <./images/chapter/design/components/temp.png>]
+<images/chapter/design/components/sd_support.jpg, id=423, 803.0pt x 803.0pt>
 File: images/chapter/design/components/sd_support.jpg Graphic file (type jpg)
 <use images/chapter/design/components/sd_support.jpg>
-Package pdftex.def Info: images/chapter/design/components/sd_support.jpg  used on input line 97.
+Package pdftex.def Info: images/chapter/design/components/sd_support.jpg  used on input line 115.
 (pdftex.def)             Requested size: 339.72592pt x 339.73276pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 101.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 119.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 101.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 119.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [17 <./images/chapter/design/components/sdcard.png>]
-<images/chapter/design/components/battery-holder.jpg, id=412, 602.25pt x 602.25pt>
+ [18 <./images/chapter/design/components/sdcard.png>]
+<images/chapter/design/components/battery-holder.jpg, id=428, 602.25pt x 602.25pt>
 File: images/chapter/design/components/battery-holder.jpg Graphic file (type jpg)
 <use images/chapter/design/components/battery-holder.jpg>
-Package pdftex.def Info: images/chapter/design/components/battery-holder.jpg  used on input line 107.
+Package pdftex.def Info: images/chapter/design/components/battery-holder.jpg  used on input line 125.
 (pdftex.def)             Requested size: 339.72592pt x 339.73888pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 111.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 129.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 111.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 129.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [18 <./images/chapter/design/components/sd_support.jpg>]
-<images/chapter/design/components/batt.jpg, id=417, 602.25pt x 602.25pt>
+ [19 <./images/chapter/design/components/sd_support.jpg>]
+<images/chapter/design/components/batt.jpg, id=433, 602.25pt x 602.25pt>
 File: images/chapter/design/components/batt.jpg Graphic file (type jpg)
 <use images/chapter/design/components/batt.jpg>
-Package pdftex.def Info: images/chapter/design/components/batt.jpg  used on input line 117.
+Package pdftex.def Info: images/chapter/design/components/batt.jpg  used on input line 135.
 (pdftex.def)             Requested size: 339.72592pt x 339.73888pt.
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 121.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 139.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 121.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 139.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [19 <./images/chapter/design/components/battery-holder.jpg>]
+ [20 <./images/chapter/design/components/battery-holder.jpg>]
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 166.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 184.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 166.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 184.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [20 <./images/chapter/design/components/batt.jpg>])
+ [21 <./images/chapter/design/components/batt.jpg>])
 File: images/logos/TOP_ENG_LOGO.png Graphic file (type png)
 <use images/logos/TOP_ENG_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 99.
+Package pdftex.def Info: images/logos/TOP_ENG_LOGO.png  used on input line 100.
 (pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
 File: images/logos/TOP_CMEMS_LOGO.png Graphic file (type png)
 <use images/logos/TOP_CMEMS_LOGO.png>
-Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 99.
+Package pdftex.def Info: images/logos/TOP_CMEMS_LOGO.png  used on input line 100.
 (pdftex.def)             Requested size: 40.76544pt x 45.95105pt.
- [21]
+ [22]
 \openout2 = `chapters/implementation.aux'.
 
  (./chapters/implementation.tex
@@ -819,7 +836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-) [22
+) [23
 
 
 
@@ -829,7 +846,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  (./chapters/conclusion.tex
 Chapter 5.
-) [23
+) [24
 
 
 
@@ -846,22 +863,31 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 5F990F31CD04F6BD2D3361F6075D736D;5001.
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 2EFD012059BD1E41832175237AF68622;5291
+(rerunfilecheck)             After:  1B84157723A1F218004E80EC0AC638E1;5189.
  ) 
 Here is how much of TeX's memory you used:
- 12770 strings out of 474222
- 213369 string characters out of 5748733
+ 12843 strings out of 474222
+ 214533 string characters out of 5748733
  1937975 words of memory out of 5000000
- 34716 multiletter control sequences out of 15000+600000
+ 34780 multiletter control sequences out of 15000+600000
  565093 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,16n,79p,364b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,16n,79p,364b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not exist, replaced by a fixed one
+
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on report.pdf (28 pages, 3143546 bytes).
+Output written on report.pdf (29 pages, 3147081 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
- 126 named destinations out of 1000 (max. 500000)
- 436 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 531 PDF objects out of 1000 (max. 8388607)
+ 442 compressed objects within 5 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
 

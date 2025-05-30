@@ -30,6 +30,9 @@
 //Nb-IoT
 #define MONGO_DB_PDP_TYPE "IP" //Assuption to be IPV4
 #define MONGO_DB_IP "255.255.255.255"
+//tes ip
+//http://193.136.12.30/
+//https://echo.free.beeceptor.com
 #define MONGO_DB_PORT 8000
 
 #define VODAFONE_APN "http://net2.vodafone.pt"
