@@ -1,0 +1,8 @@
+{"rule":"EN_DIACRITICS_REPLACE","sentence":"^\\QOnce this problem requires a list of tasks to be executed, using a OS will allow a better project organization and performance with little to no impact in power consumption, even helping to menage the low power mode.\\E$"}
+{"rule":"HELL","sentence":"^\\QIt should be heavy so the drifter points up, but it shouldn't exceed the second topic demand The Floater volume, as it has to balance the hole electronics and shell weight.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe Copernicus Marine Service, component of Copernicus Programme of the European Union, has developed the SVP-BRST, a drifter for temperature and depth measurement.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSVP-BRST Design The image shows the SVP-BRST model.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCMEMS Examples.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe CMEMS lab at the University of Minho combines expertise in microsystems engineering with environmental research to develop innovative ocean monitoring technologies.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSONDA.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe diagram shows the SMT32 minimum peripherals: ADC, TIMER, GPIO, I2C / SPI, USART.\\E$"}

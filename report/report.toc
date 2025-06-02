@@ -25,37 +25,34 @@
 \contentsline {subsubsection}{Memory Abstraction (Log)}{12}{section*.28}%
 \contentsline {chapter}{\numberline {3}Design}{14}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Analysis Review}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Hardware}{14}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Autonomy}{14}{subsection.3.2.1}%
-\contentsline {subsubsection}{Batteries}{14}{section*.31}%
-\contentsline {subsubsection}{Board Consumption}{14}{section*.32}%
-\contentsline {section}{\numberline {3.3}Hardware Specification}{21}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}SDCard}{21}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}STM32}{21}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}BMI088 IMU Sensor}{21}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Temperature}{21}{subsection.3.3.4}%
-\contentsline {section}{\numberline {3.4}Software}{21}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Communication protocol}{21}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Shell}{22}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Conclusion}{22}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}Case Construction}{22}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Tools and COTS}{22}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Tools}{22}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}COTS}{22}{subsection.3.7.2}%
-\contentsline {subsubsection}{GPS and 4G module}{22}{section*.41}%
-\contentsline {subsubsection}{Inkscape}{22}{section*.42}%
-\contentsline {subsubsection}{draw.io}{22}{section*.43}%
-\contentsline {subsubsection}{STM32 CUBEmx}{22}{section*.44}%
-\contentsline {subsubsection}{\LaTeX }{22}{section*.45}%
-\contentsline {section}{\numberline {3.8}Software Specification}{22}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Theorical Concepts}{22}{section.3.9}%
-\contentsline {chapter}{\numberline {4}Implementation}{23}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Hardware and Shell}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Software}{23}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Project Sections}{23}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Task Behavior}{23}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}DataBase Comunication}{23}{subsection.4.2.3}%
-\contentsline {chapter}{\numberline {5}Conclusion}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Gantt Diagram}{24}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Bibliografy}{24}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Special Greatings}{24}{section.5.3}%
+\contentsline {section}{\numberline {3.2}Software}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Communication protocol}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Abstraction}{15}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}RTOS}{16}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}RTOS alternative}{16}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Hardware}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Autonomy}{16}{subsection.3.3.1}%
+\contentsline {subsubsection}{Board Consumption}{16}{section*.32}%
+\contentsline {subsubsection}{Possible Solar Energy}{21}{section*.41}%
+\contentsline {subsubsection}{Batteries}{22}{section*.42}%
+\contentsline {subsection}{\numberline {3.3.2}System Pinout}{22}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Shell}{23}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Conclusion}{23}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Tools and COTS}{23}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Tools}{23}{subsection.3.5.1}%
+\contentsline {subsubsection}{Inkscape}{23}{section*.45}%
+\contentsline {subsubsection}{draw.io}{23}{section*.46}%
+\contentsline {subsubsection}{STM32 CUBEmx}{23}{section*.47}%
+\contentsline {subsubsection}{Fusion360}{23}{section*.48}%
+\contentsline {subsubsection}{\LaTeX }{23}{section*.49}%
+\contentsline {subsection}{\numberline {3.5.2}COTS}{23}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}Implementation}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hardware and Shell}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Software}{24}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Project Sections}{24}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Task Behavior}{24}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}DataBase Comunication}{24}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Gantt Diagram}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Bibliografy}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Special Greatings}{25}{section.5.3}%
