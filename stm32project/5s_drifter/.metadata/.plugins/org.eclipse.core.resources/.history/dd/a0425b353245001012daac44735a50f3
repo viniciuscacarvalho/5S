@@ -1,0 +1,52 @@
+/*
+ * imu_behavior.h
+ *
+ *  Created on: Jun 2, 2025
+ *      Author: viny
+ */
+
+#include "imu_behavior.h"
+
+void imu_init (void)
+{
+	IMU_Init();
+}
+
+void imu_update (void)
+{
+
+}
+
+void IMU_Init(void)
+{
+    uint8_t buf[2];
+
+    //ACL
+    // ADXL345: set measurement mode
+    //buf[0] = 0x2D; buf[1] = 0x08;
+    //HAL_I2C_Master_Transmit(hi2c, ADXL345_ADDR, buf, 2, 100);
+
+    //GYRO
+    // Set sample rate divider to reduce power (e.g., 125Hz)
+	buf[0] = 0x15; buf[1] = 0x07; // Divider = 7 → Fs = 1kHz / (7+1) = 125Hz
+	HAL_I2C_Master_Transmit(IMU_I2C, ITG3205_ADDR, buf, 2, 100);
+
+	// Set DLPF and Full Scale: 0x18 = FS ±2000°/s, low-pass filter at 42Hz
+	buf[0] = 0x16; buf[1] = 0x1B;
+	HAL_I2C_Master_Transmit(IMU_I2C, ITG3205_ADDR, buf, 2, 100);
+
+	// Power management: select Z gyro as PLL source (low-power + stability)
+	buf[0] = 0x3E; buf[1] = 0x03;
+	HAL_I2C_Master_Transmit(IMU_I2C, ITG3205_ADDR, buf, 2, 100);
+
+    // HMC5883L: configure for continuous measurement
+    //buf[0]=0x02; buf[1]=0x00; HAL_I2C_Master_Transmit(hi2c, HMC5883L_ADDR, buf, 2, 100);
+    //buf[0]=0x00; buf[1]=0x70; HAL_I2C_Master_Transmit(hi2c, HMC5883L_ADDR, buf, 2, 100);
+    //buf[0]=0x01; buf[1]=0xA0; HAL_I2C_Master_Transmit(hi2c, HMC5883L_ADDR, buf, 2, 100);
+}
+
+int16_t ITG3205_Read_Z(void) {
+    uint8_t buf[2];
+    HAL_I2C_Mem_Read(IMU_I2C, ITG3205_ADDR, 0x21, 1, buf, 2, 100); // ZOUT_H, ZOUT_L
+    return (int16_t)(buf[0] << 8 | buf[1]);
+}

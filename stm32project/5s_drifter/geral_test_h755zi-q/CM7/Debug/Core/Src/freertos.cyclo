@@ -1,8 +1,0 @@
-../Core/Src/freertos.c:122:6:MX_FREERTOS_Init	1
-../Core/Src/freertos.c:182:13:idle_task	1
-../Core/Src/freertos.c:200:13:nb_iot_task	1
-../Core/Src/freertos.c:214:13:cnss_task	1
-../Core/Src/freertos.c:228:13:sd_card_task	1
-../Core/Src/freertos.c:242:13:temp_task	1
-../Core/Src/freertos.c:256:13:imu_task	1
-../Core/Src/freertos.c:272:13:batterie_task	1

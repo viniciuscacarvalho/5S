@@ -5,84 +5,213 @@
  *      Author: viny
  */
 #include "at_commands_ST87M01.h"
-void ac_set_at_gpio (unsigned char gpio,unsigned char state)
+
+void at_set_baudrate (char* recived)
 {
-	char buffer[16];
-	fscanf(buffer,"AT@GPIOSET=%d,%d",gpio,state);
-	HAL_UART_Transmit_IT(&huart3, buffer, 16);
+	gnss_sendCommand("\r\nAT+IPR=19200\r\n", COMMAND_GENERAL_DELAY, recived);
 }
 
-void ac_get_at_gpio (unsigned char gpio,char* recived)
+void at_echo_on (char* recived)
 {
-	char buffer[16];
-	fscanf(buffer,"AT@GPIOGET=%d",gpio);
-	HAL_UART_Transmit_IT(&huart3, buffer, 16);
-	HAL_UART_Receive_IT(&huart3, recived, 16);
+	mobile_sendCommand("\r\nATE1\r\n", COMMAND_GENERAL_DELAY, recived);
 }
 
-void ac_power_on (unsigned char gpio,char* recived)
+void at_echo_off (char* recived)
 {
-	char buffer[16];
-	fscanf(buffer,"AT+CGNSPWR=1");
-	HAL_UART_Transmit_IT(&huart3, buffer, 16);
-	HAL_UART_Receive_IT(&huart3, recived, 16);
-}
-
-void ac_check (char* recived)
-{
-	char buffer[16];
-	fscanf(buffer,"AT");
-	HAL_UART_Transmit_IT(&huart3, buffer, 16);
-	HAL_UART_Receive_IT(&huart3, recived, 16);
+	mobile_sendCommand("\r\nATE0\r\n", COMMAND_GENERAL_DELAY, recived);
 }
 
 
-
-void ac_gnss_request (char* recived)
+void at_set_at_gpio (unsigned char gpio,unsigned char state, char *recived)
 {
+
 	char buffer[16];
-	fscanf(buffer,"AT+CGNSINF");
-	HAL_UART_Transmit_IT(&huart3, buffer, 16);
-	HAL_UART_Receive_IT(&huart3, recived, 16);
+	fprintf(buffer,"\r\nAT@GPIOSET=%d,%d\r\n",gpio,state);
+	mobile_sendCommand(buffer, COMMAND_GENERAL_DELAY, recived);
 }
 
-void ac_ping (char count,char* recived)
+void at_get_at_gpio (unsigned char gpio,char* recived)
 {
 	char buffer[16];
-	fscanf(buffer,"AT%PINGCMD=0,%s,%d",MONGO_DB_IP,count);
-	HAL_UART_Transmit_IT(&huart3, buffer, 16);
-	HAL_UART_Receive_IT(&huart3, recived, 16);
+	fprintf(buffer,"\r\nAT@GPIOGET=%d\r\n",gpio);
+	mobile_sendCommand(buffer, COMMAND_GENERAL_DELAY, recived);
 }
 
-void ac_network_attach_request (char* recived)
+void at_power_on (char* recived)
 {
-	char buffer[16];
-	fscanf(buffer,"AT+CGATT=1");
-	HAL_UART_Transmit_IT(&huart3, buffer, 16);
-	HAL_UART_Receive_IT(&huart3, recived, 16);
+	gnss_sendCommand("\r\nAT+CGNSPWR=1\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+void at_power_state (char* recived)
+{
+	gnss_sendCommand("\r\nAT+CGNSPWR?\r\n", COMMAND_GENERAL_DELAY, recived);
 }
 
-void ac_network_pdp_activate(char* recived)
+void at_power_off (char* recived)
 {
-	char buffer[16];
-	fscanf(buffer,"AT+CGDCONT=1,%s,%s",MONGO_DB_PDP_TYPE,VODAFONE_APN );
-	HAL_UART_Transmit_IT(&huart3, buffer, 16);
-	HAL_UART_Receive_IT(&huart3, recived, 16);
+	gnss_sendCommand("\r\nAT+CGNSPWR=0\r\n", COMMAND_GENERAL_DELAY, recived);
 }
 
-void ac_nb_iot_send(char* to_send,char size,char* recived)
+
+
+void at_check (char* recived)
+{
+	gnss_sendCommand("\r\nAT\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+
+
+void at_gnss_signal (char* recived)
+{
+	gnss_sendCommand("\r\nAT+CGNSINF\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+/*
+void ac_gnss_location_request (char* recived)
+{
+	char buffer[12] = "AT+CGNSINF\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, 12);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+*/
+
+void at_sim_status (char* recived)
+{
+	mobile_sendCommand("\r\nAT+CPIN?\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+void at_network_mode (char* recived)
+{
+	mobile_sendCommand("\r\nAT+CNMP=38\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+void at_set_band(char* recived)
+{
+	mobile_sendCommand("\r\nAT+CMNB=3\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+void at_network_reg_status (char* recived)
+{
+	mobile_sendCommand("\r\nAT+CREG?\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+
+void at_setup_lte (char* recived)
+{
+	mobile_sendCommand("\r\nAT+CBANDCFG=\"CAT-M\",3,20\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+void at_gprs_init (char* recived)
+{
+	mobile_sendCommand("\r\nAT+CGACT=1,1\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+void at_gprs_attatch(char* recived)
+{
+	mobile_sendCommand("\r\nAT+CIICR\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+
+void at_ping (char count,char* recived)
+{
+	char buffer[64];
+	fprintf(buffer,"\r\nAT%PINGCMD=0,%s,%d\r\n",MONGO_DB_IP,count);
+	mobile_sendCommand(buffer, COMMAND_GENERAL_DELAY, recived);
+}
+
+void at_network_attach_request (char* recived)
+{
+	mobile_sendCommand("\r\nAT+CGATT=1\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+void at_set_apn (char* recived)
+{
+	char buffer[64];
+	fprintf(buffer,"\r\nAT+CSTT=\"%s\"\r\n",SIMBASE_APN);
+	mobile_sendCommand(buffer, COMMAND_GENERAL_DELAY, recived);
+
+}
+
+void at_set_ip_config (char* recived)
+{
+	mobile_sendCommand("\r\nAT+CIPSRIP=1\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+void at_init_http_connection (char* recived)
+{
+	//mobile_sendCommand("\r\nAT+SAPBR=3,1,\"CONTYPE\",\"GPRS\"\r\n",COMMAND_GENERAL_DELAY,recived);
+
+	//char buffer [64];
+	//sprintf(buffer,"\r\nAT+SAPBR=3,1,\"APN\",\"%s\"\r\n",SIMBASE_APN);
+	//mobile_sendCommand(buffer,COMMAND_GENERAL_DELAY,recived);
+
+	//sprintf(buffer,"\r\nAT+SAPBR=3,1,\"APN\",\"%s\"\r\n",SIMBASE_APN);
+	//mobile_sendCommand(buffer,COMMAND_GENERAL_DELAY,recived);
+
+	//mobile_sendCommand("\r\nAT+SAPBR=1,1\r\n", COMMAND_GENERAL_DELAY, recived);
+
+	//mobile_sendCommand("\r\nAT+SAPBR=2,1\r\n", COMMAND_GENERAL_DELAY, recived);
+
+	mobile_sendCommand("\r\nAT+HTTPINIT\r\n", COMMAND_GENERAL_DELAY, recived);
+
+	mobile_sendCommand("\r\nAT+HTTPPARA=\"CID\",1\r\n", COMMAND_GENERAL_DELAY, recived);
+
+}
+
+
+
+
+void at_set_ip_headers (char* recived)
+{
+	mobile_sendCommand("\r\nAT+CIPHEAD=1\r\n", COMMAND_GENERAL_DELAY, recived);
+}
+
+void at_lte_send(char* site, char* to_send,char* recived)
+{
+	char buffer[MAX_LTE_MSG_LEN];
+	sprintf(buffer,"AT+HTTPPARA=\"URL\",\"%s%s\"",site,to_send);
+	mobile_sendCommand(buffer, 5000, recived);
+}
+
+
+//nbiot
+void at_network_pdp_activate(char* recived)
+{
+	char buffer[64];
+	fprintf(buffer,"\r\nAT+CGDCONT=1,\"%s\",\"%s\"\r\n",MONGO_DB_PDP_TYPE,SIMBASE_APN);
+	mobile_sendCommand(buffer, COMMAND_GENERAL_DELAY, recived);
+
+}
+
+void at_nb_iot_send(char* to_send,int size,char* recived)
 {
 	char buffer[16];
-	fscanf(buffer,"AT+NSOST=0,%s,%s,%d",MONGO_DB_IP,MONGO_DB_PORT,size);
-	HAL_UART_Transmit_IT(&huart3, buffer, 16);
-	HAL_UART_Transmit_IT(&huart3, to_send, size);
-	HAL_UART_Receive_IT(&huart3, recived, 16);
+	fprintf(buffer,"\r\nAT+NSOST=0,%s,%s,%d\r\n",MONGO_DB_IP,MONGO_DB_PORT,size);
+	mobile_sendCommand(buffer, COMMAND_GENERAL_DELAY, recived);
+}
+
+//----------------------------------------------------------------------------------------
+
+void mobile_sendCommand(char * command, unsigned int timeout, char * recived)
+{
+	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, command, strlen(command));
+	HAL_Delay(timeout);
+	HAL_UART_Receive_IT(MOBILE_COMMS_UART, recived, 32);
+}
+
+void gnss_sendCommand(char * command, unsigned int timeout, char * recived)
+{
+	HAL_UART_Transmit_IT(GNSS_UART, command, strlen(command));
+	HAL_Delay(timeout);
+	HAL_UART_Receive_IT(GNSS_UART, recived, 32);
 }
 
 
 /*
 AT+CGNSPWR=1 power
 AT+CGNSINF Request GNSS info
+
+HAL_UART_Transmit_IT(&huart1, buffer, 16);
+char buffer2[16] = "AT+CGNSTST=1";
+
 
 AT+CGATT=1 network attach
 AT+CGDCONT=1 ,%s,%s",MONGO_DB,VODAFONE_APN PDP

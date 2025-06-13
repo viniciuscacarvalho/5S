@@ -382,8 +382,31 @@ four implies four times the capacity meaning the system will
 
 Here will be displayed the systems pinout. (Yet to be decided)
 
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{l|l|l}
+
+        Name & Pinout & uC Pin \\
+        \hline
+        Temperature Sensor & VDD  & 3.3V\\
+                           &      &     \\
+        IMU                & VDD  & 3.3V\\
+                           &      &     \\
+        UART AT            & 3,05 & 3,90\\
+                           &      &     \\
+        UART DEBUG         & 3,47 & 4,40\\
+                           &      &     \\
+        ADC                & 3,61 & 4,60\\
+                           &      &     \\
+        SD card            & VDD  & 3.3V\\
+                           &      &     \\
+    \end{tabular}
+    \caption{Batteries Capacities, prices and time relation.}
+    \label{table: Batteries Capacities, prices and time relation.}
+\end{table}
+
 \section{Shell}
-2.5 dB Antenna should be at least 10 cm form water 
+2.5 dB Antenna should be at least 15 cm form water 
 
 
 \subsection{Conclusion}
@@ -394,8 +417,8 @@ Diagram
 The hardware configurations, as indicated on the datasheet should follow the leading steps.
 %hw config
 
-As for the UART communication, the list of commads are listed on the datasheet. 
-As for better flow, here are listed the commadsused along the project and their functionalities. 
+As for the UART communication, the list of commands are listed on the datasheet. 
+As for better flow, here are listed the commands used along the project and their functionalities. 
 %commmand list
 
 
@@ -411,6 +434,8 @@ A configuration and code generation tool for STM32 microcontrollers. Simplifies 
 A professional-grade 3D CAD, CAM, and CAE tool from Autodesk. Used for mechanical design, simulation, and 3D modeling, making it ideal for designing enclosures, mounts, and mechanical parts.
 \subsubsection{\LaTeX}
 A high-quality typesetting system used for technical and scientific documentation. Ideal for creating well-formatted reports, theses, datasheets, and documentation with complex mathematical content
+\subsubsection{Minicom}
+Minicom is a text-based serial communication program for Unix-like systems. It allows you to connect to serial devices (like routers, microcontrollers, or modems) via a serial port (e.g., /dev/ttyACM0). It's commonly used for debugging, configuration, and monitoring of hardware over UART.
 \subsection{COTS}
-All COTS are specified on the \hyperref[link:Board Consumption]{Board Consumption}
+All COTS are specified on the \hyperref[link:Board Consumption]{Board Consumption} chapter.
 %\section{Theorical Concepts}

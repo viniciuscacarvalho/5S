@@ -3,7 +3,14 @@
 #define	_DS18B20_H
 //	2018/09/08
 
-#include "../task_header.h"
+
+#ifndef USING_RTOS
+	#include "../with_RTOS/task_header.h"
+#else
+	#include "../manager/manager.h"
+
+#endif
+
 #include "onewire.h"
 #include "ds18b20Config.h"
 #include <stdbool.h>

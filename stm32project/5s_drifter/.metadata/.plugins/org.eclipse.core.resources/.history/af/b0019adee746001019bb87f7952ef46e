@@ -1,0 +1,63 @@
+/*
+ * defines.h
+ *
+ *  Created on: Apr 23, 2025
+ *      Author: viny
+ */
+
+#ifndef PROJECT_DEFINES_H_
+#define PROJECT_DEFINES_H_
+
+#include <stdint.h>
+
+#define DELAY_MAX (unsigned int)-1
+
+#define NUMBER_OF_SAMPLES 10
+
+#define TIME_BETWEEN_SAMPLES 10 //in minutes
+
+#define DEBUG_UART &huart3
+#define DEBUG_ANSWER_LEN 64
+//ADC
+#define ADC_SAMPLE_PERIOD_UC 600000
+#define BATTERY_MAX_VOLTAGE 3.9
+#define BATTERY_MAX_VOLTAGE_OVER_10BIT 1/((1<<10)/5)
+
+//IMU
+//#define IMU_CS_GPIO_PORT GPIOC
+//#define IMU_CS_PIN GPIO_PIN_0
+#define IMU_SAMPLE_PERIOD_UC 60000
+#define IMU_SAMPLE_FREQUENCY 5
+#define IMU_NUMBER_OF_SAMPLES TIME_BETWEEN_SAMPLES * 60 * IMU_SAMPLE_FREQUENCY
+
+#define ADXL345_ADDR   (0x53 << 1)  // ACCEL
+#define ITG3205_ADDR   (0x68 << 1)  // GYRO
+#define HMC5883L_ADDR  (0x1E << 1)  // MAG
+
+#define IMU_I2C &hi2c1
+
+//Temp
+#define ONEWIRE_PORT GPIOC
+#define ONEWIRE_PIN GPIO_PIN_0
+#define TEMP_NUMBER_OF_SAMPLES TIME_BETWEEN_SAMPLES
+
+//#define TEMP_SENSOR_TIMER htim3
+
+//Nb-IoT
+#define MONGO_DB_PDP_TYPE "IP" //Assuption to be IPV4
+#define MONGO_DB_IP "255.255.255.255"
+//tes ip
+//http://193.136.12.30/
+//https://echo.free.beeceptor.com
+#define MONGO_DB_PORT 8000
+
+#define VODAFONE_APN "http://net2.vodafone.pt"
+#define MOBILE_COMMS_UART &huart3
+
+//GNSS
+#define GNSS_ANSWER_LEN 96 //64 + 32
+#define GNSS_PERIOD TIME_BETWEEN_SAMPLES
+#define GNSS_RETRY_CONNECTION_DELAY 3000 //ms
+#define GNSS_UART &huart1
+
+#endif /* PROJECT_DEFINES_H_ */

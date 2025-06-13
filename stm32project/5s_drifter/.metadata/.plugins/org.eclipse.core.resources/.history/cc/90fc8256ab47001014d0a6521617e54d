@@ -1,0 +1,36 @@
+/*
+ * nb_iot_behavior.h
+ *
+ *  Created on: Jun 2, 2025
+ *      Author: viny
+ */
+
+#include "nb_iot_behavior.h"
+
+char recived_at_msg[MOBILE_COMMS_ANSWER_LEN];
+char msg_buffer[32];
+
+void nb_iot_init (void)
+{
+	HAL_UART_Transmit_IT(DEBUG_UART, MOBILE_COMMS_INIT_MSG, sizeof MOBILE_COMMS_INIT_MSG);
+
+	at_echo_off(recived_at_msg);
+	at_network_mode(recived_at_msg);
+	at_set_band(recived_at_msg);
+	//at_setup_lte(recived_at_msg);
+	at_network_pdp_activate(recived_at_msg);
+	//at_gprs_init(recived_at_msg);
+	at_network_attach_request (recived_at_msg);
+	//at_set_ip_config(recived_at_msg);
+	//at_set_ip_headers(recived_at_msg);
+	at_init_http_connection(recived_at_msg);
+
+	HAL_UART_Transmit_IT(DEBUG_UART, MOBILE_COMMS_END_INIT_MSG, sizeof MOBILE_COMMS_END_INIT_MSG);
+
+}
+
+void nb_iot_update (void)
+{
+	at_lte_send(TESTE_SITE, "Teste", recived_at_msg);
+	HAL_Delay(1000);
+}

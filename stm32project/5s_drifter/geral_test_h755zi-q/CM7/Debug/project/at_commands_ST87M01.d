@@ -1,6 +1,6 @@
 project/at_commands_ST87M01.o: ../project/at_commands_ST87M01.c \
- ../project/at_commands_ST87M01.h ../project/task_header.h \
- ../project/../Core/Inc/main.h \
+ ../project/at_commands_ST87M01.h ../project/with_RTOS/task_header.h \
+ ../project/with_RTOS/../../Core/Inc/main.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -32,55 +32,43 @@ project/at_commands_ST87M01.o: ../project/at_commands_ST87M01.c \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
- ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h \
- ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h \
- ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h \
- ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h \
- ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
- ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
- ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
- ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- ../project/package.h ../project/defines.h \
- ../project/task_behavior/nb_iot_task.h \
- ../project/task_behavior/../task_header.h \
- ../project/task_behavior/batteries_task.h \
- ../project/task_behavior/cnss_task.h \
- ../project/task_behavior/sd_card_task.h \
- ../project/task_behavior/temp_task.h \
- ../project/task_behavior/../one_wire/ds18b20.h \
- ../project/task_behavior/../one_wire/../task_header.h \
- ../project/task_behavior/../one_wire/onewire.h ../Core/Inc/gpio.h \
- ../Core/Inc/main.h ../project/task_behavior/../one_wire/ds18b20Config.h \
- ../project/task_behavior/../one_wire/../defines.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
- ../Core/Inc/FreeRTOSConfig.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- ../project/task_behavior/imu_task.h ../project/../Core/Inc/usart.h \
- ../project/../Core/Inc/main.h ../project/../Core/Inc/spi.h \
- ../project/../Core/Inc/gpio.h ../project/../Core/Inc/adc.h \
- ../project/../Core/Inc/tim.h ../project/../FATFS/App/fatfs.h \
- ../../Middlewares/Third_Party/FatFs/src/ff.h \
- ../../Middlewares/Third_Party/FatFs/src/integer.h \
- ../FATFS/Target/ffconf.h ../Core/Inc/main.h \
- ../FATFS/Target/bsp_driver_sd.h \
- ../../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
- ../../Middlewares/Third_Party/FatFs/src/diskio.h \
- ../../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
- ../project/../Core/Inc/FreeRTOSConfig.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+ ../project/with_RTOS/../package.h ../project/with_RTOS/../defines.h \
+ ../project/with_RTOS/task_behavior/nb_iot_task.h \
+ ../project/with_RTOS/task_behavior/../task_header.h \
+ ../project/with_RTOS/task_behavior/batteries_task.h \
+ ../project/with_RTOS/task_behavior/cnss_task.h \
+ ../project/with_RTOS/task_behavior/sd_card_task.h \
+ ../project/with_RTOS/task_behavior/temp_task.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/ds18b20.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/manager.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/main.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/../package.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/battery_behavior.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/../manager.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/imu_behavior.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/cnss_behavior.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/nb_iot_behavior.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/sd_card_behavior.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/temperature_behavior.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/i2c.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/main.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/usart.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/gpio.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/adc.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/onewire.h \
+ ../Core/Inc/gpio.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/ds18b20Config.h \
+ ../project/with_RTOS/task_behavior/../../one_wire/../defines.h \
+ ../project/with_RTOS/task_behavior/imu_task.h \
+ ../project/with_RTOS/../../Core/Inc/usart.h \
+ ../project/with_RTOS/../../Core/Inc/gpio.h \
+ ../project/with_RTOS/../../Core/Inc/adc.h \
+ ../project/with_RTOS/../defines.h
 ../project/at_commands_ST87M01.h:
-../project/task_header.h:
-../project/../Core/Inc/main.h:
+../project/with_RTOS/task_header.h:
+../project/with_RTOS/../../Core/Inc/main.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
@@ -112,58 +100,38 @@ project/at_commands_ST87M01.o: ../project/at_commands_ST87M01.c \
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
-../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-../project/package.h:
-../project/defines.h:
-../project/task_behavior/nb_iot_task.h:
-../project/task_behavior/../task_header.h:
-../project/task_behavior/batteries_task.h:
-../project/task_behavior/cnss_task.h:
-../project/task_behavior/sd_card_task.h:
-../project/task_behavior/temp_task.h:
-../project/task_behavior/../one_wire/ds18b20.h:
-../project/task_behavior/../one_wire/../task_header.h:
-../project/task_behavior/../one_wire/onewire.h:
+../project/with_RTOS/../package.h:
+../project/with_RTOS/../defines.h:
+../project/with_RTOS/task_behavior/nb_iot_task.h:
+../project/with_RTOS/task_behavior/../task_header.h:
+../project/with_RTOS/task_behavior/batteries_task.h:
+../project/with_RTOS/task_behavior/cnss_task.h:
+../project/with_RTOS/task_behavior/sd_card_task.h:
+../project/with_RTOS/task_behavior/temp_task.h:
+../project/with_RTOS/task_behavior/../../one_wire/ds18b20.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/manager.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/main.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/../package.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/battery_behavior.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/../manager.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/imu_behavior.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/cnss_behavior.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/nb_iot_behavior.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/sd_card_behavior.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/managers_behavior/temperature_behavior.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/i2c.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/main.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/usart.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/gpio.h:
+../project/with_RTOS/task_behavior/../../one_wire/../manager/../../Core/Inc/adc.h:
+../project/with_RTOS/task_behavior/../../one_wire/onewire.h:
 ../Core/Inc/gpio.h:
-../Core/Inc/main.h:
-../project/task_behavior/../one_wire/ds18b20Config.h:
-../project/task_behavior/../one_wire/../defines.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
-../Core/Inc/FreeRTOSConfig.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
-../project/task_behavior/imu_task.h:
-../project/../Core/Inc/usart.h:
-../project/../Core/Inc/main.h:
-../project/../Core/Inc/spi.h:
-../project/../Core/Inc/gpio.h:
-../project/../Core/Inc/adc.h:
-../project/../Core/Inc/tim.h:
-../project/../FATFS/App/fatfs.h:
-../../Middlewares/Third_Party/FatFs/src/ff.h:
-../../Middlewares/Third_Party/FatFs/src/integer.h:
-../FATFS/Target/ffconf.h:
-../Core/Inc/main.h:
-../FATFS/Target/bsp_driver_sd.h:
-../../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h:
-../../Middlewares/Third_Party/FatFs/src/diskio.h:
-../../Middlewares/Third_Party/FatFs/src/ff.h:
-../FATFS/Target/sd_diskio.h:
-../project/../Core/Inc/FreeRTOSConfig.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../project/with_RTOS/task_behavior/../../one_wire/ds18b20Config.h:
+../project/with_RTOS/task_behavior/../../one_wire/../defines.h:
+../project/with_RTOS/task_behavior/imu_task.h:
+../project/with_RTOS/../../Core/Inc/usart.h:
+../project/with_RTOS/../../Core/Inc/gpio.h:
+../project/with_RTOS/../../Core/Inc/adc.h:
+../project/with_RTOS/../defines.h:

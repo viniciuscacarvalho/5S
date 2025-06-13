@@ -1,0 +1,50 @@
+/*
+ * package.h
+ *
+ *  Created on: May 1, 2025
+ *      Author: viny
+ */
+
+#ifndef PROJECT_TASK_BEHAVIOR_PACKAGE_H_
+#define PROJECT_TASK_BEHAVIOR_PACKAGE_H_
+
+#include "defines.h"
+
+typedef struct p_data_s
+{
+	float longitude;
+	float latitude;
+} coordinates_t;
+
+typedef struct p_data_s
+{
+    float power_level;
+    unsigned short temperature[NUMBER_OF_SAMPLES];
+    unsigned short imu[NUMBER_OF_SAMPLES];
+    coordinates_t gnss;
+    unsigned short errors;
+    unsigned char static sample_number;
+    unsigned short packege_number;
+} package_data_t;
+
+/*
+{
+  "power_level": 0,
+  "temperature": [0, 0, 0],
+  "imu": [0, 0, 0],
+  "gnss": [
+    [0, 0, 0],
+    [0, 0, 0]
+  ],
+  "errors": 0
+}
+ * */
+
+package_data_t* write_package_data();
+
+package_data_t* read_package_data();
+
+void update_package_data();
+
+
+#endif /* PROJECT_TASK_BEHAVIOR_PACKAGE_H_ */

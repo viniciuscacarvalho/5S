@@ -26,11 +26,7 @@ Common/Src \
 Core/Src \
 Core/Startup \
 Drivers/STM32H7xx_HAL_Driver \
-FATFS/App \
-FATFS/Target \
-Middlewares/Third_Party/FatFs \
-Middlewares/Third_Party/FreeRTOS \
 project \
-project/one_wire \
-project/task_behavior \
+project/manager \
+project/manager/managers_behavior \
 

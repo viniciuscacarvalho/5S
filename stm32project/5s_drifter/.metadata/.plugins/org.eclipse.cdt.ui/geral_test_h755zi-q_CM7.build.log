@@ -1,10 +1,470 @@
-19:44:48 **** Incremental Build of configuration Debug for project geral_test_h755zi-q_CM7 ****
+17:52:04 **** Incremental Build of configuration Debug for project geral_test_h755zi-q_CM7 ****
 make -j4 all 
+arm-none-eabi-gcc "../project/manager/managers_behavior/battery_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u_printf_floats -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/battery_behavior.d" -MT"project/manager/managers_behavior/battery_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/battery_behavior.o"
+arm-none-eabi-gcc "../project/manager/managers_behavior/cnss_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/cnss_behavior.d" -MT"project/manager/managers_behavior/cnss_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/cnss_behavior.o"
+arm-none-eabi-gcc "../project/manager/managers_behavior/imu_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/imu_behavior.d" -MT"project/manager/managers_behavior/imu_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/imu_behavior.o"
+arm-none-eabi-gcc "../project/manager/managers_behavior/nb_iot_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/nb_iot_behavior.d" -MT"project/manager/managers_behavior/nb_iot_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/nb_iot_behavior.o"
+In file included from ../project/manager/managers_behavior/../../package.h:11,
+                 from ../project/manager/managers_behavior/../manager.h:12,
+                 from ../project/manager/managers_behavior/nb_iot_behavior.h:11,
+                 from ../project/manager/managers_behavior/nb_iot_behavior.c:8:
+../project/manager/managers_behavior/nb_iot_behavior.c: In function 'nb_iot_init':
+../project/manager/managers_behavior/../../defines.h:58:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+   58 | #define MOBILE_COMMS_INIT_MSG "\r\nMobile Comms Init\r\n"
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               |
+      |                               char *
+../project/manager/managers_behavior/nb_iot_behavior.c:15:42: note: in expansion of macro 'MOBILE_COMMS_INIT_MSG'
+   15 |         HAL_UART_Transmit_IT(DEBUG_UART, MOBILE_COMMS_INIT_MSG, sizeof MOBILE_COMMS_INIT_MSG);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../project/manager/managers_behavior/../../../Core/Inc/main.h:30,
+                 from ../project/manager/managers_behavior/../manager.h:11:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:17:9: warning: implicit declaration of function 'at_echo_off' [-Wimplicit-function-declaration]
+   17 |         at_echo_off(recived_at_msg);
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:18:9: warning: implicit declaration of function 'at_network_mode' [-Wimplicit-function-declaration]
+   18 |         at_network_mode(recived_at_msg);
+      |         ^~~~~~~~~~~~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:19:9: warning: implicit declaration of function 'at_set_band' [-Wimplicit-function-declaration]
+   19 |         at_set_band(recived_at_msg);
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:21:9: warning: implicit declaration of function 'at_network_pdp_activate' [-Wimplicit-function-declaration]
+   21 |         at_network_pdp_activate(recived_at_msg);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:22:9: warning: implicit declaration of function 'at_gprs_init' [-Wimplicit-function-declaration]
+   22 |         at_gprs_init(recived_at_msg);
+      |         ^~~~~~~~~~~~
+In file included from ../project/manager/managers_behavior/../../package.h:11,
+                 from ../project/manager/managers_behavior/../manager.h:12,
+                 from ../project/manager/managers_behavior/cnss_behavior.h:11,
+                 from ../project/manager/managers_behavior/cnss_behavior.c:8:
+../project/manager/managers_behavior/cnss_behavior.c: In function 'cnss_init':
+../project/manager/managers_behavior/../../defines.h:72:23: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+   72 | #define GNSS_INIT_MSG "\r\nGNSS Init\r\n"
+      |                       ^~~~~~~~~~~~~~~~~~~
+      |                       |
+      |                       char *
+../project/manager/managers_behavior/cnss_behavior.c:18:42: note: in expansion of macro 'GNSS_INIT_MSG'
+   18 |         HAL_UART_Transmit_IT(DEBUG_UART, GNSS_INIT_MSG, sizeof GNSS_INIT_MSG);
+      |                                          ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../project/manager/managers_behavior/../../../Core/Inc/main.h:30,
+                 from ../project/manager/managers_behavior/../manager.h:11:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/battery_behavior.c: In function 'battery_update':
+../project/manager/managers_behavior/battery_behavior.c:24:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   24 |         sprintf(buffer,"Batt:%d\n\n",(int)temp->power_level);
+      |         ^~~~~~~
+../project/manager/managers_behavior/battery_behavior.c:8:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    7 | #include "battery_behavior.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../project/manager/managers_behavior/battery_behavior.c:24:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   24 |         sprintf(buffer,"Batt:%d\n\n",(int)temp->power_level);
+      |         ^~~~~~~
+../project/manager/managers_behavior/battery_behavior.c:24:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/battery_behavior.c:25:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   25 |         HAL_UART_Transmit(&huart3, buffer, 8, -1);
+      |                                    ^~~~~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../project/manager/managers_behavior/../../../Core/Inc/main.h:30,
+                 from ../project/manager/managers_behavior/../manager.h:11,
+                 from ../project/manager/managers_behavior/battery_behavior.h:11,
+                 from ../project/manager/managers_behavior/battery_behavior.c:7:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:26:9: warning: implicit declaration of function 'at_echo_off' [-Wimplicit-function-declaration]
+   26 |         at_echo_off (recived_buffer_debug); // turn off echo function
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:27:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   27 |         sprintf(buffer,"\r\nEcho off:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:9:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    8 | #include "cnss_behavior.h"
+  +++ |+#include <stdio.h>
+    9 | 
+../project/manager/managers_behavior/cnss_behavior.c:27:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   27 |         sprintf(buffer,"\r\nEcho off:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:27:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/cnss_behavior.c:28:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   28 |         HAL_UART_Transmit(DEBUG_UART, buffer, 16, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:30:9: warning: implicit declaration of function 'at_set_baudrate' [-Wimplicit-function-declaration]
+   30 |         at_set_baudrate (recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:32:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   32 |         HAL_UART_Transmit(DEBUG_UART, buffer, 16, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:34:9: warning: implicit declaration of function 'at_power_on' [-Wimplicit-function-declaration]
+   34 |         at_power_on(recived_buffer_debug); // turn on the GNSS
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:36:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   36 |         HAL_UART_Transmit(DEBUG_UART, buffer, 16, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'cnss_update':
+../project/manager/managers_behavior/cnss_behavior.c:46:17: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+   46 |                 memset(recived_buffer_debug, 0, DEBUG_ANSWER_LEN);
+      |                 ^~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:9:1: note: include '<string.h>' or provide a declaration of 'memset'
+    8 | #include "cnss_behavior.h"
+  +++ |+#include <string.h>
+    9 | 
+../project/manager/managers_behavior/cnss_behavior.c:46:17: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+   46 |                 memset(recived_buffer_debug, 0, DEBUG_ANSWER_LEN);
+      |                 ^~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:46:17: note: include '<string.h>' or provide a declaration of 'memset'
+../project/manager/managers_behavior/nb_iot_behavior.c:23:9: warning: implicit declaration of function 'at_network_attach_request' [-Wimplicit-function-declaration]
+   23 |         at_network_attach_request (recived_at_msg);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:47:17: warning: implicit declaration of function 'at_power_state' [-Wimplicit-function-declaration]
+   47 |                 at_power_state(recived_buffer_debug); //ask if the module is ready
+      |                 ^~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:50:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   50 |                 sprintf(buffer,"\r\nVerification:%s\r\n",recived_buffer_debug);
+      |                 ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:50:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/cnss_behavior.c:52:47: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   52 |                 HAL_UART_Transmit(DEBUG_UART, buffer, 32,-1);
+      |                                               ^~~~~~
+      |                                               |
+      |                                               char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:54:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   54 |                 sscanf(recived_buffer_debug,"\r\n+CGNSPWR: %d",&gnss_run_status);
+      |                 ^~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:54:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../project/manager/managers_behavior/cnss_behavior.c:54:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+../project/manager/managers_behavior/cnss_behavior.c:54:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../project/manager/managers_behavior/cnss_behavior.c:54:61: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'char *' [-Wformat=]
+   54 |                 sscanf(recived_buffer_debug,"\r\n+CGNSPWR: %d",&gnss_run_status);
+      |                                                            ~^  ~~~~~~~~~~~~~~~~
+      |                                                             |  |
+      |                                                             |  char *
+      |                                                             int *
+      |                                                            %hhd
+../project/manager/managers_behavior/cnss_behavior.c:57:9: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+   57 |         memset(recived_buffer_gnss, 0, GNSS_ANSWER_LEN);
+      |         ^~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:57:9: note: include '<string.h>' or provide a declaration of 'memset'
+../project/manager/managers_behavior/nb_iot_behavior.c:26:9: warning: implicit declaration of function 'at_init_http_connection' [-Wimplicit-function-declaration]
+   26 |         at_init_http_connection(recived_at_msg);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/../../defines.h:59:35: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+   59 | #define MOBILE_COMMS_END_INIT_MSG "\r\nMobile Comms Init END\r\n"
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                   |
+      |                                   char *
+../project/manager/managers_behavior/nb_iot_behavior.c:28:42: note: in expansion of macro 'MOBILE_COMMS_END_INIT_MSG'
+   28 |         HAL_UART_Transmit_IT(DEBUG_UART, MOBILE_COMMS_END_INIT_MSG, sizeof MOBILE_COMMS_END_INIT_MSG);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:59:9: warning: implicit declaration of function 'at_gnss_signal' [-Wimplicit-function-declaration]
+   59 |         at_gnss_signal(recived_buffer_gnss);
+      |         ^~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:63:9: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   63 |         sscanf(recived_buffer_gnss,
+      |         ^~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:63:9: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../project/manager/managers_behavior/cnss_behavior.c:64:32: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'char *' [-Wformat=]
+   64 |                "\r\n+CGNSINF: %d,%c,%[^,],%f,%f"
+      |                               ~^
+      |                                |
+      |                                int *
+      |                               %hhd
+   65 |                         ,&gnss_run_status
+      |                          ~~~~~~~~~~~~~~~~
+      |                          |
+      |                          char *
+../project/manager/managers_behavior/cnss_behavior.c:83:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   83 |         sprintf(buffer,"\r\nGNSS:\n\tLat:%f\n\tLong:%f\r\n"
+      |         ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:83:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/cnss_behavior.c:87:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   87 |         HAL_UART_Transmit(DEBUG_UART, buffer,GNSS_ANSWER_LEN,1000);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'retry_delay':
+../project/manager/managers_behavior/../../defines.h:71:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   71 | #define CONNECTION_FAILED_MSG "Connection Failed\n"
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+      |                               |
+      |                               char *
+../project/manager/managers_behavior/cnss_behavior.c:93:39: note: in expansion of macro 'CONNECTION_FAILED_MSG'
+   93 |         HAL_UART_Transmit(DEBUG_UART, CONNECTION_FAILED_MSG, sizeof(CONNECTION_FAILED_MSG),-1);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:95:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   95 |         HAL_UART_Transmit(DEBUG_UART, "Retrying GNSS data\n",sizeof("Retrying GNSS data\n"),-1);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:98:9: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+   98 |         memset(buffer, 0, sizeof buffer);
+      |         ^~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:98:9: note: include '<string.h>' or provide a declaration of 'memset'
+../project/manager/managers_behavior/nb_iot_behavior.c: In function 'nb_iot_update':
+../project/manager/managers_behavior/nb_iot_behavior.c:34:9: warning: implicit declaration of function 'at_lte_send' [-Wimplicit-function-declaration]
+   34 |         at_lte_send(TESTE_SITE, "Teste", recived_at_msg);
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:100:9: warning: implicit declaration of function 'at_power_off' [-Wimplicit-function-declaration]
+  100 |         at_power_off(recived_buffer_debug); // turn on the GNSS
+      |         ^~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:101:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  101 |         sprintf(buffer,"Turning OFF:%s\n",recived_buffer_debug);
+      |         ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:101:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/cnss_behavior.c:102:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  102 |         HAL_UART_Transmit(DEBUG_UART, buffer, 32, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:110:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  110 |         HAL_UART_Transmit(DEBUG_UART, buffer, 32, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'cnss_init':
+../project/manager/managers_behavior/cnss_behavior.c:27:38: warning: '%s' directive writing up to 63 bytes into a region of size 53 [-Wformat-overflow=]
+   27 |         sprintf(buffer,"\r\nEcho off:%s\r\n",recived_buffer_debug);
+      |                                      ^~      ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:27:9: note: 'sprintf' output between 14 and 77 bytes into a destination of size 64
+   27 |         sprintf(buffer,"\r\nEcho off:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:31:38: warning: '%s' directive writing up to 63 bytes into a region of size 53 [-Wformat-overflow=]
+   31 |         sprintf(buffer,"\r\nBaudrate:%s\r\n",recived_buffer_debug);
+      |                                      ^~      ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:31:9: note: 'sprintf' output between 14 and 77 bytes into a destination of size 64
+   31 |         sprintf(buffer,"\r\nBaudrate:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:35:32: warning: '%s' directive writing up to 63 bytes into a region of size 59 [-Wformat-overflow=]
+   35 |         sprintf(buffer,"\r\nOn:%s\r\n",recived_buffer_debug);
+      |                                ^~      ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:35:9: note: 'sprintf' output between 8 and 71 bytes into a destination of size 64
+   35 |         sprintf(buffer,"\r\nOn:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'retry_delay':
+../project/manager/managers_behavior/cnss_behavior.c:101:37: warning: '%s' directive writing up to 63 bytes into a region of size 52 [-Wformat-overflow=]
+  101 |         sprintf(buffer,"Turning OFF:%s\n",recived_buffer_debug);
+      |                                     ^~    ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:101:9: note: 'sprintf' output between 14 and 77 bytes into a destination of size 64
+  101 |         sprintf(buffer,"Turning OFF:%s\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:109:36: warning: '%s' directive writing up to 63 bytes into a region of size 53 [-Wformat-overflow=]
+  109 |         sprintf(buffer,"Turning ON:%s\n",recived_buffer_debug);
+      |                                    ^~    ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:109:9: note: 'sprintf' output between 13 and 76 bytes into a destination of size 64
+  109 |         sprintf(buffer,"Turning ON:%s\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'cnss_update':
+../project/manager/managers_behavior/cnss_behavior.c:50:50: warning: '%s' directive writing up to 63 bytes into a region of size 49 [-Wformat-overflow=]
+   50 |                 sprintf(buffer,"\r\nVerification:%s\r\n",recived_buffer_debug);
+      |                                                  ^~      ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:50:17: note: 'sprintf' output between 18 and 81 bytes into a destination of size 64
+   50 |                 sprintf(buffer,"\r\nVerification:%s\r\n",recived_buffer_debug);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../project/manager/manager.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/manager.d" -MT"project/manager/manager.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/manager.o"
+arm-none-eabi-gcc "../project/at_commands_ST87M01.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/at_commands_ST87M01.d" -MT"project/at_commands_ST87M01.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/at_commands_ST87M01.o"
+arm-none-eabi-gcc "../project/package.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/package.d" -MT"project/package.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/package.o"
+../project/at_commands_ST87M01.c: In function 'at_set_baudrate':
+../project/at_commands_ST87M01.c:11:9: warning: implicit declaration of function 'gnss_sendCommand' [-Wimplicit-function-declaration]
+   11 |         gnss_sendCommand("\r\nAT+IPR=19200\r\n", COMMAND_GENERAL_DELAY, recived);
+      |         ^~~~~~~~~~~~~~~~
+../project/package.c: In function 'write_package_data':
+../project/package.c:22:25: warning: array subscript has type 'char' [-Wchar-subscripts]
+   22 |     return &package_data[package_data_index];
+      |                         ^
+../project/package.c: In function 'update_package_data':
+../project/package.c:34:21: warning: array subscript has type 'char' [-Wchar-subscripts]
+   34 |         package_data[package_data_index].packege_number++;
+      |                     ^
+../project/package.c:36:17: warning: array subscript has type 'char' [-Wchar-subscripts]
+   36 |     package_data[package_data_index].packege_number++;
+      |                 ^
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../project/at_commands_ST87M01.c: In function 'at_echo_on':
+../project/at_commands_ST87M01.c:16:9: warning: implicit declaration of function 'mobile_sendCommand' [-Wimplicit-function-declaration]
+   16 |         mobile_sendCommand("\r\nATE1\r\n", COMMAND_GENERAL_DELAY, recived);
+      |         ^~~~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c: In function 'at_set_at_gpio':
+../project/at_commands_ST87M01.c:29:9: warning: implicit declaration of function 'fprintf' [-Wimplicit-function-declaration]
+   29 |         fprintf(buffer,"\r\nAT@GPIOSET=%d,%d\r\n",gpio,state);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:8:1: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+    7 | #include "at_commands_ST87M01.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../project/at_commands_ST87M01.c:29:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+   29 |         fprintf(buffer,"\r\nAT@GPIOSET=%d,%d\r\n",gpio,state);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:29:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c: In function 'at_get_at_gpio':
+../project/at_commands_ST87M01.c:36:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+   36 |         fprintf(buffer,"\r\nAT@GPIOGET=%d\r\n",gpio);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:36:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c: In function 'at_ping':
+../project/at_commands_ST87M01.c:116:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+  116 |         fprintf(buffer,"\r\nAT%PINGCMD=0,%s,%d\r\n",MONGO_DB_IP,count);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:116:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c:116:32: warning: unknown conversion type character 'P' in format [-Wformat=]
+  116 |         fprintf(buffer,"\r\nAT%PINGCMD=0,%s,%d\r\n",MONGO_DB_IP,count);
+      |                                ^
+../project/at_commands_ST87M01.c: In function 'at_set_apn':
+../project/at_commands_ST87M01.c:128:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+  128 |         fprintf(buffer,"\r\nAT+CSTT=\"%s\"\r\n",SIMBASE_APN);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:128:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c: In function 'at_lte_send':
+../project/at_commands_ST87M01.c:170:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  170 |         sprintf(buffer,"AT+HTTPPARA=\"URL\",\"%s%s\"",site,to_send);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:170:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/at_commands_ST87M01.c:170:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+../project/at_commands_ST87M01.c:170:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/at_commands_ST87M01.c: In function 'at_network_pdp_activate':
+../project/at_commands_ST87M01.c:179:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+  179 |         fprintf(buffer,"\r\nAT+CGDCONT=1,\"%s\",\"%s\"\r\n",MONGO_DB_PDP_TYPE,SIMBASE_APN);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:179:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c: In function 'at_nb_iot_send':
+../project/at_commands_ST87M01.c:187:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+  187 |         fprintf(buffer,"\r\nAT+NSOST=0,%s,%s,%d\r\n",MONGO_DB_IP,MONGO_DB_PORT,size);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:187:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c:187:44: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  187 |         fprintf(buffer,"\r\nAT+NSOST=0,%s,%s,%d\r\n",MONGO_DB_IP,MONGO_DB_PORT,size);
+      |                                           ~^
+      |                                            |
+      |                                            char *
+      |                                           %d
+../project/at_commands_ST87M01.c: At top level:
+../project/at_commands_ST87M01.c:193:6: warning: conflicting types for 'mobile_sendCommand'; have 'void(char *, unsigned int,  char *)'
+  193 | void mobile_sendCommand(char * command, unsigned int timeout, char * recived)
+      |      ^~~~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c:16:9: note: previous implicit declaration of 'mobile_sendCommand' with type 'void(char *, unsigned int,  char *)'
+   16 |         mobile_sendCommand("\r\nATE1\r\n", COMMAND_GENERAL_DELAY, recived);
+      |         ^~~~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c: In function 'mobile_sendCommand':
+../project/at_commands_ST87M01.c:195:58: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  195 |         HAL_UART_Transmit_IT(MOBILE_COMMS_UART, command, strlen(command));
+      |                                                          ^~~~~~
+../project/at_commands_ST87M01.c:8:1: note: include '<string.h>' or provide a declaration of 'strlen'
+    7 | #include "at_commands_ST87M01.h"
+  +++ |+#include <string.h>
+    8 | 
+../project/at_commands_ST87M01.c:195:58: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  195 |         HAL_UART_Transmit_IT(MOBILE_COMMS_UART, command, strlen(command));
+      |                                                          ^~~~~~
+../project/at_commands_ST87M01.c:195:58: note: include '<string.h>' or provide a declaration of 'strlen'
+../project/at_commands_ST87M01.c:195:49: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+  195 |         HAL_UART_Transmit_IT(MOBILE_COMMS_UART, command, strlen(command));
+      |                                                 ^~~~~~~
+      |                                                 |
+      |                                                 char *
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../project/with_RTOS/../../Core/Inc/main.h:30,
+                 from ../project/with_RTOS/task_header.h:13,
+                 from ../project/at_commands_ST87M01.h:12,
+                 from ../project/at_commands_ST87M01.c:7:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/at_commands_ST87M01.c:197:48: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+  197 |         HAL_UART_Receive_IT(MOBILE_COMMS_UART, recived, 32);
+      |                                                ^~~~~~~
+      |                                                |
+      |                                                char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1639:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+ 1639 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+../project/at_commands_ST87M01.c: At top level:
+../project/at_commands_ST87M01.c:200:6: warning: conflicting types for 'gnss_sendCommand'; have 'void(char *, unsigned int,  char *)'
+  200 | void gnss_sendCommand(char * command, unsigned int timeout, char * recived)
+      |      ^~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c:11:9: note: previous implicit declaration of 'gnss_sendCommand' with type 'void(char *, unsigned int,  char *)'
+   11 |         gnss_sendCommand("\r\nAT+IPR=19200\r\n", COMMAND_GENERAL_DELAY, recived);
+      |         ^~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c: In function 'gnss_sendCommand':
+../project/at_commands_ST87M01.c:202:50: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  202 |         HAL_UART_Transmit_IT(GNSS_UART, command, strlen(command));
+      |                                                  ^~~~~~
+../project/at_commands_ST87M01.c:202:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../project/at_commands_ST87M01.c:202:41: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+  202 |         HAL_UART_Transmit_IT(GNSS_UART, command, strlen(command));
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/at_commands_ST87M01.c:204:40: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+  204 |         HAL_UART_Receive_IT(GNSS_UART, recived, 32);
+      |                                        ^~~~~~~
+      |                                        |
+      |                                        char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1639:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+ 1639 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                  ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "geral_test_h755zi-q_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/viny/Desktop/pi_project/stm32project/5s_drifter/geral_test_h755zi-q/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="geral_test_h755zi-q_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: geral_test_h755zi-q_CM7.elf
+ 
 arm-none-eabi-size  geral_test_h755zi-q_CM7.elf 
+arm-none-eabi-objdump -h -S geral_test_h755zi-q_CM7.elf  > "geral_test_h755zi-q_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  81852	    100	  22772	 104724	  19914	geral_test_h755zi-q_CM7.elf
+  64620	    472	  14632	  79724	  1376c	geral_test_h755zi-q_CM7.elf
 Finished building: default.size.stdout
  
+Finished building: geral_test_h755zi-q_CM7.list
+ 
 
-19:44:50 Build Finished. 0 errors, 0 warnings. (took 1s.104ms)
+17:52:09 Build Finished. 0 errors, 74 warnings. (took 4s.523ms)
 

@@ -1,2 +1,0 @@
-../project/task_behavior/batteries_task.c:11:6:batterie_task	1
-../project/task_behavior/batteries_task.c:33:6:HAL_ADC_ConvCpltCallback	1

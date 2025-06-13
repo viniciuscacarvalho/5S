@@ -8,19 +8,35 @@
 #ifndef PROJECT_AT_COMMANDS_ST87M01_H_
 #define PROJECT_AT_COMMANDS_ST87M01_H_
 
-#include "task_header.h"
+#ifndef USING_RTOS
+	#include "with_RTOS/task_header.h"
+#else
+	#include "manager/manager.h"
 
-void ac_set_at_gpio (unsigned char gpio,unsigned char state);
-void ac_get_at_gpio (unsigned char gpio,char* recived);
+#endif
+
+void at_set_baudrate (char* recived);
+void at_sim_status (char* recived);
+void at_network_reg_status (char* recived);
+void at_setup_lte (char* recived);
 
 
-void ac_power_on		(unsigned char gpio, char* recived);
-void ac_check 								(char* recived);
-void ac_gnss_request 						(char* recived);
-void ac_ping					(char count, char* recived);
-void ac_network_attach_request 				(char* recived);
-void ac_network_pdp_activate				(char* recived);
-void ac_nb_iot_send	(char* to_send,char size,char* recived);
+void at_set_at_gpio (unsigned char gpio,unsigned char state, char *recived);
+void at_get_at_gpio (unsigned char gpio,char* recived);
+
+void at_echo_on (char* recived);
+void at_echo_off (char* recived);
+
+
+void at_power_on							(char* recived);
+void at_power_state 						(char* recived);
+void at_check 								(char* recived);
+void at_gnss_signal			 				(char* recived);
+void at_gnss_location_request 				(char* recived);
+void at_ping					(char count, char* recived);
+void at_network_attach_request 				(char* recived);
+void at_network_pdp_activate				(char* recived);
+void at_nb_iot_send	(char* to_send,int size,char* recived);
 
 
 

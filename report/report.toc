@@ -40,19 +40,22 @@
 \contentsline {subsection}{\numberline {3.4.1}Conclusion}{23}{subsection.3.4.1}%
 \contentsline {section}{\numberline {3.5}Tools and COTS}{23}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Tools}{23}{subsection.3.5.1}%
-\contentsline {subsubsection}{Inkscape}{23}{section*.45}%
-\contentsline {subsubsection}{draw.io}{23}{section*.46}%
-\contentsline {subsubsection}{STM32 CUBEmx}{23}{section*.47}%
-\contentsline {subsubsection}{Fusion360}{23}{section*.48}%
-\contentsline {subsubsection}{\LaTeX }{23}{section*.49}%
-\contentsline {subsection}{\numberline {3.5.2}COTS}{23}{subsection.3.5.2}%
-\contentsline {chapter}{\numberline {4}Implementation}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Hardware and Shell}{24}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Software}{24}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Project Sections}{24}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Task Behavior}{24}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}DataBase Comunication}{24}{subsection.4.2.3}%
-\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Gantt Diagram}{25}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Bibliografy}{25}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Special Greatings}{25}{section.5.3}%
+\contentsline {subsubsection}{Inkscape}{23}{section*.46}%
+\contentsline {subsubsection}{draw.io}{23}{section*.47}%
+\contentsline {subsubsection}{STM32 CUBEmx}{23}{section*.48}%
+\contentsline {subsubsection}{Fusion360}{24}{section*.49}%
+\contentsline {subsubsection}{\LaTeX }{24}{section*.50}%
+\contentsline {subsubsection}{Minicom}{24}{section*.51}%
+\contentsline {subsection}{\numberline {3.5.2}COTS}{24}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}Implementation}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hardware and Shell}{25}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Project Sections}{25}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Task Behavior}{25}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Software}{25}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Mobile Communication}{25}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}AT commands}{25}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}DataBase Comunication}{25}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{26}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Future improvements}{26}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Special Greatings}{26}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Bibliografy}{26}{section.5.3}%

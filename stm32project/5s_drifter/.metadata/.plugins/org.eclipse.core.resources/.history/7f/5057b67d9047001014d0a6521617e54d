@@ -1,0 +1,246 @@
+/*
+ * at_commands_ST87M01.c
+ *
+ *  Created on: May 2, 2025
+ *      Author: viny
+ */
+#include "at_commands_ST87M01.h"
+
+void at_set_baudrate (char* recived)
+{
+	char buffer[] = "AT+IPR=19200\r\n";
+	//fprintf(buffer,"AT+CGNSPWR=1");
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	HAL_Delay(500);
+	HAL_UART_Receive_IT(&huart1, recived, 10);
+}
+
+void at_echo_on (char* recived)
+{
+	char buffer[] = "ATE1\r\n";
+	//fprintf(buffer,"AT+CGNSPWR=1");
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	HAL_Delay(500);
+	HAL_UART_Receive_IT(&huart1, recived, 4);
+}
+
+void at_echo_off (char* recived)
+{
+	char buffer[] = "ATE0\r\n";
+	//fprintf(buffer,"AT+CGNSPWR=1");
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	HAL_Delay(500);
+	HAL_UART_Receive_IT(&huart1, recived, 4);
+}
+
+
+void at_set_at_gpio (unsigned char gpio,unsigned char state)
+{
+	char buffer[16];
+	fprintf(buffer,"AT@GPIOSET=%d,%d\r\n",gpio,state);
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+}
+
+void at_get_at_gpio (unsigned char gpio,char* recived)
+{
+	char buffer[16];
+	fprintf(buffer,"AT@GPIOGET=%d\r\n",gpio);
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	HAL_UART_Receive_IT(&huart1, recived, 16);
+}
+
+void at_power_on (char* recived)
+{
+	char buffer[] = "\r\nAT+CGNSPWR=1\r\n";
+	//fprintf(buffer,"AT+CGNSPWR=1");
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	HAL_Delay(500);
+	HAL_UART_Receive_IT(&huart1, recived, 10);
+}
+void at_power_state (char* recived)
+{
+	char buffer[] = "\r\nAT+CGNSPWR?\r\n";
+	//fprintf(buffer,"AT+CGNSPWR?");
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(500);
+	HAL_UART_Receive_IT(&huart1, recived, DEBUG_ANSWER_LEN);
+	HAL_Delay(100);
+}
+
+void at_power_off (char* recived)
+{
+	char buffer[] = "\r\nAT+CGNSPWR=0\r\n";
+	//fprintf(buffer,"AT+CGNSPWR=0");
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	HAL_Delay(500);
+	HAL_UART_Receive_IT(&huart1, recived, 10);
+}
+
+
+
+void at_check (char* recived)
+{
+	char buffer[] = "\r\nAT\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	HAL_UART_Receive_IT(&huart1, recived, 6);
+}
+
+
+
+void at_gnss_signal (char* recived)
+{
+	char buffer[] = "\r\nAT+CGNSINF\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(1000);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+	HAL_Delay(100);
+}
+/*
+void ac_gnss_location_request (char* recived)
+{
+	char buffer[12] = "AT+CGNSINF\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, 12);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+*/
+
+void at_sim_status (char* recived)
+{
+	char buffer[] = "\r\nAT+CPIN?\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(1000);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+
+void at_network_mode (char* recived)
+{
+	char buffer[] = "\r\nAT+CNMP=51\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(1000);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+
+void at_set_band(char* recived)
+{
+	char buffer[] = "\r\nAT+CMNB=3\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(1000);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+
+void at_network_reg_status (char* recived)
+{
+	char buffer[] = "\r\nAT+CREG?\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(1000);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+
+
+void at_setup_lte (char* recived)
+{
+	char buffer[] = "\r\nAT+CBANDCFG=\"CAT-M\",3,20\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(1000);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+
+void at_gprs_init (char* recived)
+{
+	char buffer[] = "\r\nAT+CIICR\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(1000);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+
+void at_gprs_attatch(char* recived)
+{
+	char buffer[] = "\r\nAT+CIICR\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(1000);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+
+
+void at_setup_lte (char* recived)
+{
+	char buffer[] = "\r\nAT+CBANDCFG=\"CAT-M\",3,20\r\n";
+	HAL_UART_Transmit_IT(&huart1, buffer, sizeof buffer);
+	//HAL_Delay(1000);
+	HAL_UART_Receive_IT(&huart1, recived, 64);
+}
+
+
+void at_ping (char count,char* recived)
+{
+	char buffer[16];
+	fprintf(buffer,"\r\nAT%PINGCMD=0,%s,%d\r\n",MONGO_DB_IP,count);
+	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, buffer, 16);
+	HAL_UART_Receive_IT(MOBILE_COMMS_UART, recived, 16);
+}
+
+void at_network_attach_request (char* recived)
+{
+	char buffer[] = "\r\nAT+CGATT=1\r\n";
+	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, buffer, sizeof buffer);
+	HAL_UART_Receive_IT(MOBILE_COMMS_UART, recived, 16);
+}
+
+void at_set_apn (char* recived)
+{
+	char buffer[64];
+	fprintf(buffer,"\r\nAT+CSTT=\"%s\"\r\n",SIMBASE_APN);
+	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, buffer, 64);
+	HAL_UART_Receive_IT(MOBILE_COMMS_UART, recived, 16);
+}
+
+void at_set_ip_config (char* recived)
+{
+	char buffer[] = "\r\nAT+CGATT=1\r\n";
+	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, buffer, sizeof buffer);
+	HAL_UART_Receive_IT(MOBILE_COMMS_UART, recived, 16);
+}
+
+
+void at_network_pdp_activate(char* recived)
+{
+	char buffer[64];
+	fprintf(buffer,"\r\nAT+CGDCONT=1,%s,%s\r\n",MONGO_DB_PDP_TYPE,SIMBASE_APN);
+	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, buffer, 64);
+	HAL_UART_Receive_IT(MOBILE_COMMS_UART, recived, 16);
+}
+
+void at_nb_iot_send(char* to_send,int size,char* recived)
+{
+	char buffer[16];
+	fprintf(buffer,"\r\nAT+NSOST=0,%s,%s,%d\r\n",MONGO_DB_IP,MONGO_DB_PORT,size);
+	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, buffer, 16);
+	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, to_send, size);
+	HAL_UART_Receive_IT(MOBILE_COMMS_UART, recived, 16);
+}
+
+
+/*
+AT+CGNSPWR=1 power
+AT+CGNSINF Request GNSS info
+
+HAL_UART_Transmit_IT(&huart1, buffer, 16);
+char buffer2[16] = "AT+CGNSTST=1";
+
+
+AT+CGATT=1 network attach
+AT+CGDCONT=1 ,%s,%s",MONGO_DB,VODAFONE_APN PDP
+"AT+NSOST=0,\"%s\",%s,%d,\"", ip, port, len send
+
+
+
+
+
+
+
+
+
+
+
+
+*/

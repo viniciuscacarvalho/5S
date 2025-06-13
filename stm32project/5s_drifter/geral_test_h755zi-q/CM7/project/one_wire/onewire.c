@@ -18,7 +18,7 @@
  */
 #include "onewire.h"
 #include "ds18b20Config.h"
-#include "../../Core/Inc/tim.h"
+//#include "../../Core/Inc/tim.h"
 
 void ONEWIRE_DELAY(uint16_t time_us)
 {

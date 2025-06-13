@@ -1,11 +1,33 @@
 \chapter{Implementation}
 \section{Hardware and Shell}
 
-\section{Software}
-
 \subsection{Project Sections}
 
 \subsection{Task Behavior}
+
+\section{Software}
+\subsection{Mobile Communication}
+\subsection{AT commands}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{l|l|l|l}
+        \textbf{Field} & \textbf{Value} & \textbf{Meaning} & \textbf{Parameter Description} \\
+        \hline
+        Run Status & 1 & GNSS engine is running & Indicates whether the GNSS subsystem is powered on (1) or off (0) \\
+        Fix Status & (empty) & No valid fix yet & Shows if a location fix is acquired (1 = valid, 0 = invalid) \\
+        UTC & (empty) & No time fix yet & Coordinated Universal Time (YYYYMMDDHHMMSS.SSS) \\
+        Latitude & 39.500002 & Your current latitude & North/South position in decimal degrees \\
+        Longitude & -8.000000 & Your current longitude & East/West position in decimal degrees \\
+        Altitude & -54.560 & Meters & Height above mean sea level \\
+        Speed & (empty) & Not available yet & Speed over ground in km/h \\
+        Course & (empty) & Not available yet & Direction of movement in degrees (0–360°) \\
+        Fix Mode & 1 & Autonomous fix (probably 2D/3D) & 1 = Autonomous, 2 = DGPS, 3 = RTK, etc. \\
+        HDOP, PDOP, VDOP & 0.1, 0.1, 0.0 & Position accuracy factors & Horizontal, Position, and Vertical dilution of precision \\
+    \end{tabular}
+    \caption{Detailed Breakdown of +CGNSINF Response Fields}
+\end{table}
+        
+pg 147
 
 separar funções do IMU e GNSS para não atrapalhar um ao outro.
 \subsection{DataBase Comunication}

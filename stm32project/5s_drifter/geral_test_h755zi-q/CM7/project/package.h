@@ -10,13 +10,33 @@
 
 #include "defines.h"
 
-typedef struct p_data_s
+typedef struct
 {
-    unsigned short power_level;
-    unsigned short temperature[NUMBER_OF_SAMPLES];
-    unsigned short imu[NUMBER_OF_SAMPLES];
-    unsigned short gnss[2][NUMBER_OF_SAMPLES];
+	float longitude;
+	float latitude;
+} coordinates_t;
+
+typedef struct
+{
+    int year;        // e.g., 2025
+    int month;       // 1 to 12
+    int day;         // 1 to 31
+    int hour;        // 0 to 23
+    int minute;      // 0 to 59
+    int second;      // 0 to 59
+    //int millisecond; // 0 to 999
+} utc_time_t;
+
+typedef struct
+{
+    float power_level;
+    utc_time_t utc;
+    unsigned short temperature[TEMP_NUMBER_OF_SAMPLES];
+    int16_t imu[IMU_NUMBER_OF_SAMPLES];
+    coordinates_t gnss;
     unsigned short errors;
+    unsigned char  sample_number;
+    unsigned short packege_number;
 } package_data_t;
 
 /*
@@ -31,6 +51,8 @@ typedef struct p_data_s
   "errors": 0
 }
  * */
+
+void init_package_data(void);
 
 package_data_t* write_package_data();
 
