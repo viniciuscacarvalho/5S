@@ -9,6 +9,63 @@
 \usepackage{acronym}
 \usepackage{hyperref}
 \usepackage{wrapfig}
+\usepackage[table]{xcolor}
+\usepackage{arydshln} 
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%\usepackage[backend=biber,style=numeric]{biblatex}
+%\addbibresource{bib/bibliography.bib}
+
+\definecolor{lightgray}{gray}{0.95}
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+\definecolor{darkblue}{rgb}{0,0,0.6}
+
+\lstdefinelanguage{json}{
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{lightgray},
+    literate=
+     *{0}{{{\color{blue}0}}}{1}
+      {1}{{{\color{blue}1}}}{1}
+      {2}{{{\color{blue}2}}}{1}
+      {3}{{{\color{blue}3}}}{1}
+      {4}{{{\color{blue}4}}}{1}
+      {5}{{{\color{blue}5}}}{1}
+      {6}{{{\color{blue}6}}}{1}
+      {7}{{{\color{blue}7}}}{1}
+      {8}{{{\color{blue}8}}}{1}
+      {9}{{{\color{blue}9}}}{1}
+      {:}{{{\color{black}:}}}{1}
+      {,}{{{\color{black},}}}{1}
+      {"}{{{\color{red}"}}}{1}
+}
+
+\lstdefinestyle{cStyle}{
+    language=C,
+    backgroundcolor=\color{lightgray},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{darkblue}\bfseries,
+    commentstyle=\color{darkgreen},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=8pt,
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    tabsize=4,
+    captionpos=b
+}
 %\usepackage{soul}
 %\usepackage{natbib}
 %\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
@@ -68,6 +125,7 @@ Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
     \textbf{\Huge Acronyms} %remove indentation
     \normalsize
     \begin{acronym}[UART] % Give the longest label here so that the list is nicely aligned
+        \small
         \acro{UART}{Universal asynchronous receiver/transmitter}
         \acro{LTE}{Long-Term Evolution}
         \acro{ADC}{Analog to Digital Converter}
@@ -79,10 +137,9 @@ Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
         \acro{IoT}{Internet of Things}
         \acro{GPS}{}
         \acro{JSON}{}
-        \acro{DB}{Data Base}
-        \acro{SST}{Sea Surface Temperature}
+        \acro{DB}{Data Base}   
         \acro{HRSST}{High Resolution Sea Surface Temperature}
-        \acro{ITC}{Inter Thread Comunication}
+        \acro{ITC}{Inter Thread Communication}
         \acro{CS}{Channel Select}
 
     \end{acronym}
@@ -105,5 +162,7 @@ Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
 
     \newpage
     \include{chapters/conclusion}
-    
+
+    %\bibliographystyle{plain}
+    %\bibliography{../bib/bibliography} 
 \end{document}

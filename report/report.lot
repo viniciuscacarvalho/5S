@@ -4,10 +4,14 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Protocol per provider table}}{15}{table.caption.31}%
 \contentsline {table}{\numberline {3.2}{\ignorespaces Typical power consumption values for STM32H7 vs STM32L0.}}{16}{table.caption.33}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Current Consumption of Modules (in µA)}}{17}{table.caption.34}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Current Consumption of Modules}}{17}{table.caption.34}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces Supported Protocols by Module}}{17}{table.caption.35}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Batteries Capacitis, prices and time relation.}}{22}{table.caption.43}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Batteries Capacities, prices and time relation.}}{23}{table.caption.45}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Battery Capacities, Prices, and Current Capabilities}}{21}{table.caption.43}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Average Power Consumption Per Component Per 10 Minutes Cicle}}{22}{table.caption.44}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Battery Capacity, Price, Estimated Autonomy, and Required Battery Swaps per Month}}{22}{table.caption.45}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Peripheral Pinout Mapping to Microcontroller (STM32H755ZI-Q)}}{23}{table.caption.47}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Detailed Breakdown of +CGNSINF Response Fields}}{25}{table.caption.52}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces GNSS-Related AT Commands}}{28}{table.caption.57}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Detailed Breakdown of \texttt {+CGNSINF} Response Fields}}{28}{table.caption.58}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces LTE-Related AT Commands}}{29}{table.caption.59}%
 \addvspace {10\p@ }

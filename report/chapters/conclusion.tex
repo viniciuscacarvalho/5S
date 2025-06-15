@@ -1,10 +1,95 @@
 \chapter{Conclusion}
 
-\section{Future improvements}
-\section{Special Greatings}
-At last it's important to add the support from the 
-CMEMS labs personal as well of the professor Tiago Matos for his support with hardware
-\section{Bibliografy}
-%https://www.researchgate.net/publication/284138059_Different_frequencies_and_triggers_of_canyon_filling_and_flushing_events_in_Nazare_Canyon_offshore_Portugal
-The secondary ageostrophic circulation in the Iberian Poleward Current along the Cantabrian Sea (Bay of Biscay)
-Atmospheric modes influence on Iberian Poleward Current variability
+The 5S Drifter project almost successfully demonstrated the feasibility of developing a low-power, low-cost, 
+and autonomous oceanographic drifter for surface sea stream monitoring. This integrative effort combined
+knowledge in embedded systems, wireless communication, sensor integration, and mechanical design to
+deliver prototype capable of acquiring GPS position, sea surface temperature and IMU data.
+
+The prototype, works in isolation, but it still needs polishing due to the problems in development.
+The physical design of the drifter shell, inspired by successful CMEMS projects such as SONDA and NextSea,
+will continue to be improved and tested in sea. 
+
+Overall, the project represents a solid step toward scalable, autonomous marine data collection and 
+demonstrates how embedded electronics can be applied effectively in oceanographic research. With future 
+iterations and optimizations, the 5S Drifter could become a viable tool for environmental monitoring, 
+coastal safety planning, and marine traffic management.
+
+
+\section{Limitations and Future improvements}
+Despite the functionality, the prototype has limitations. Most notably its dependence on battery replacement 
+and inability to cover long deployment periods without manual intervention. These issues point to clear 
+paths for future improvements, such as integrating solar charging and switching to more energy-efficient 
+microcontrollers like the STM32L0 family. A potential full migration to an RTOS-based architecture would 
+enhance multitasking and improve energy management.
+
+\section{Final GIT}
+\href{https://github.com/viniciuscacarvalho/5S}{Here} is the full project on github.
+
+\section{Special Greetings}
+At last, it's important to add the support from the 
+CMEMS labs personal as well of the professor Tiago Matos and professor Carlos Faria for the
+support with hardware selection and shell mechanical advise respectively.
+
+\begin{thebibliography}{99}
+
+    \bibitem{nazare_canyon}
+    Arzola, R. G., Wynn, R. B., Lastras, G., Masson, D. G., \& Weaver, P. P. E. (2008). 
+    Different frequencies and triggers of canyon filling and flushing events in Nazare Canyon, offshore Portugal. 
+    \textit{Marine Geology}, 250(1-2), 38-63. 
+    Available at: \url{https://www.researchgate.net/.../Different_frequencies_and_triggers_of_canyon_filling_and_flushing_events_in_Nazare_Canyon_offshore_Portugal}
+    
+    \bibitem{secondary_ageostrophic}
+    Hernandez-Molina, F. J., Llave, E., \& Somoza, L. (2003). 
+    The secondary ageostrophic circulation in the Iberian Poleward Current along the Cantabrian Sea (Bay of Biscay). 
+    \textit{Deep-Sea Research Part II}, 50(20-21), 1505-1524.
+    
+    \bibitem{atmospheric_modes}
+    Gonzalez-Pola, C., Lavin, A., \& Vargas-Yanez, M. (2005). 
+    Atmospheric modes influence on Iberian Poleward Current variability. 
+    \textit{Geophysical Research Letters}, 32(14), L14605.
+    
+    \bibitem{ocean_waves_energy}
+    Green Nation. (n.d.). 
+    Ocean Waves - An Energy Source. 
+    Retrieved from \url{https://greeneration.org/en/publication/green-info/ocean-waves-energy-source/}
+    
+    \bibitem{nextsea_lab}
+    Matos, T., Rocha, J. L., Martins, M., \& Goncalves, L. M. (2025). 
+    Enhancing sea wave monitoring through integrated pressure sensors in smart marine cables. 
+    \textit{[Journal/Conference]}, April 2025.
+    
+    \bibitem{sonda_optical}
+    Matos, T., Faria, C. L., Martins, M. S. M., et al. (2022). 
+    Development of an automated sensor for in-situ continuous monitoring of sediment deposition and erosion: the SONDA optical instrument. 
+    \textit{Science of the Total Environment}, 808, 152164. 
+    
+    \bibitem{copernicus_svpbrst}
+    Poli, P., Lucas, M., O'Carroll, A., Le Menn, M., David, A., Corlett, G. K., Blouch, P., Merchant, C. J., Belbeoch, M., Herklotz, K., et al. (2019). 
+    The Copernicus Surface Velocity Platform drifter with Barometer and Reference Sensor for Temperature (SVP-BRST): genesis, design, and initial results. 
+    \textit{Ocean Science}, 15, 199-215.
+    
+    \bibitem{circling_the_seas}
+    Subbaraya, S., Breitenmoser, A., Molchanov, A., Muller, J., Oberg, C., Caron, D. A., \& Sukhatme, G. S. (2016). 
+    Circling the Seas: Design of Lagrangian Drifters for Ocean Monitoring. 
+    \textit{IEEE Robotics \& Automation Magazine}, 23(4), 42-53.
+    
+    \bibitem{wind_waves_fuel}
+    Degraer, S., et al. (2009). 
+    Wind and waves affect fuel consumption [Technical report]. Royal Belgian Institute of Natural Sciences.
+    
+    \bibitem{dala_lora_antenna}
+    Dala, A., \& Arslan, T. (2021). 
+    Design, Implementation, and Measurement Procedure of Underwater and Water Surface Antenna for LoRa Communication. 
+    \textit{Sensors}, 21(4), 1337. doi:10.3390/s21041337
+    
+    \bibitem{sim_at_commands}
+    Wistron NeWeb Corp. (2018, December 4). 
+    WNC AT Commands Guide, version 1.2.
+    
+    \bibitem{wnc_at_commands}
+    Wistron NeWeb Corp. (2017, November 17). 
+    WNC AT Commands Guide (IMS2 project), rev. 4.1.
+    
+\end{thebibliography}
+    
+    

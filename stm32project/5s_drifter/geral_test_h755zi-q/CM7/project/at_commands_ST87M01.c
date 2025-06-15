@@ -192,6 +192,19 @@ void at_nb_iot_send(char* to_send,int size,char* recived)
 
 void mobile_sendCommand(char * command, unsigned int timeout, char * recived)
 {
+	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, command, strlen(command)); //Transmits
+	HAL_UART_Receive(MOBILE_COMMS_UART, recived, 32, timeout); //Reads the module
+}
+
+void gnss_sendCommand(char * command, unsigned int timeout, char * recived)
+{
+	HAL_UART_Transmit_IT(GNSS_UART, command, strlen(command)); //Transmits
+	HAL_UART_Receive(GNSS_UART, recived, 32, timeout); //Reads the module
+}
+
+/*
+void mobile_sendCommand(char * command, unsigned int timeout, char * recived)
+{
 	HAL_UART_Transmit_IT(MOBILE_COMMS_UART, command, strlen(command));
 	HAL_Delay(timeout);
 	HAL_UART_Receive_IT(MOBILE_COMMS_UART, recived, 32);
@@ -204,7 +217,7 @@ void gnss_sendCommand(char * command, unsigned int timeout, char * recived)
 	HAL_UART_Receive_IT(GNSS_UART, recived, 32);
 }
 
-
+*/
 /*
 AT+CGNSPWR=1 power
 AT+CGNSINF Request GNSS info

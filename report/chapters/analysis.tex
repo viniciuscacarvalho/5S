@@ -26,7 +26,7 @@ As for the outer shell there are a few things to have in attention.
     \item The drifter ballast, that will be the drifter core, located between the 
     floater and the temperature sensor tip. It should be heavy so the drifter points up, but it shouldn't exceed the 
     second topic demand 
-    \item The Floater volume, as it has to balance the hole electronics and shell 
+    \item The Floater volume, as it has to balance the whole electronics and shell 
     weight.
 \end{itemize}
 This creates a first view of the system as a block diagram. Indicating the physical 
@@ -66,7 +66,7 @@ According to the blocked diagram.
     \item Limited Team
     \item The project must be presented for evaluation within deadline.
     \item The project has to be validated at the ocean.
-    \item The pretended autonomy has to be of a mouth at minimum.
+    \item The pretended autonomy has to be of a month at minimum.
 \end{itemize}
 
 %vila do conde + ou - 10km mar adentro 2g 4g\\
@@ -103,7 +103,7 @@ SST sensor, gathering the position with GNSS and transmitting the data using Iri
     \caption{SVP-BRST Design}
     \label{fig:SVP-BRST Design}        
 \end{figure}
-The image shows the SVP-BRST model. The (a) image shows the hole model with the antenna the buoyant part ad the weight to point the buoy up.
+The image shows the SVP-BRST model. The (a) image shows the whole model with the antenna the buoyant part ad the weight to point the buoy up.
 As for the (b) image, shows the sensor's placement. 
 
 \subsection{CMEMS Examples}
@@ -140,8 +140,9 @@ phytoplankton and its concentration, pH, currents direction and intensity and tu
 \section{System Architecture}
 
 Once studied what the system needs to follow, it is now needed to formulate a solution.
-Here it will be used UML diagrams to convey the solution in question, whiteout real specifications
-once this proposal works as a validation and organization to the problem as a formal language.
+Here it will be used UML diagrams to convey the solution in question, without specific 
+implementation details, as this proposal serves to validate and organize the problem 
+structure as a formal language.
 
 \subsubsection{Block Diagram}
 
@@ -162,7 +163,7 @@ Some points to be considered are:
     protocols require different frequencies to be used.
     \item The communication to the SDcard, uses SPI with STM32 below 64 pins. As it 
     doesn't include SDMMC supporting FatFS.
-    \item The batteries power the hole system. Even if not shown.
+    \item The batteries power the whole system. Even if not shown.
     \item Depending on the implementation, the timer block will be the Sysclock, as 
     the RTOS may use by default.
 \end{itemize}
@@ -194,7 +195,7 @@ temporary the information, only storing locally, once per cycle, reducing the SD
 Once the software and hardware are planed, now a time related diagram will show the blocks interactions
 as time passes.
 
-First task sequence, a generic "Data Acquisition Task" shows the general behavior of a task focused to menage the sensors.
+First task sequence, a generic "Data Acquisition Task" shows the general behavior of a task focused to manage the sensors.
 
 \begin{figure}[H]
     \centering
@@ -215,7 +216,7 @@ On the end, initiating the SDcard storage.
 \subsubsection{Threads} 
 Once this problem requires a list of tasks to be executed, using a OS will allow
 a better project organization and performance with little to no impact in power consumption, 
-even helping to menage the low power mode. However, the implementation will suffer, as the
+even helping to manage the low-power mode. However, the implementation will suffer, as the
 codification as verification grows, so this topic may become an additional information 
 by the end of the project.
 
@@ -226,7 +227,7 @@ The division in Threads demands a separation in Priority levels, as the OS sched
 once both tasks are ready for execution.  
 
 Setting a task priority it must take in vision the resources the task will use, the time it will take to execute said behavior
-and the actual importance in matching it time constraints. In order to menage this level of complexity, the RTOS offers a set of
+and the actual importance in matching it time constraints. In order to manage this level of complexity, the RTOS offers a set of
 tools for tasks control that will be used for its synchronization and communication.
 \begin{itemize}
     \item High Priority Threads \\ 
@@ -259,8 +260,8 @@ X yet to be defined as it first depends on the sample time.
     \label{fig:Thread Temporal Graph}        
 \end{figure}
 
-Here up to t1 the system executes tasks, storing data, then entering low power mode until the next sample.
-Then, at the end of the last repetition, at t2, stating the second task sequence. Then after the SDcard task behavior ends, as so do the cycle.
+Here up to t1 the system executes tasks, storing data, then entering low-power mode until the next sample.
+Then, at the end of the last repetition, at t2, stating the second task sequence. Then after the SDcard task behavior ends, and so does the cycle.
 \subsubsection{Memory Abstraction (Log)} 
 
 The final diagrams, are a exception to UML diagrams, As it only builds a data structure and a simple interface to interact with it.
