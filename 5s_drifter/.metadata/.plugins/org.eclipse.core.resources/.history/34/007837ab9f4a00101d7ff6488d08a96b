@@ -1,0 +1,57 @@
+/*
+ * maneger.c
+ *
+ *  Created on: Jun 2, 2025
+ *      Author: viny
+ */
+#include "manager.h"
+
+uint32_t battery_last_time = 0;
+uint32_t temperature_last_time = 0;
+uint32_t cnss_last_time = 0;
+uint32_t imu_last_time = 0;
+uint32_t nb_iot_last_time = 0;
+uint32_t sd_card_last_time = 0;
+
+extern volatile uint64_t extended_tick = 0;
+
+
+void manager_init(void)
+{
+	//Memory
+	init_package_data();
+	//Batteries
+	battery_init();
+	//Temperature
+	temperature_init();
+	//CNSS
+	//cnss_init();
+	//IMU
+	imu_init();
+	//NB_IoT
+	nb_iot_init();
+	//SD_CARD
+	sd_card_init();
+
+}
+void manager_update(void)
+{
+
+	//Batteries
+	//battery_update(); //verified
+	//IMU
+	imu_update(); //not tested
+	//Temperature
+	//temperature_update();
+
+
+	//CNSS
+	//cnss_update(); //working but not tested
+	//NB_IoT
+	nb_iot_update(); //not working
+	//SD_CARD
+	sd_card_update();
+
+
+	HAL_Delay(2000);
+}

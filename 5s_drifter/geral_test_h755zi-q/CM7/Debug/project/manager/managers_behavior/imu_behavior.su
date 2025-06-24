@@ -1,0 +1,2 @@
+../project/manager/managers_behavior/imu_behavior.c:11:6:imu_init	24	static
+../project/manager/managers_behavior/imu_behavior.c:40:6:imu_update	32	static

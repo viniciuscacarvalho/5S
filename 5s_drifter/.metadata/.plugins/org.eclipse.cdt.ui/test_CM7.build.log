@@ -1,0 +1,10 @@
+13:35:49 **** Incremental Build of configuration Debug for project test_CM7 ****
+make -j4 all 
+arm-none-eabi-size  test_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21604	     16	   1720	  23340	   5b2c	test_CM7.elf
+Finished building: default.size.stdout
+ 
+
+13:35:50 Build Finished. 0 errors, 0 warnings. (took 1s.556ms)
+

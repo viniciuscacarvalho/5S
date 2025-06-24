@@ -1,0 +1,33 @@
+/*
+ * sd_card_behavior.h
+ *
+ *  Created on: Jun 2, 2025
+ *      Author: viny
+ */
+
+#include "sd_card_behavior.h"
+
+FATFS fs;
+FIL fil;
+FRESULT fres;
+UINT br, bw;
+
+void sd_card_init (void)
+{
+
+}
+
+void sd_card_update (void)
+{
+	  if (f_mount(&fs, "", 1) == FR_OK)
+	  {
+	    // Open file to write
+	    if (f_open(&fil, "test.txt", FA_CREATE_ALWAYS | FA_WRITE) == FR_OK)
+	    {
+	      char data[] = "Hello from STM32H755!\r\n";
+	      f_write(&fil, data, strlen(data), &bw);
+	      f_close(&fil);
+	    }
+	    f_mount(NULL, "", 1); // Unmount
+	  }
+}

@@ -1,0 +1,51 @@
+03:07:50 **** Incremental Build of configuration Debug for project by_god_please_2_5s_CM7 ****
+make -j4 all 
+arm-none-eabi-gcc "../project/manager/managers_behavior/battery_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/battery_behavior.d" -MT"project/manager/managers_behavior/battery_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/battery_behavior.o"
+arm-none-eabi-gcc "../project/manager/managers_behavior/temperature_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/temperature_behavior.d" -MT"project/manager/managers_behavior/temperature_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/temperature_behavior.o"
+../project/manager/managers_behavior/battery_behavior.c: In function 'battery_update':
+../project/manager/managers_behavior/battery_behavior.c:24:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   24 |         sprintf(buffer,"Batt:%d\n\n",(int)temp->power_level);
+      |         ^~~~~~~
+../project/manager/managers_behavior/battery_behavior.c:8:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    7 | #include "battery_behavior.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../project/manager/managers_behavior/battery_behavior.c:24:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   24 |         sprintf(buffer,"Batt:%d\n\n",(int)temp->power_level);
+      |         ^~~~~~~
+../project/manager/managers_behavior/battery_behavior.c:24:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/battery_behavior.c:25:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   25 |         HAL_UART_Transmit(&huart3, buffer, 8, -1);
+      |                                    ^~~~~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../FATFS/Target/ffconf.h:25,
+                 from ../../Middlewares/Third_Party/FatFs/src/ff.h:29,
+                 from ../project/manager/managers_behavior/../../../FATFS/App/fatfs.h:26,
+                 from ../project/manager/managers_behavior/../manager.h:15,
+                 from ../project/manager/managers_behavior/battery_behavior.h:11,
+                 from ../project/manager/managers_behavior/battery_behavior.c:7:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/temperature_behavior.c: In function 'temperature_init':
+../project/manager/managers_behavior/temperature_behavior.c:12:9: warning: implicit declaration of function 'DWT_Init' [-Wimplicit-function-declaration]
+   12 |         DWT_Init();  // Enable cycle counter for delay
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "by_god_please_2_5s_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="by_god_please_2_5s_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: by_god_please_2_5s_CM7.elf
+ 
+arm-none-eabi-size  by_god_please_2_5s_CM7.elf 
+arm-none-eabi-objdump -h -S by_god_please_2_5s_CM7.elf  > "by_god_please_2_5s_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  71252	    108	  16512	  87872	  15740	by_god_please_2_5s_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: by_god_please_2_5s_CM7.list
+ 
+
+03:07:51 Build Finished. 0 errors, 4 warnings. (took 1s.299ms)
+

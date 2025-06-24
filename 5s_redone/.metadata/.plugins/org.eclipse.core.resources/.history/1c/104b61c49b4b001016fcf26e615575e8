@@ -1,0 +1,77 @@
+/*
+ * imu_behavior.h
+ *
+ *  Created on: Jun 2, 2025
+ *      Author: viny
+ */
+
+#include "imu_behavior.h"
+unsigned int sample_count = 0;
+
+char imu_msg_buffer[32];
+
+void imu_init (void)
+{
+	///*
+	for (uint8_t addr = 1; addr < 127; addr++)
+	{
+		if (HAL_I2C_IsDeviceReady(IMU_I2C, addr << 1, 2, 100) == HAL_OK)
+		{
+			sprintf(msg, "Device found at 0x%02X\r\n", addr << 1);
+			HAL_UART_Transmit(DEBUG_UART, msg, strlen(msg), 100);
+		}
+	}
+	//*/
+
+	///*
+	uint8_t whoami = 0;
+	HAL_I2C_Mem_Read(IMU_I2C, ITG3205_ADDR, 0x00, I2C_MEMADD_SIZE_8BIT, &whoami, 1, 100);
+	sprintf(imu_msg_buffer, "\r\nWHO_AM_I: 0x%02X\r\n", whoami);
+	HAL_UART_Transmit(DEBUG_UART, imu_msg_buffer, 20, -1);
+	//*/
+
+	//ACL
+	// ADXL345: set measurement mode
+	//buf[0] = 0x2D; buf[1] = 0x08;
+	//HAL_I2C_Master_Transmit(hi2c, ADXL345_ADDR, buf, 2, 100);
+
+	// Set Sample Rate Divider
+	uint8_t val = 0x07;
+	HAL_I2C_Mem_Write_IT(IMU_I2C, ITG3205_ADDR, 0x15, I2C_MEMADD_SIZE_8BIT, &val, 1);
+
+	// Set DLPF and full scale
+	val = 0x1B;
+	HAL_I2C_Mem_Write_IT(IMU_I2C, ITG3205_ADDR, 0x16, I2C_MEMADD_SIZE_8BIT, &val, 1);
+
+	// Power management
+	val = 0x03;
+	HAL_I2C_Mem_Write_IT(IMU_I2C, ITG3205_ADDR, 0x3E, I2C_MEMADD_SIZE_8BIT, &val, 1);
+
+	HAL_UART_Transmit(DEBUG_UART, IMU_INIT_MSG , sizeof IMU_INIT_MSG , -1);
+	// HMC5883L: configure for continuous measurement
+	//buf[0]=0x02; buf[1]=0x00; HAL_I2C_Master_Transmit(hi2c, HMC5883L_ADDR, buf, 2, 100);
+	//buf[0]=0x00; buf[1]=0x70; HAL_I2C_Master_Transmit(hi2c, HMC5883L_ADDR, buf, 2, 100);
+	//buf[0]=0x01; buf[1]=0xA0; HAL_I2C_Master_Transmit(hi2c, HMC5883L_ADDR, buf, 2, 100);
+
+}
+
+void imu_update (void)
+{
+
+    if (sample_count < IMU_NUMBER_OF_SAMPLES)
+    {
+        uint8_t buf[2];
+        HAL_I2C_Mem_Read(IMU_I2C, ITG3205_ADDR, 0x21, 1, buf, 2, 100); // ZOUT_H, ZOUT_L
+
+
+        package_data_t* imu_data = write_package_data();
+    	imu_data->imu[sample_count] = (int16_t)(buf[0] << 8 | buf[1]);
+
+    	//Debug
+        sprintf(imu_msg_buffer, "\r\nZ: %02X %02X = %d\r\n", buf[0], buf[1], imu_data->imu[sample_count]);
+        HAL_UART_Transmit(DEBUG_UART, imu_msg_buffer, 32, -1);
+
+    }
+    else
+    	sample_count = 0;
+}

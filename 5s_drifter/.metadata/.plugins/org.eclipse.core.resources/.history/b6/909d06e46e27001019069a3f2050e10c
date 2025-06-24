@@ -1,0 +1,15 @@
+/*
+ * at_commands_ST87M01.h
+ *
+ *  Created on: May 2, 2025
+ *      Author: viny
+ */
+
+#ifndef PROJECT_AT_COMMANDS_ST87M01_H_
+#define PROJECT_AT_COMMANDS_ST87M01_H_
+
+
+void set_gpio_at (unsigned char gpio,unsigned char state);
+
+
+#endif /* PROJECT_AT_COMMANDS_ST87M01_H_ */

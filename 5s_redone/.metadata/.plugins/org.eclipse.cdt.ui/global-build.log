@@ -1,0 +1,744 @@
+02:41:45 **** Clean-only build of configuration Debug for project by_god_please_2_5s_CM7 ****
+make -j4 clean 
+rm -rf ./project/manager/managers_behavior/temp_sensor/delay.cyclo ./project/manager/managers_behavior/temp_sensor/delay.d ./project/manager/managers_behavior/temp_sensor/delay.o ./project/manager/managers_behavior/temp_sensor/delay.su ./project/manager/managers_behavior/temp_sensor/ds18b20.cyclo ./project/manager/managers_behavior/temp_sensor/ds18b20.d ./project/manager/managers_behavior/temp_sensor/ds18b20.o ./project/manager/managers_behavior/temp_sensor/ds18b20.su
+rm -rf ./project/manager/managers_behavior/battery_behavior.cyclo ./project/manager/managers_behavior/battery_behavior.d ./project/manager/managers_behavior/battery_behavior.o ./project/manager/managers_behavior/battery_behavior.su ./project/manager/managers_behavior/cnss_behavior.cyclo ./project/manager/managers_behavior/cnss_behavior.d ./project/manager/managers_behavior/cnss_behavior.o ./project/manager/managers_behavior/cnss_behavior.su ./project/manager/managers_behavior/imu_behavior.cyclo ./project/manager/managers_behavior/imu_behavior.d ./project/manager/managers_behavior/imu_behavior.o ./project/manager/managers_behavior/imu_behavior.su ./project/manager/managers_behavior/nb_iot_behavior.cyclo ./project/manager/managers_behavior/nb_iot_behavior.d ./project/manager/managers_behavior/nb_iot_behavior.o ./project/manager/managers_behavior/nb_iot_behavior.su ./project/manager/managers_behavior/sd_card_behavior.cyclo ./project/manager/managers_behavior/sd_card_behavior.d ./project/manager/managers_behavior/sd_card_behavior.o ./project/manager/managers_behavior/sd_card_behavior.su ./project/manager/managers_behavior/temperature_behavior.cyclo ./project/manager/managers_behavior/temperature_behavior.d ./project/manager/managers_behavior/temperature_behavior.o ./project/manager/managers_behavior/temperature_behavior.su
+rm -rf ./project/manager/manager.cyclo ./project/manager/manager.d ./project/manager/manager.o ./project/manager/manager.su
+rm -rf ./project/at_commands_ST87M01.cyclo ./project/at_commands_ST87M01.d ./project/at_commands_ST87M01.o ./project/at_commands_ST87M01.su ./project/package.cyclo ./project/package.d ./project/package.o ./project/package.su
+rm -rf ./FATFS/Target/bsp_driver_sd.cyclo ./FATFS/Target/bsp_driver_sd.d ./FATFS/Target/bsp_driver_sd.o ./FATFS/Target/bsp_driver_sd.su ./FATFS/Target/sd_diskio.cyclo ./FATFS/Target/sd_diskio.d ./FATFS/Target/sd_diskio.o ./FATFS/Target/sd_diskio.su
+rm -rf ./FATFS/App/fatfs.cyclo ./FATFS/App/fatfs.d ./FATFS/App/fatfs.o ./FATFS/App/fatfs.su
+rm -rf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc_ex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd_ex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_delayblock.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_delayblock.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_delayblock.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_delayblock.su ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_sdmmc.cyclo ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_sdmmc.d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_sdmmc.o ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_sdmmc.su
+rm -rf ./Core/Startup/startup_stm32h755zitx.d ./Core/Startup/startup_stm32h755zitx.o
+rm -rf ./Core/Src/adc.cyclo ./Core/Src/adc.d ./Core/Src/adc.o ./Core/Src/adc.su ./Core/Src/gpio.cyclo ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/i2c.cyclo ./Core/Src/i2c.d ./Core/Src/i2c.o ./Core/Src/i2c.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/memorymap.cyclo ./Core/Src/memorymap.d ./Core/Src/memorymap.o ./Core/Src/memorymap.su ./Core/Src/sdmmc.cyclo ./Core/Src/sdmmc.d ./Core/Src/sdmmc.o ./Core/Src/sdmmc.su ./Core/Src/stm32h7xx_hal_msp.cyclo ./Core/Src/stm32h7xx_hal_msp.d ./Core/Src/stm32h7xx_hal_msp.o ./Core/Src/stm32h7xx_hal_msp.su ./Core/Src/stm32h7xx_it.cyclo ./Core/Src/stm32h7xx_it.d ./Core/Src/stm32h7xx_it.o ./Core/Src/stm32h7xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/usart.cyclo ./Core/Src/usart.d ./Core/Src/usart.o ./Core/Src/usart.su
+rm -rf ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.cyclo ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o ./Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.su
+rm -rf by_god_please_2_5s_CM7.elf by_god_please_2_5s_CM7.list by_god_please_2_5s_CM7.map default.size.stdout
+ 
+02:41:45 **** Incremental Build of configuration Debug for project by_god_please_2_5s_CM7 ****
+make -j4 all 
+arm-none-eabi-gcc "../project/manager/managers_behavior/temp_sensor/delay.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/temp_sensor/delay.d" -MT"project/manager/managers_behavior/temp_sensor/delay.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/temp_sensor/delay.o"
+arm-none-eabi-gcc "../project/manager/managers_behavior/temp_sensor/ds18b20.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/temp_sensor/ds18b20.d" -MT"project/manager/managers_behavior/temp_sensor/ds18b20.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/temp_sensor/ds18b20.o"
+arm-none-eabi-gcc "../project/manager/managers_behavior/battery_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/battery_behavior.d" -MT"project/manager/managers_behavior/battery_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/battery_behavior.o"
+arm-none-eabi-gcc "../project/manager/managers_behavior/cnss_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/cnss_behavior.d" -MT"project/manager/managers_behavior/cnss_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/cnss_behavior.o"
+../project/manager/managers_behavior/battery_behavior.c: In function 'battery_update':
+../project/manager/managers_behavior/battery_behavior.c:24:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   24 |         sprintf(buffer,"Batt:%d\n\n",(int)temp->power_level);
+      |         ^~~~~~~
+../project/manager/managers_behavior/battery_behavior.c:8:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    7 | #include "battery_behavior.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../project/manager/managers_behavior/battery_behavior.c:24:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   24 |         sprintf(buffer,"Batt:%d\n\n",(int)temp->power_level);
+      |         ^~~~~~~
+../project/manager/managers_behavior/battery_behavior.c:24:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/battery_behavior.c:25:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   25 |         HAL_UART_Transmit(&huart3, buffer, 8, -1);
+      |                                    ^~~~~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../FATFS/Target/ffconf.h:25,
+                 from ../../Middlewares/Third_Party/FatFs/src/ff.h:29,
+                 from ../project/manager/managers_behavior/../../../FATFS/App/fatfs.h:26,
+                 from ../project/manager/managers_behavior/../manager.h:15,
+                 from ../project/manager/managers_behavior/battery_behavior.h:11,
+                 from ../project/manager/managers_behavior/battery_behavior.c:7:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+In file included from ../project/manager/managers_behavior/../../package.h:11,
+                 from ../project/manager/managers_behavior/../manager.h:12,
+                 from ../project/manager/managers_behavior/cnss_behavior.h:11,
+                 from ../project/manager/managers_behavior/cnss_behavior.c:8:
+../project/manager/managers_behavior/cnss_behavior.c: In function 'cnss_init':
+../project/manager/managers_behavior/../../defines.h:81:23: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+   81 | #define GNSS_INIT_MSG "\r\nGNSS Init\r\n"
+      |                       ^~~~~~~~~~~~~~~~~~~
+      |                       |
+      |                       char *
+../project/manager/managers_behavior/cnss_behavior.c:18:42: note: in expansion of macro 'GNSS_INIT_MSG'
+   18 |         HAL_UART_Transmit_IT(DEBUG_UART, GNSS_INIT_MSG, sizeof GNSS_INIT_MSG);
+      |                                          ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../FATFS/Target/ffconf.h:25,
+                 from ../../Middlewares/Third_Party/FatFs/src/ff.h:29,
+                 from ../project/manager/managers_behavior/../../../FATFS/App/fatfs.h:26,
+                 from ../project/manager/managers_behavior/../manager.h:15:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:26:9: warning: implicit declaration of function 'at_echo_off' [-Wimplicit-function-declaration]
+   26 |         at_echo_off (recived_buffer_debug); // turn off echo function
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:27:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   27 |         sprintf(buffer,"\r\nEcho off:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:9:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    8 | #include "cnss_behavior.h"
+  +++ |+#include <stdio.h>
+    9 | 
+../project/manager/managers_behavior/cnss_behavior.c:27:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   27 |         sprintf(buffer,"\r\nEcho off:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:27:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/cnss_behavior.c:28:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   28 |         HAL_UART_Transmit(DEBUG_UART, buffer, 16, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:30:9: warning: implicit declaration of function 'at_set_baudrate' [-Wimplicit-function-declaration]
+   30 |         at_set_baudrate (recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:32:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   32 |         HAL_UART_Transmit(DEBUG_UART, buffer, 16, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:34:9: warning: implicit declaration of function 'at_power_on' [-Wimplicit-function-declaration]
+   34 |         at_power_on(recived_buffer_debug); // turn on the GNSS
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:36:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   36 |         HAL_UART_Transmit(DEBUG_UART, buffer, 16, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'cnss_update':
+../project/manager/managers_behavior/cnss_behavior.c:47:17: warning: implicit declaration of function 'at_power_state' [-Wimplicit-function-declaration]
+   47 |                 at_power_state(recived_buffer_debug); //ask if the module is ready
+      |                 ^~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:50:17: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   50 |                 sprintf(buffer,"\r\nVerification:%s\r\n",recived_buffer_debug);
+      |                 ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:50:17: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/cnss_behavior.c:52:47: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   52 |                 HAL_UART_Transmit(DEBUG_UART, buffer, 32,-1);
+      |                                               ^~~~~~
+      |                                               |
+      |                                               char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:54:17: warning: implicit declaration of function 'sscanf' [-Wimplicit-function-declaration]
+   54 |                 sscanf(recived_buffer_debug,"\r\n+CGNSPWR: %d",&gnss_run_status);
+      |                 ^~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:54:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../project/manager/managers_behavior/cnss_behavior.c:54:17: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+../project/manager/managers_behavior/cnss_behavior.c:54:17: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../project/manager/managers_behavior/cnss_behavior.c:54:61: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'char *' [-Wformat=]
+   54 |                 sscanf(recived_buffer_debug,"\r\n+CGNSPWR: %d",&gnss_run_status);
+      |                                                            ~^  ~~~~~~~~~~~~~~~~
+      |                                                             |  |
+      |                                                             |  char *
+      |                                                             int *
+      |                                                            %hhd
+../project/manager/managers_behavior/cnss_behavior.c:59:9: warning: implicit declaration of function 'at_gnss_signal' [-Wimplicit-function-declaration]
+   59 |         at_gnss_signal(recived_buffer_gnss);
+      |         ^~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:63:9: warning: incompatible implicit declaration of built-in function 'sscanf' [-Wbuiltin-declaration-mismatch]
+   63 |         sscanf(recived_buffer_gnss,
+      |         ^~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:63:9: note: include '<stdio.h>' or provide a declaration of 'sscanf'
+../project/manager/managers_behavior/cnss_behavior.c:64:32: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'char *' [-Wformat=]
+   64 |                "\r\n+CGNSINF: %d,%c,%[^,],%f,%f"
+      |                               ~^
+      |                                |
+      |                                int *
+      |                               %hhd
+   65 |                         ,&gnss_run_status
+      |                          ~~~~~~~~~~~~~~~~
+      |                          |
+      |                          char *
+../project/manager/managers_behavior/cnss_behavior.c:83:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   83 |         sprintf(buffer,"\r\nGNSS:\n\tLat:%f\n\tLong:%f\r\n"
+      |         ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:83:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/cnss_behavior.c:87:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   87 |         HAL_UART_Transmit(DEBUG_UART, buffer,GNSS_ANSWER_LEN,1000);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'retry_delay':
+../project/manager/managers_behavior/../../defines.h:80:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   80 | #define CONNECTION_FAILED_MSG "Connection Failed\n"
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+      |                               |
+      |                               char *
+../project/manager/managers_behavior/cnss_behavior.c:93:39: note: in expansion of macro 'CONNECTION_FAILED_MSG'
+   93 |         HAL_UART_Transmit(DEBUG_UART, CONNECTION_FAILED_MSG, sizeof(CONNECTION_FAILED_MSG),-1);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:95:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   95 |         HAL_UART_Transmit(DEBUG_UART, "Retrying GNSS data\n",sizeof("Retrying GNSS data\n"),-1);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc "../project/manager/managers_behavior/imu_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/imu_behavior.d" -MT"project/manager/managers_behavior/imu_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/imu_behavior.o"
+../project/manager/managers_behavior/cnss_behavior.c:100:9: warning: implicit declaration of function 'at_power_off' [-Wimplicit-function-declaration]
+  100 |         at_power_off(recived_buffer_debug); // turn on the GNSS
+      |         ^~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:101:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  101 |         sprintf(buffer,"Turning OFF:%s\n",recived_buffer_debug);
+      |         ^~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:101:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/cnss_behavior.c:102:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  102 |         HAL_UART_Transmit(DEBUG_UART, buffer, 32, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+arm-none-eabi-gcc "../project/manager/managers_behavior/nb_iot_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/nb_iot_behavior.d" -MT"project/manager/managers_behavior/nb_iot_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/nb_iot_behavior.o"
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c:110:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  110 |         HAL_UART_Transmit(DEBUG_UART, buffer, 32, -1);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'cnss_init':
+../project/manager/managers_behavior/cnss_behavior.c:27:38: warning: '%s' directive writing up to 63 bytes into a region of size 53 [-Wformat-overflow=]
+   27 |         sprintf(buffer,"\r\nEcho off:%s\r\n",recived_buffer_debug);
+      |                                      ^~      ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:27:9: note: 'sprintf' output between 14 and 77 bytes into a destination of size 64
+   27 |         sprintf(buffer,"\r\nEcho off:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:31:38: warning: '%s' directive writing up to 63 bytes into a region of size 53 [-Wformat-overflow=]
+   31 |         sprintf(buffer,"\r\nBaudrate:%s\r\n",recived_buffer_debug);
+      |                                      ^~      ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:31:9: note: 'sprintf' output between 14 and 77 bytes into a destination of size 64
+   31 |         sprintf(buffer,"\r\nBaudrate:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:35:32: warning: '%s' directive writing up to 63 bytes into a region of size 59 [-Wformat-overflow=]
+   35 |         sprintf(buffer,"\r\nOn:%s\r\n",recived_buffer_debug);
+      |                                ^~      ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:35:9: note: 'sprintf' output between 8 and 71 bytes into a destination of size 64
+   35 |         sprintf(buffer,"\r\nOn:%s\r\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'retry_delay':
+../project/manager/managers_behavior/cnss_behavior.c:101:37: warning: '%s' directive writing up to 63 bytes into a region of size 52 [-Wformat-overflow=]
+  101 |         sprintf(buffer,"Turning OFF:%s\n",recived_buffer_debug);
+      |                                     ^~    ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:101:9: note: 'sprintf' output between 14 and 77 bytes into a destination of size 64
+  101 |         sprintf(buffer,"Turning OFF:%s\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:109:36: warning: '%s' directive writing up to 63 bytes into a region of size 53 [-Wformat-overflow=]
+  109 |         sprintf(buffer,"Turning ON:%s\n",recived_buffer_debug);
+      |                                    ^~    ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:109:9: note: 'sprintf' output between 13 and 76 bytes into a destination of size 64
+  109 |         sprintf(buffer,"Turning ON:%s\n",recived_buffer_debug);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c: In function 'cnss_update':
+../project/manager/managers_behavior/cnss_behavior.c:50:50: warning: '%s' directive writing up to 63 bytes into a region of size 49 [-Wformat-overflow=]
+   50 |                 sprintf(buffer,"\r\nVerification:%s\r\n",recived_buffer_debug);
+      |                                                  ^~      ~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/cnss_behavior.c:50:17: note: 'sprintf' output between 18 and 81 bytes into a destination of size 64
+   50 |                 sprintf(buffer,"\r\nVerification:%s\r\n",recived_buffer_debug);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../project/manager/managers_behavior/sd_card_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/sd_card_behavior.d" -MT"project/manager/managers_behavior/sd_card_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/sd_card_behavior.o"
+In file included from ../project/manager/managers_behavior/../../package.h:11,
+                 from ../project/manager/managers_behavior/../manager.h:12,
+                 from ../project/manager/managers_behavior/sd_card_behavior.h:11,
+                 from ../project/manager/managers_behavior/sd_card_behavior.c:8:
+../project/manager/managers_behavior/sd_card_behavior.c: In function 'sd_card_init':
+../project/manager/managers_behavior/../../defines.h:30:26: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   30 | #define SD_CARD_INIT_MSG "\r\nSD Card Init\r\n"
+      |                          ^~~~~~~~~~~~~~~~~~~~~~
+      |                          |
+      |                          char *
+../project/manager/managers_behavior/sd_card_behavior.c:24:35: note: in expansion of macro 'SD_CARD_INIT_MSG'
+   24 |     HAL_UART_Transmit(DEBUG_UART, SD_CARD_INIT_MSG , sizeof SD_CARD_INIT_MSG , -1);
+      |                                   ^~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../FATFS/Target/ffconf.h:25,
+                 from ../../Middlewares/Third_Party/FatFs/src/ff.h:29,
+                 from ../project/manager/managers_behavior/../../../FATFS/App/fatfs.h:26,
+                 from ../project/manager/managers_behavior/../manager.h:15:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/sd_card_behavior.c: In function 'sd_card_update':
+../project/manager/managers_behavior/sd_card_behavior.c:64:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   64 |     sprintf(log_name,"log_%d.txt",data->packege_number);
+      |     ^~~~~~~
+../project/manager/managers_behavior/sd_card_behavior.c:9:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    8 | #include "sd_card_behavior.h"
+  +++ |+#include <stdio.h>
+    9 | 
+../project/manager/managers_behavior/sd_card_behavior.c:64:5: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   64 |     sprintf(log_name,"log_%d.txt",data->packege_number);
+      |     ^~~~~~~
+../project/manager/managers_behavior/sd_card_behavior.c:64:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/sd_card_behavior.c:72:15: warning: implicit declaration of function 'snprintf' [-Wimplicit-function-declaration]
+   72 |     offset += snprintf(to_send + offset, sizeof(to_send) - offset,
+      |               ^~~~~~~~
+../project/manager/managers_behavior/sd_card_behavior.c:72:15: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+../project/manager/managers_behavior/sd_card_behavior.c:72:15: warning: incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]
+../project/manager/managers_behavior/sd_card_behavior.c:72:15: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+../project/manager/managers_behavior/sd_card_behavior.c:73:18: warning: format '%d' expects argument of type 'int', but argument 4 has type 'double' [-Wformat=]
+   73 |         "Power: %d V\n"
+      |                 ~^
+      |                  |
+      |                  int
+      |                 %f
+......
+   77 |         data->power_level,
+      |         ~~~~~~~~~~~~~~~~~
+      |             |
+      |             double
+../project/manager/managers_behavior/sd_card_behavior.c:98:34: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   98 |     HAL_UART_Transmit(DEBUG_UART,to_send,strlen(to_send),-1);
+      |                                  ^~~~~~~
+      |                                  |
+      |                                  char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+In file included from ../project/manager/managers_behavior/../../package.h:11,
+                 from ../project/manager/managers_behavior/../manager.h:12,
+                 from ../project/manager/managers_behavior/nb_iot_behavior.h:11,
+                 from ../project/manager/managers_behavior/nb_iot_behavior.c:8:
+../project/manager/managers_behavior/nb_iot_behavior.c: In function 'nb_iot_init':
+../project/manager/managers_behavior/../../defines.h:67:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+   67 | #define MOBILE_COMMS_INIT_MSG "\r\nMobile Comms Init\r\n"
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               |
+      |                               char *
+../project/manager/managers_behavior/nb_iot_behavior.c:15:42: note: in expansion of macro 'MOBILE_COMMS_INIT_MSG'
+   15 |         HAL_UART_Transmit_IT(DEBUG_UART, MOBILE_COMMS_INIT_MSG, sizeof MOBILE_COMMS_INIT_MSG);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../FATFS/Target/ffconf.h:25,
+                 from ../../Middlewares/Third_Party/FatFs/src/ff.h:29,
+                 from ../project/manager/managers_behavior/../../../FATFS/App/fatfs.h:26,
+                 from ../project/manager/managers_behavior/../manager.h:15:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:17:9: warning: implicit declaration of function 'at_echo_off' [-Wimplicit-function-declaration]
+   17 |         at_echo_off(recived_at_msg);
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:18:9: warning: implicit declaration of function 'at_network_mode' [-Wimplicit-function-declaration]
+   18 |         at_network_mode(recived_at_msg);
+      |         ^~~~~~~~~~~~~~~
+../project/manager/managers_behavior/imu_behavior.c: In function 'imu_init':
+../project/manager/managers_behavior/imu_behavior.c:17:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   17 |         sprintf(imu_msg_buffer, "\r\nWHO_AM_I: 0x%02X\r\n", whoami);
+      |         ^~~~~~~
+../project/manager/managers_behavior/imu_behavior.c:9:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    8 | #include "imu_behavior.h"
+  +++ |+#include <stdio.h>
+    9 | unsigned int sample_count = 0;
+../project/manager/managers_behavior/imu_behavior.c:17:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   17 |         sprintf(imu_msg_buffer, "\r\nWHO_AM_I: 0x%02X\r\n", whoami);
+      |         ^~~~~~~
+../project/manager/managers_behavior/imu_behavior.c:17:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/imu_behavior.c:18:39: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   18 |         HAL_UART_Transmit(DEBUG_UART, imu_msg_buffer, 20, -1);
+      |                                       ^~~~~~~~~~~~~~
+      |                                       |
+      |                                       char *
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../FATFS/Target/ffconf.h:25,
+                 from ../../Middlewares/Third_Party/FatFs/src/ff.h:29,
+                 from ../project/manager/managers_behavior/../../../FATFS/App/fatfs.h:26,
+                 from ../project/manager/managers_behavior/../manager.h:15,
+                 from ../project/manager/managers_behavior/imu_behavior.h:11,
+                 from ../project/manager/managers_behavior/imu_behavior.c:8:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+In file included from ../project/manager/managers_behavior/../../package.h:11,
+                 from ../project/manager/managers_behavior/../manager.h:12:
+../project/manager/managers_behavior/../../defines.h:45:22: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   45 | #define IMU_INIT_MSG "\r\nIMU Ready\r\n"
+      |                      ^~~~~~~~~~~~~~~~~~~
+      |                      |
+      |                      char *
+../project/manager/managers_behavior/imu_behavior.c:34:39: note: in expansion of macro 'IMU_INIT_MSG'
+   34 |         HAL_UART_Transmit(DEBUG_UART, IMU_INIT_MSG , sizeof IMU_INIT_MSG , 100);
+      |                                       ^~~~~~~~~~~~
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/imu_behavior.c: In function 'imu_update':
+../project/manager/managers_behavior/imu_behavior.c:50:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   50 |                         sprintf(imu_msg_buffer, "\r\nZ: %02X %02X = %d\r\n", buf[0], buf[1], z_raw);
+      |                         ^~~~~~~
+../project/manager/managers_behavior/imu_behavior.c:50:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/imu_behavior.c:51:55: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   51 |                         HAL_UART_Transmit(DEBUG_UART, imu_msg_buffer, strlen(imu_msg_buffer), 100);
+      |                                                       ^~~~~~~~~~~~~~
+      |                                                       |
+      |                                                       char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:19:9: warning: implicit declaration of function 'at_set_band' [-Wimplicit-function-declaration]
+   19 |         at_set_band(recived_at_msg);
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:21:9: warning: implicit declaration of function 'at_network_pdp_activate' [-Wimplicit-function-declaration]
+   21 |         at_network_pdp_activate(recived_at_msg);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:22:9: warning: implicit declaration of function 'at_gprs_init' [-Wimplicit-function-declaration]
+   22 |         at_gprs_init(recived_at_msg);
+      |         ^~~~~~~~~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c:23:9: warning: implicit declaration of function 'at_network_attach_request' [-Wimplicit-function-declaration]
+   23 |         at_network_attach_request (recived_at_msg);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../project/manager/managers_behavior/temperature_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/temperature_behavior.d" -MT"project/manager/managers_behavior/temperature_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/temperature_behavior.o"
+arm-none-eabi-gcc "../project/manager/manager.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/manager.d" -MT"project/manager/manager.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/manager.o"
+../project/manager/managers_behavior/nb_iot_behavior.c:26:9: warning: implicit declaration of function 'at_init_http_connection' [-Wimplicit-function-declaration]
+   26 |         at_init_http_connection(recived_at_msg);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../project/manager/managers_behavior/../../defines.h:68:35: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+   68 | #define MOBILE_COMMS_END_INIT_MSG "\r\nMobile Comms Init END\r\n"
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                   |
+      |                                   char *
+../project/manager/managers_behavior/nb_iot_behavior.c:28:42: note: in expansion of macro 'MOBILE_COMMS_END_INIT_MSG'
+   28 |         HAL_UART_Transmit_IT(DEBUG_UART, MOBILE_COMMS_END_INIT_MSG, sizeof MOBILE_COMMS_END_INIT_MSG);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/nb_iot_behavior.c: In function 'nb_iot_update':
+../project/manager/managers_behavior/nb_iot_behavior.c:34:9: warning: implicit declaration of function 'at_lte_send' [-Wimplicit-function-declaration]
+   34 |         at_lte_send(TESTE_SITE, "Teste", recived_at_msg);
+      |         ^~~~~~~~~~~
+../project/manager/managers_behavior/temperature_behavior.c: In function 'temperature_init':
+../project/manager/managers_behavior/temperature_behavior.c:12:9: warning: implicit declaration of function 'DWT_Init' [-Wimplicit-function-declaration]
+   12 |         DWT_Init();  // Enable cycle counter for delay
+      |         ^~~~~~~~
+arm-none-eabi-gcc "../project/at_commands_ST87M01.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/at_commands_ST87M01.d" -MT"project/at_commands_ST87M01.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/at_commands_ST87M01.o"
+arm-none-eabi-gcc "../project/package.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/package.d" -MT"project/package.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/package.o"
+../project/package.c: In function 'write_package_data':
+../project/package.c:22:25: warning: array subscript has type 'char' [-Wchar-subscripts]
+   22 |     return &package_data[package_data_index];
+      |                         ^
+../project/package.c: In function 'update_package_data':
+../project/package.c:34:21: warning: array subscript has type 'char' [-Wchar-subscripts]
+   34 |         package_data[package_data_index].packege_number++;
+      |                     ^
+../project/package.c:36:17: warning: array subscript has type 'char' [-Wchar-subscripts]
+   36 |     package_data[package_data_index].packege_number++;
+      |                 ^
+arm-none-eabi-gcc "../FATFS/Target/bsp_driver_sd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"FATFS/Target/bsp_driver_sd.d" -MT"FATFS/Target/bsp_driver_sd.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "FATFS/Target/bsp_driver_sd.o"
+arm-none-eabi-gcc "../FATFS/Target/sd_diskio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"FATFS/Target/sd_diskio.d" -MT"FATFS/Target/sd_diskio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "FATFS/Target/sd_diskio.o"
+../project/at_commands_ST87M01.c: In function 'at_set_baudrate':
+../project/at_commands_ST87M01.c:11:9: warning: implicit declaration of function 'gnss_sendCommand' [-Wimplicit-function-declaration]
+   11 |         gnss_sendCommand("\r\nAT+IPR=19200\r\n", COMMAND_GENERAL_DELAY, recived);
+      |         ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../FATFS/App/fatfs.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"FATFS/App/fatfs.d" -MT"FATFS/App/fatfs.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "FATFS/App/fatfs.o"
+../project/at_commands_ST87M01.c: In function 'at_echo_on':
+../project/at_commands_ST87M01.c:16:9: warning: implicit declaration of function 'mobile_sendCommand' [-Wimplicit-function-declaration]
+   16 |         mobile_sendCommand("\r\nATE1\r\n", COMMAND_GENERAL_DELAY, recived);
+      |         ^~~~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c: In function 'at_set_at_gpio':
+../project/at_commands_ST87M01.c:29:9: warning: implicit declaration of function 'fprintf' [-Wimplicit-function-declaration]
+   29 |         fprintf(buffer,"\r\nAT@GPIOSET=%d,%d\r\n",gpio,state);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:8:1: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+    7 | #include "at_commands_ST87M01.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../project/at_commands_ST87M01.c:29:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+   29 |         fprintf(buffer,"\r\nAT@GPIOSET=%d,%d\r\n",gpio,state);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:29:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c: In function 'at_get_at_gpio':
+../project/at_commands_ST87M01.c:36:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+   36 |         fprintf(buffer,"\r\nAT@GPIOGET=%d\r\n",gpio);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:36:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c: In function 'at_ping':
+../project/at_commands_ST87M01.c:116:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+  116 |         fprintf(buffer,"\r\nAT%PINGCMD=0,%s,%d\r\n",MONGO_DB_IP,count);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:116:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c:116:32: warning: unknown conversion type character 'P' in format [-Wformat=]
+  116 |         fprintf(buffer,"\r\nAT%PINGCMD=0,%s,%d\r\n",MONGO_DB_IP,count);
+      |                                ^
+../project/at_commands_ST87M01.c: In function 'at_set_apn':
+../project/at_commands_ST87M01.c:128:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+  128 |         fprintf(buffer,"\r\nAT+CSTT=\"%s\"\r\n",SIMBASE_APN);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:128:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c: In function 'at_lte_send':
+../project/at_commands_ST87M01.c:170:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  170 |         sprintf(buffer,"AT+HTTPPARA=\"URL\",\"%s%s\"",site,to_send);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:170:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/at_commands_ST87M01.c:170:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+../project/at_commands_ST87M01.c:170:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/at_commands_ST87M01.c: In function 'at_network_pdp_activate':
+../project/at_commands_ST87M01.c:179:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+  179 |         fprintf(buffer,"\r\nAT+CGDCONT=1,\"%s\",\"%s\"\r\n",MONGO_DB_PDP_TYPE,SIMBASE_APN);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:179:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c: In function 'at_nb_iot_send':
+../project/at_commands_ST87M01.c:187:9: warning: incompatible implicit declaration of built-in function 'fprintf' [-Wbuiltin-declaration-mismatch]
+  187 |         fprintf(buffer,"\r\nAT+NSOST=0,%s,%s,%d\r\n",MONGO_DB_IP,MONGO_DB_PORT,size);
+      |         ^~~~~~~
+../project/at_commands_ST87M01.c:187:9: note: include '<stdio.h>' or provide a declaration of 'fprintf'
+../project/at_commands_ST87M01.c:187:44: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  187 |         fprintf(buffer,"\r\nAT+NSOST=0,%s,%s,%d\r\n",MONGO_DB_IP,MONGO_DB_PORT,size);
+      |                                           ~^
+      |                                            |
+      |                                            char *
+      |                                           %d
+../project/at_commands_ST87M01.c: At top level:
+../project/at_commands_ST87M01.c:193:6: warning: conflicting types for 'mobile_sendCommand'; have 'void(char *, unsigned int,  char *)'
+  193 | void mobile_sendCommand(char * command, unsigned int timeout, char * recived)
+      |      ^~~~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c:16:9: note: previous implicit declaration of 'mobile_sendCommand' with type 'void(char *, unsigned int,  char *)'
+   16 |         mobile_sendCommand("\r\nATE1\r\n", COMMAND_GENERAL_DELAY, recived);
+      |         ^~~~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c: In function 'mobile_sendCommand':
+../project/at_commands_ST87M01.c:195:49: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+  195 |         HAL_UART_Transmit_IT(MOBILE_COMMS_UART, command, strlen(command)); //Transmits
+      |                                                 ^~~~~~~
+      |                                                 |
+      |                                                 char *
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../project/with_RTOS/../../Core/Inc/main.h:30,
+                 from ../project/with_RTOS/task_header.h:13,
+                 from ../project/at_commands_ST87M01.h:12,
+                 from ../project/at_commands_ST87M01.c:7:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/at_commands_ST87M01.c:196:45: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive' differ in signedness [-Wpointer-sign]
+  196 |         HAL_UART_Receive(MOBILE_COMMS_UART, recived, 32, timeout); //Reads the module
+      |                                             ^~~~~~~
+      |                                             |
+      |                                             char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1637:72: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+ 1637 | HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                               ~~~~~~~~~^~~~~
+../project/at_commands_ST87M01.c: At top level:
+../project/at_commands_ST87M01.c:199:6: warning: conflicting types for 'gnss_sendCommand'; have 'void(char *, unsigned int,  char *)'
+  199 | void gnss_sendCommand(char * command, unsigned int timeout, char * recived)
+      |      ^~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c:11:9: note: previous implicit declaration of 'gnss_sendCommand' with type 'void(char *, unsigned int,  char *)'
+   11 |         gnss_sendCommand("\r\nAT+IPR=19200\r\n", COMMAND_GENERAL_DELAY, recived);
+      |         ^~~~~~~~~~~~~~~~
+../project/at_commands_ST87M01.c: In function 'gnss_sendCommand':
+../project/at_commands_ST87M01.c:201:41: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+  201 |         HAL_UART_Transmit_IT(GNSS_UART, command, strlen(command)); //Transmits
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1638:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1638 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../project/at_commands_ST87M01.c:202:37: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive' differ in signedness [-Wpointer-sign]
+  202 |         HAL_UART_Receive(GNSS_UART, recived, 32, timeout); //Reads the module
+      |                                     ^~~~~~~
+      |                                     |
+      |                                     char *
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1637:72: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+ 1637 | HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                               ~~~~~~~~~^~~~~
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_adc_ex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_exti.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_hsem.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mdma.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_mmc_ex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_sd_ex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart_ex.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_delayblock.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_delayblock.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_delayblock.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_sdmmc.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_sdmmc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_ll_sdmmc.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32h755zitx.d" -MT"Core/Startup/startup_stm32h755zitx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32h755zitx.o" "../Core/Startup/startup_stm32h755zitx.s"
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:91:1: warning: "/*" within comment [-Wcomment]
+   91 | /* USER CODE END Boot_Mode_Sequence_1 */
+      |  
+In file included from ../Core/Src/../../project/manager/../package.h:11,
+                 from ../Core/Src/../../project/manager/manager.h:12,
+                 from ../Core/Src/main.c:31:
+../Core/Src/main.c: In function 'Error_Handler':
+../Core/Src/../../project/manager/../defines.h:15:19: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   15 | #define ERROR_MSG "\r\nError Handler\r\n"
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+      |                   |
+      |                   char *
+../Core/Src/main.c:220:33: note: in expansion of macro 'ERROR_MSG'
+  220 |   HAL_UART_Transmit(DEBUG_UART, ERROR_MSG  , sizeof ERROR_MSG , -1);
+      |                                 ^~~~~~~~~
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc "../Core/Src/memorymap.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/memorymap.d" -MT"Core/Src/memorymap.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/memorymap.o"
+arm-none-eabi-gcc "../Core/Src/sdmmc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sdmmc.d" -MT"Core/Src/sdmmc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sdmmc.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc "/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.d" -MT"Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o"
+arm-none-eabi-gcc -o "by_god_please_2_5s_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="by_god_please_2_5s_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: by_god_please_2_5s_CM7.elf
+ 
+arm-none-eabi-size  by_god_please_2_5s_CM7.elf 
+arm-none-eabi-objdump -h -S by_god_please_2_5s_CM7.elf  > "by_god_please_2_5s_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  84908	    472	  16512	 101892	  18e04	by_god_please_2_5s_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: by_god_please_2_5s_CM7.list
+ 
+02:42:44 **** Incremental Build of configuration Debug for project by_god_please_2_5s_CM7 ****
+make -j4 all 
+arm-none-eabi-gcc "../project/manager/manager.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/manager.d" -MT"project/manager/manager.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/manager.o"
+arm-none-eabi-gcc -o "by_god_please_2_5s_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="by_god_please_2_5s_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: by_god_please_2_5s_CM7.elf
+ 
+arm-none-eabi-size  by_god_please_2_5s_CM7.elf 
+arm-none-eabi-objdump -h -S by_god_please_2_5s_CM7.elf  > "by_god_please_2_5s_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  71144	    108	  16512	  87764	  156d4	by_god_please_2_5s_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: by_god_please_2_5s_CM7.list
+ 
+02:45:51 **** Incremental Build of configuration Debug for project by_god_please_2_5s_CM7 ****
+make -j4 all 
+arm-none-eabi-size  by_god_please_2_5s_CM7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  71144	    108	  16512	  87764	  156d4	by_god_please_2_5s_CM7.elf
+Finished building: default.size.stdout
+ 
+02:49:06 **** Incremental Build of configuration Debug for project by_god_please_2_5s_CM7 ****
+make -j4 all 
+arm-none-eabi-gcc "../project/manager/managers_behavior/temp_sensor/ds18b20.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/temp_sensor/ds18b20.d" -MT"project/manager/managers_behavior/temp_sensor/ds18b20.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/temp_sensor/ds18b20.o"
+arm-none-eabi-gcc -o "by_god_please_2_5s_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="by_god_please_2_5s_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: by_god_please_2_5s_CM7.elf
+ 
+arm-none-eabi-size  by_god_please_2_5s_CM7.elf 
+arm-none-eabi-objdump -h -S by_god_please_2_5s_CM7.elf  > "by_god_please_2_5s_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  71144	    108	  16512	  87764	  156d4	by_god_please_2_5s_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: by_god_please_2_5s_CM7.list
+ 
+02:51:01 **** Incremental Build of configuration Debug for project by_god_please_2_5s_CM7 ****
+make -j4 all 
+arm-none-eabi-gcc "../project/manager/managers_behavior/temperature_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/temperature_behavior.d" -MT"project/manager/managers_behavior/temperature_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/temperature_behavior.o"
+../project/manager/managers_behavior/temperature_behavior.c: In function 'temperature_init':
+../project/manager/managers_behavior/temperature_behavior.c:12:9: warning: implicit declaration of function 'DWT_Init' [-Wimplicit-function-declaration]
+   12 |         DWT_Init();  // Enable cycle counter for delay
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "by_god_please_2_5s_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="by_god_please_2_5s_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: by_god_please_2_5s_CM7.elf
+ 
+arm-none-eabi-size  by_god_please_2_5s_CM7.elf 
+arm-none-eabi-objdump -h -S by_god_please_2_5s_CM7.elf  > "by_god_please_2_5s_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  71160	    108	  16512	  87780	  156e4	by_god_please_2_5s_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: by_god_please_2_5s_CM7.list
+ 
+03:07:50 **** Incremental Build of configuration Debug for project by_god_please_2_5s_CM7 ****
+make -j4 all 
+arm-none-eabi-gcc "../project/manager/managers_behavior/battery_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/battery_behavior.d" -MT"project/manager/managers_behavior/battery_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/battery_behavior.o"
+arm-none-eabi-gcc "../project/manager/managers_behavior/temperature_behavior.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_PWR_DIRECT_SMPS_SUPPLY -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"project/manager/managers_behavior/temperature_behavior.d" -MT"project/manager/managers_behavior/temperature_behavior.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "project/manager/managers_behavior/temperature_behavior.o"
+../project/manager/managers_behavior/battery_behavior.c: In function 'battery_update':
+../project/manager/managers_behavior/battery_behavior.c:24:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   24 |         sprintf(buffer,"Batt:%d\n\n",(int)temp->power_level);
+      |         ^~~~~~~
+../project/manager/managers_behavior/battery_behavior.c:8:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    7 | #include "battery_behavior.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../project/manager/managers_behavior/battery_behavior.c:24:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   24 |         sprintf(buffer,"Batt:%d\n\n",(int)temp->power_level);
+      |         ^~~~~~~
+../project/manager/managers_behavior/battery_behavior.c:24:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../project/manager/managers_behavior/battery_behavior.c:25:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   25 |         HAL_UART_Transmit(&huart3, buffer, 8, -1);
+      |                                    ^~~~~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32h7xx_hal_conf.h:462,
+                 from ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../FATFS/Target/ffconf.h:25,
+                 from ../../Middlewares/Third_Party/FatFs/src/ff.h:29,
+                 from ../project/manager/managers_behavior/../../../FATFS/App/fatfs.h:26,
+                 from ../project/manager/managers_behavior/../manager.h:15,
+                 from ../project/manager/managers_behavior/battery_behavior.h:11,
+                 from ../project/manager/managers_behavior/battery_behavior.c:7:
+../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:1636:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1636 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../project/manager/managers_behavior/temperature_behavior.c: In function 'temperature_init':
+../project/manager/managers_behavior/temperature_behavior.c:12:9: warning: implicit declaration of function 'DWT_Init' [-Wimplicit-function-declaration]
+   12 |         DWT_Init();  // Enable cycle counter for delay
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "by_god_please_2_5s_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"/home/viny/Desktop/pi_project/5s_redone/by_god_please_2_5s/CM7/STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="by_god_please_2_5s_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: by_god_please_2_5s_CM7.elf
+ 
+arm-none-eabi-size  by_god_please_2_5s_CM7.elf 
+arm-none-eabi-objdump -h -S by_god_please_2_5s_CM7.elf  > "by_god_please_2_5s_CM7.list"
+   text	   data	    bss	    dec	    hex	filename
+  71252	    108	  16512	  87872	  15740	by_god_please_2_5s_CM7.elf
+Finished building: default.size.stdout
+ 
+Finished building: by_god_please_2_5s_CM7.list
+ 
